@@ -1,0 +1,41 @@
+%% PolicyPulse 360 — architecture (Neural Mavericks)
+flowchart LR
+  subgraph SRC["Source systems (Kavach Insurance)"]
+    direction TB
+    S1["CRM / KYC<br/>CUSTOMERS"]
+    S2["Policy admin<br/>POLICIES"]
+    S3["Claims<br/>CLAIMS"]
+    S4["Billing<br/>PAYMENTS"]
+    S5["Call centre<br/>CALL_TRANSCRIPTS<br/>(unstructured)"]
+  end
+
+  subgraph SF["Snowflake AI Data Cloud · DB POLICYPULSE · XS warehouse, auto-suspend 60s"]
+    direction LR
+    RAW[("RAW schema<br/>stage + COPY INTO")]
+    subgraph COCO["Cortex Code CLI — modular skills (.cortex/skills)"]
+      direction TB
+      K1["$c360-unify<br/>SQL views"]
+      K2["$interaction-intel<br/>CORTEX.SENTIMENT · AI_CLASSIFY<br/>AI_COMPLETE · Cortex Search"]
+      K3["$next-best-action<br/>explainable risk score +<br/>grounded AI_COMPLETE"]
+    end
+    C360[("CURATED.CUSTOMER_360")]
+    INS[("CURATED.INTERACTION_INSIGHTS")]
+    NBA[("APP.CHURN_RISK<br/>APP.NEXT_BEST_ACTIONS")]
+  end
+
+  subgraph UX["Experience"]
+    APP["Streamlit app<br/>360 card · NBA · portfolio · Ask"]
+    AG["Retention agent / RM"]
+  end
+
+  S1 & S2 & S3 & S4 & S5 --> RAW
+  RAW --> K1 --> C360
+  RAW --> K2 --> INS
+  INS -. AI signals .-> C360
+  C360 --> K3
+  INS --> K3
+  K3 --> NBA
+  NBA -->|LIVE: Snowflake connector| APP
+  NBA -->|DEMO: Parquet export| APP
+  APP --> AG
+  AG -->|plain-English question| APP
