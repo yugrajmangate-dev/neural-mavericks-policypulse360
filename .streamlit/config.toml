@@ -1,13 +1,24 @@
 [theme]
-base = "light"
-primaryColor = "#1c5cab"
-backgroundColor = "#f9f9f7"
-secondaryBackgroundColor = "#f0efec"
-textColor = "#0b0b0b"
+base = "dark"
+primaryColor = "#22D3EE"
+backgroundColor = "#0B1220"
+secondaryBackgroundColor = "#111A2E"
+textColor = "#E5E7EB"
+linkColor = "#22D3EE"
+borderColor = "#1E2A44"
+dataframeHeaderBackgroundColor = "#111A2E"
+codeBackgroundColor = "#0E1729"
+baseRadius = "0.7rem"
 font = "sans serif"
 
 [server]
 headless = true
+
+[runner]
+fastReruns = true
+
+[client]
+toolbarMode = "minimal"
 
 [browser]
 gatherUsageStats = false
