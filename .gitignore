@@ -1,0 +1,19 @@
+# secrets — never commit
+.streamlit/secrets.toml
+.env
+*.p8
+*.pem
+connections.toml
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

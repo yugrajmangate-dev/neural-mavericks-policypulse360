@@ -1,0 +1,510 @@
+POLICY_ID,CUSTOMER_ID,PRODUCT_LINE,PLAN_NAME,SUM_INSURED,ANNUAL_PREMIUM,PAYMENT_FREQUENCY,START_DATE,RENEWAL_DATE,STATUS,SALES_CHANNEL,NCB_PCT
+KVH-LI-00001,C0001,Life,Child Future Saver,25450000,131300,Quarterly,2026-02-02,2026-10-07,Cancellation Requested,Bancassurance,
+KVH-HO-00002,C0002,Home,Home Protect Structure,12400000,14600,Annual,2022-04-10,2026-09-16,Lapsed,Bancassurance,
+KVH-MO-00003,C0002,Motor,Motor Third-Party Plus,2350000,59600,Annual,2022-07-19,2027-01-07,Active,Broker,45
+KVH-LI-00004,C0002,Life,Child Future Saver,25250000,92250,Monthly,2022-11-19,2027-03-13,Active,Online,
+KVH-HO-00005,C0003,Home,Home Protect Contents,4150000,5300,Monthly,2023-03-17,2026-10-11,Active,Bancassurance,
+KVH-HE-00006,C0003,Health,Health Shield Family Floater,1400000,31400,Monthly,2025-09-22,2027-07-15,Active,Agent,
+KVH-HE-00007,C0004,Health,Health Shield Individual,1400000,32900,Annual,2021-11-14,2026-10-26,Active,Online,
+KVH-MO-00008,C0004,Motor,Two-Wheeler Secure,900000,4200,Annual,2022-12-26,2027-09-21,Active,Bancassurance,45
+KVH-LI-00009,C0004,Life,Term Secure Plus (ROP),6400000,47750,Quarterly,2023-10-03,2027-09-18,Active,Broker,
+KVH-LI-00010,C0005,Life,Term Secure,16500000,56650,Quarterly,2021-12-29,2027-04-02,Active,Agent,
+KVH-HE-00011,C0005,Health,Health Shield Individual,1500000,29200,Annual,2026-08-03,2027-02-27,Active,Agent,
+KVH-MO-00012,C0005,Motor,Motor Comprehensive,1050000,32800,Annual,2021-07-26,2026-10-02,Grace Period,Online,0
+KVH-LI-00013,C0006,Life,Term Secure,7300000,60750,Monthly,2023-10-09,2026-10-20,Active,Bancassurance,
+KVH-MO-00014,C0006,Motor,Motor Comprehensive,800000,13200,Annual,2024-04-03,2027-05-23,Active,Agent,25
+KVH-HE-00015,C0007,Health,Health Shield Individual,750000,25550,Monthly,2023-12-19,2027-07-18,Active,Broker,
+KVH-MO-00016,C0007,Motor,Motor Third-Party Plus,750000,18150,Annual,2025-04-29,2027-06-14,Active,Broker,50
+KVH-LI-00017,C0008,Life,Child Future Saver,11500000,25750,Annual,2019-08-24,2027-10-03,Active,Online,
+KVH-HE-00018,C0008,Health,Health Shield Family Floater,900000,18250,Annual,2019-04-08,2026-11-07,Active,Bancassurance,
+KVH-HO-00019,C0008,Home,Home Protect Contents,4450000,2350,Annual,2025-02-14,2027-05-12,Active,Bancassurance,
+KVH-LI-00020,C0009,Life,Term Secure Plus (ROP),17050000,35600,Quarterly,2025-02-28,2026-10-07,Active,Agent,
+KVH-HE-00021,C0009,Health,Health Shield Individual,2500000,11350,Quarterly,2021-10-15,2027-04-20,Active,Broker,
+KVH-HO-00022,C0009,Home,Home Protect Contents,3000000,7550,Monthly,2025-09-22,2026-12-24,Active,Agent,
+KVH-MO-00023,C0010,Motor,Motor Third-Party Plus,850000,11550,Annual,2018-01-19,2026-09-19,Grace Period,Online,50
+KVH-HE-00024,C0010,Health,Super Top-Up,550000,19850,Quarterly,2025-02-06,2027-01-15,Active,Online,
+KVH-HO-00025,C0010,Home,Home Protect Structure,2900000,4000,Monthly,2018-03-24,2027-08-01,Active,Online,
+KVH-HE-00026,C0011,Health,Health Shield Individual,1700000,60150,Annual,2026-04-19,2026-10-30,Active,Bancassurance,
+KVH-MO-00027,C0011,Motor,Two-Wheeler Secure,1500000,12950,Annual,2025-11-06,2027-04-07,Active,Bancassurance,35
+KVH-LI-00028,C0011,Life,Child Future Saver,16350000,15350,Annual,2025-04-21,2026-12-30,Active,Bancassurance,
+KVH-MO-00029,C0012,Motor,Motor Comprehensive,600000,15900,Annual,2021-02-25,2027-07-04,Active,Agent,20
+KVH-LI-00030,C0013,Life,Term Secure,8200000,15800,Monthly,2026-07-12,2026-11-27,Active,Agent,
+KVH-MO-00031,C0014,Motor,Motor Third-Party Plus,1150000,13650,Annual,2021-04-17,2027-04-23,Active,Online,45
+KVH-LI-00032,C0015,Life,Term Secure,6900000,59350,Annual,2025-04-02,2026-11-28,Active,Bancassurance,
+KVH-HE-00033,C0016,Health,Health Shield Individual,1150000,47000,Annual,2022-06-05,2027-07-04,Active,Broker,
+KVH-HE-00034,C0017,Health,Super Top-Up,500000,28550,Monthly,2026-08-22,2026-12-16,Active,Online,
+KVH-MO-00035,C0017,Motor,Motor Comprehensive,250000,10900,Annual,2026-08-28,2027-03-19,Active,Bancassurance,0
+KVH-HE-00036,C0018,Health,Health Shield Individual,450000,31700,Annual,2023-12-25,2026-10-26,Active,Online,
+KVH-LI-00037,C0019,Life,Term Secure,16400000,83900,Quarterly,2026-07-19,2026-12-02,Active,Bancassurance,
+KVH-LI-00038,C0020,Life,Term Secure Plus (ROP),14550000,50900,Monthly,2025-01-05,2026-11-05,Active,Bancassurance,
+KVH-HO-00039,C0020,Home,Home Protect Structure,7750000,11700,Monthly,2025-03-05,2026-12-18,Active,Broker,
+KVH-HE-00040,C0021,Health,Super Top-Up,1700000,12500,Monthly,2024-11-06,2026-12-21,Active,Bancassurance,
+KVH-MO-00041,C0022,Motor,Two-Wheeler Secure,1600000,12050,Annual,2026-02-21,2026-11-05,Active,Agent,50
+KVH-MO-00042,C0023,Motor,Two-Wheeler Secure,750000,6100,Annual,2026-01-11,2027-07-02,Active,Online,25
+KVH-MO-00043,C0024,Motor,Two-Wheeler Secure,1200000,10450,Annual,2021-09-19,2026-11-16,Active,Agent,25
+KVH-MO-00044,C0025,Motor,Two-Wheeler Secure,750000,21900,Annual,2017-08-21,2026-12-08,Active,Online,25
+KVH-HE-00045,C0026,Health,Senior Care Health,1050000,35700,Annual,2022-08-07,2027-06-12,Active,Bancassurance,
+KVH-LI-00046,C0026,Life,Term Secure Plus (ROP),4400000,64250,Quarterly,2022-07-13,2027-08-01,Active,Agent,
+KVH-HO-00047,C0027,Home,Home Protect Contents,5900000,6500,Annual,2023-01-16,2026-12-08,Active,Agent,
+KVH-MO-00048,C0027,Motor,Two-Wheeler Secure,1150000,10900,Annual,2023-06-06,2027-05-23,Active,Bancassurance,35
+KVH-MO-00049,C0028,Motor,Motor Third-Party Plus,550000,8850,Annual,2023-08-19,2027-03-28,Active,Agent,20
+KVH-HE-00050,C0029,Health,Health Shield Individual,1650000,51300,Monthly,2026-07-28,2026-10-25,Active,Agent,
+KVH-HO-00051,C0029,Home,Home Protect Contents,3750000,7450,Annual,2026-09-01,2027-02-25,Active,Online,
+KVH-LI-00052,C0030,Life,Term Secure Plus (ROP),9200000,50200,Annual,2025-05-06,2026-11-04,Active,Broker,
+KVH-HE-00053,C0030,Health,Senior Care Health,1000000,29450,Annual,2025-08-07,2027-05-11,Active,Online,
+KVH-MO-00054,C0030,Motor,Motor Comprehensive,650000,10700,Annual,2026-02-20,2027-06-04,Active,Bancassurance,25
+KVH-HE-00055,C0031,Health,Senior Care Health,1500000,59850,Monthly,2019-12-16,2027-02-05,Active,Agent,
+KVH-LI-00056,C0031,Life,Child Future Saver,11350000,34800,Annual,2024-03-01,2027-03-27,Active,Agent,
+KVH-MO-00057,C0032,Motor,Motor Third-Party Plus,950000,14000,Annual,2019-07-08,2027-02-28,Active,Agent,0
+KVH-LI-00058,C0032,Life,Child Future Saver,7100000,47450,Annual,2018-12-13,2027-09-14,Active,Online,
+KVH-HE-00059,C0033,Health,Health Shield Individual,850000,23650,Annual,2025-03-20,2026-12-01,Active,Agent,
+KVH-HE-00060,C0034,Health,Senior Care Health,1800000,13600,Quarterly,2024-05-24,2026-12-10,Active,Bancassurance,
+KVH-MO-00061,C0034,Motor,Motor Third-Party Plus,2400000,28150,Annual,2023-12-08,2026-09-29,Grace Period,Bancassurance,45
+KVH-HO-00062,C0034,Home,Home Protect Structure,2700000,7350,Monthly,2026-06-04,2027-08-04,Active,Online,
+KVH-HE-00063,C0035,Health,Senior Care Health,1500000,36450,Monthly,2024-01-16,2027-06-23,Active,Online,
+KVH-MO-00064,C0035,Motor,Motor Comprehensive,2500000,34150,Annual,2025-03-11,2026-10-21,Active,Online,45
+KVH-LI-00065,C0035,Life,Term Secure Plus (ROP),24050000,151750,Quarterly,2019-02-03,2027-03-15,Active,Agent,
+KVH-HE-00066,C0036,Health,Senior Care Health,1250000,26500,Annual,2025-08-19,2027-02-26,Active,Bancassurance,
+KVH-HO-00067,C0037,Home,Home Protect Contents,6650000,6600,Annual,2023-08-18,2026-11-06,Active,Broker,
+KVH-HE-00068,C0038,Health,Health Shield Family Floater,1400000,47700,Monthly,2026-01-22,2026-11-10,Active,Online,
+KVH-MO-00069,C0038,Motor,Motor Comprehensive,550000,12150,Annual,2026-08-05,2026-11-24,Active,Online,45
+KVH-MO-00070,C0039,Motor,Motor Comprehensive,1200000,13750,Annual,2024-04-22,2026-12-03,Active,Agent,50
+KVH-LI-00071,C0039,Life,Term Secure,13900000,42600,Annual,2024-03-05,2027-09-13,Active,Agent,
+KVH-HE-00072,C0039,Health,Super Top-Up,550000,18000,Annual,2024-03-02,2027-06-08,Active,Agent,
+KVH-HE-00073,C0040,Health,Health Shield Individual,950000,12150,Quarterly,2019-07-11,2026-11-08,Active,Agent,
+KVH-MO-00074,C0041,Motor,Two-Wheeler Secure,500000,7750,Annual,2024-12-03,2026-11-04,Active,Online,0
+KVH-HE-00075,C0041,Health,Health Shield Individual,1250000,21400,Monthly,2024-05-01,2026-12-07,Active,Broker,
+KVH-HO-00076,C0042,Home,Home Protect Structure,2650000,6200,Monthly,2024-08-22,2026-10-20,Active,Agent,
+KVH-HE-00077,C0042,Health,Super Top-Up,1950000,18550,Annual,2024-07-07,2026-12-25,Active,Online,
+KVH-MO-00078,C0042,Motor,Motor Third-Party Plus,1050000,11900,Annual,2025-04-07,2027-07-18,Active,Agent,0
+KVH-HO-00079,C0043,Home,Home Protect Contents,4950000,3000,Monthly,2024-01-17,2026-11-07,Active,Agent,
+KVH-MO-00080,C0044,Motor,Two-Wheeler Secure,1650000,16100,Annual,2025-06-18,2027-07-17,Active,Online,45
+KVH-HO-00081,C0045,Home,Home Protect Contents,10400000,12500,Annual,2023-07-26,2026-12-04,Active,Agent,
+KVH-HE-00082,C0045,Health,Super Top-Up,4150000,48650,Quarterly,2022-06-28,2027-04-07,Active,Online,
+KVH-MO-00083,C0046,Motor,Motor Comprehensive,700000,21400,Annual,2021-11-28,2027-05-26,Active,Agent,20
+KVH-HO-00084,C0046,Home,Home Protect Structure,7650000,10750,Monthly,2020-05-22,2027-05-29,Active,Online,
+KVH-LI-00085,C0047,Life,Term Secure Plus (ROP),7650000,63750,Quarterly,2022-03-22,2027-07-19,Active,Bancassurance,
+KVH-MO-00086,C0047,Motor,Motor Third-Party Plus,850000,7800,Annual,2020-07-20,2026-10-29,Active,Agent,45
+KVH-MO-00087,C0048,Motor,Two-Wheeler Secure,250000,8100,Annual,2023-08-27,2027-07-24,Active,Online,25
+KVH-HE-00088,C0048,Health,Health Shield Family Floater,1000000,12100,Annual,2018-06-03,2027-02-03,Active,Bancassurance,
+KVH-LI-00089,C0048,Life,Child Future Saver,9150000,25900,Monthly,2025-06-28,2027-09-04,Active,Online,
+KVH-MO-00090,C0049,Motor,Motor Third-Party Plus,1450000,9250,Annual,2025-07-04,2026-11-23,Active,Agent,20
+KVH-HE-00091,C0050,Health,Super Top-Up,1800000,24650,Annual,2022-10-02,2027-03-02,Active,Broker,
+KVH-HO-00092,C0050,Home,Home Protect Structure,6000000,3600,Quarterly,2022-06-14,2026-10-03,Grace Period,Online,
+KVH-LI-00093,C0051,Life,Term Secure Plus (ROP),12500000,75750,Annual,2023-12-23,2027-01-22,Active,Online,
+KVH-MO-00094,C0052,Motor,Motor Third-Party Plus,1150000,22100,Annual,2025-07-12,2026-10-30,Active,Online,25
+KVH-HE-00095,C0052,Health,Super Top-Up,1450000,24100,Monthly,2024-04-14,2027-08-29,Active,Online,
+KVH-HO-00096,C0052,Home,Home Protect Contents,3200000,5850,Quarterly,2023-06-08,2026-09-21,Grace Period,Bancassurance,
+KVH-HE-00097,C0053,Health,Health Shield Individual,1250000,10750,Annual,2025-12-25,2027-03-15,Active,Agent,
+KVH-HE-00098,C0054,Health,Super Top-Up,1400000,37500,Monthly,2026-06-15,2026-11-20,Active,Agent,
+KVH-MO-00099,C0054,Motor,Motor Comprehensive,400000,35050,Annual,2026-07-17,2027-03-06,Active,Online,35
+KVH-HE-00100,C0055,Health,Senior Care Health,1100000,21300,Monthly,2021-09-21,2026-11-12,Active,Broker,
+KVH-MO-00101,C0055,Motor,Motor Third-Party Plus,1050000,10800,Annual,2022-12-16,2026-11-02,Active,Online,35
+KVH-LI-00102,C0055,Life,Term Secure Plus (ROP),11100000,60550,Monthly,2025-02-08,2026-11-02,Active,Broker,
+KVH-MO-00103,C0056,Motor,Motor Comprehensive,400000,21800,Annual,2026-02-09,2026-12-10,Active,Bancassurance,50
+KVH-HE-00104,C0056,Health,Super Top-Up,750000,36500,Annual,2025-12-24,2026-10-21,Active,Agent,
+KVH-LI-00105,C0057,Life,Term Secure Plus (ROP),14200000,19900,Monthly,2026-01-30,2026-09-25,Grace Period,Agent,
+KVH-MO-00106,C0058,Motor,Two-Wheeler Secure,600000,19850,Annual,2025-01-22,2026-10-09,Active,Online,25
+KVH-HE-00107,C0059,Health,Super Top-Up,3300000,17250,Annual,2025-10-30,2026-12-07,Active,Agent,
+KVH-MO-00108,C0060,Motor,Two-Wheeler Secure,1600000,13000,Annual,2025-10-26,2026-11-10,Active,Agent,45
+KVH-LI-00109,C0061,Life,Term Secure,8100000,102500,Quarterly,2026-07-05,2026-11-07,Active,Online,
+KVH-LI-00110,C0062,Life,Term Secure Plus (ROP),15750000,53750,Quarterly,2025-12-20,2026-11-16,Active,Agent,
+KVH-HE-00111,C0062,Health,Health Shield Individual,2100000,19400,Annual,2026-01-17,2026-12-28,Active,Agent,
+KVH-LI-00112,C0063,Life,Child Future Saver,8400000,9500,Quarterly,2022-12-03,2026-11-04,Active,Bancassurance,
+KVH-MO-00113,C0063,Motor,Two-Wheeler Secure,1050000,10550,Annual,2026-06-04,2027-09-06,Active,Bancassurance,45
+KVH-LI-00114,C0064,Life,Term Secure,11950000,35850,Annual,2023-10-07,2026-11-25,Active,Online,
+KVH-HO-00115,C0064,Home,Home Protect Contents,2100000,8650,Annual,2022-08-27,2027-06-10,Cancellation Requested,Online,
+KVH-HO-00116,C0065,Home,Home Protect Structure,5150000,3000,Quarterly,2026-08-31,2026-12-06,Active,Online,
+KVH-MO-00117,C0066,Motor,Motor Comprehensive,850000,5900,Annual,2021-11-23,2027-07-22,Active,Online,20
+KVH-HE-00118,C0067,Health,Super Top-Up,850000,43300,Annual,2023-07-19,2027-06-20,Active,Online,
+KVH-LI-00119,C0067,Life,Term Secure,13350000,27950,Monthly,2019-02-25,2026-09-19,Grace Period,Bancassurance,
+KVH-LI-00120,C0068,Life,Term Secure Plus (ROP),27150000,21400,Monthly,2022-12-25,2027-03-03,Active,Bancassurance,
+KVH-LI-00121,C0069,Life,Term Secure,10000000,40100,Annual,2026-08-08,2026-12-07,Active,Online,
+KVH-LI-00122,C0070,Life,Term Secure,13150000,57100,Quarterly,2025-12-05,2026-12-28,Active,Agent,
+KVH-LI-00123,C0071,Life,Term Secure Plus (ROP),7250000,16900,Quarterly,2017-10-09,2027-07-17,Active,Agent,
+KVH-MO-00124,C0071,Motor,Motor Third-Party Plus,1550000,13500,Annual,2021-10-30,2026-10-16,Active,Broker,20
+KVH-LI-00125,C0072,Life,Term Secure Plus (ROP),7750000,80900,Monthly,2026-09-03,2026-10-10,Active,Agent,
+KVH-HE-00126,C0072,Health,Health Shield Individual,1900000,56300,Annual,2026-03-07,2027-09-15,Active,Online,
+KVH-MO-00127,C0073,Motor,Motor Third-Party Plus,1250000,18950,Annual,2026-08-15,2026-11-18,Active,Online,25
+KVH-HE-00128,C0073,Health,Senior Care Health,750000,22350,Annual,2018-06-20,2027-08-18,Active,Online,
+KVH-MO-00129,C0074,Motor,Motor Third-Party Plus,750000,4800,Annual,2021-08-27,2027-07-09,Active,Online,20
+KVH-HO-00130,C0074,Home,Home Protect Contents,5200000,8550,Annual,2023-11-03,2027-01-08,Active,Bancassurance,
+KVH-MO-00131,C0075,Motor,Motor Third-Party Plus,1300000,22600,Annual,2026-01-21,2026-11-11,Active,Agent,25
+KVH-LI-00132,C0075,Life,Term Secure Plus (ROP),16650000,24200,Monthly,2026-07-08,2027-06-02,Active,Agent,
+KVH-HE-00133,C0076,Health,Senior Care Health,4450000,77050,Quarterly,2024-09-02,2027-03-15,Active,Agent,
+KVH-MO-00134,C0077,Motor,Motor Comprehensive,550000,29750,Annual,2024-09-25,2027-05-13,Active,Online,20
+KVH-MO-00135,C0078,Motor,Motor Third-Party Plus,1000000,30150,Annual,2024-06-20,2026-11-22,Active,Agent,25
+KVH-MO-00136,C0079,Motor,Motor Comprehensive,450000,7300,Annual,2024-09-21,2026-10-23,Active,Bancassurance,0
+KVH-HE-00137,C0080,Health,Health Shield Family Floater,1300000,71450,Annual,2025-07-09,2027-01-06,Active,Agent,
+KVH-LI-00138,C0081,Life,Term Secure Plus (ROP),6650000,87600,Annual,2026-01-20,2027-03-09,Active,Online,
+KVH-LI-00139,C0082,Life,Term Secure,10350000,64950,Monthly,2026-05-05,2027-05-26,Active,Agent,
+KVH-MO-00140,C0083,Motor,Two-Wheeler Secure,1750000,61550,Annual,2024-06-21,2027-02-20,Active,Broker,35
+KVH-MO-00141,C0084,Motor,Motor Comprehensive,1800000,27050,Annual,2022-04-29,2026-11-27,Active,Online,20
+KVH-HE-00142,C0085,Health,Health Shield Family Floater,1550000,43700,Quarterly,2025-11-10,2026-12-14,Active,Broker,
+KVH-LI-00143,C0086,Life,Term Secure,6450000,58550,Annual,2022-05-22,2027-07-09,Active,Agent,
+KVH-MO-00144,C0086,Motor,Motor Comprehensive,750000,16150,Annual,2025-10-30,2027-08-07,Active,Agent,0
+KVH-HE-00145,C0087,Health,Health Shield Individual,2200000,35200,Annual,2025-07-19,2026-10-21,Active,Online,
+KVH-HE-00146,C0088,Health,Health Shield Family Floater,950000,21050,Monthly,2024-10-14,2027-08-11,Active,Agent,
+KVH-MO-00147,C0088,Motor,Two-Wheeler Secure,750000,17400,Annual,2019-12-29,2027-08-10,Active,Agent,50
+KVH-HE-00148,C0089,Health,Health Shield Individual,1400000,17400,Annual,2026-06-24,2026-12-17,Active,Online,
+KVH-LI-00149,C0090,Life,Term Secure,20550000,96950,Monthly,2025-12-07,2026-12-13,Active,Bancassurance,
+KVH-HE-00150,C0090,Health,Health Shield Individual,2450000,34850,Monthly,2026-01-06,2027-03-18,Active,Agent,
+KVH-LI-00151,C0091,Life,Term Secure Plus (ROP),4000000,29250,Quarterly,2018-11-26,2026-09-25,Grace Period,Online,
+KVH-MO-00152,C0091,Motor,Two-Wheeler Secure,500000,12150,Annual,2023-11-08,2027-09-26,Active,Bancassurance,25
+KVH-HE-00153,C0092,Health,Health Shield Family Floater,1300000,6350,Monthly,2024-05-22,2026-10-26,Active,Bancassurance,
+KVH-LI-00154,C0093,Life,Child Future Saver,8650000,94150,Quarterly,2020-05-11,2026-09-17,Lapsed,Agent,
+KVH-MO-00155,C0094,Motor,Motor Comprehensive,1000000,33000,Annual,2020-04-21,2026-10-17,Active,Agent,50
+KVH-HE-00156,C0094,Health,Super Top-Up,1200000,72850,Annual,2020-08-06,2027-07-27,Active,Online,
+KVH-HE-00157,C0095,Health,Senior Care Health,2950000,68700,Monthly,2026-01-26,2026-12-31,Active,Bancassurance,
+KVH-HO-00158,C0096,Home,Home Protect Contents,1850000,8850,Monthly,2025-07-13,2027-03-24,Active,Agent,
+KVH-HE-00159,C0096,Health,Health Shield Individual,1700000,14150,Annual,2025-07-04,2027-02-28,Active,Agent,
+KVH-HE-00160,C0097,Health,Health Shield Family Floater,1750000,40550,Monthly,2024-07-25,2027-05-22,Active,Agent,
+KVH-MO-00161,C0098,Motor,Motor Comprehensive,1100000,26000,Annual,2025-10-30,2027-01-08,Active,Online,45
+KVH-MO-00162,C0099,Motor,Motor Third-Party Plus,1300000,31850,Annual,2022-03-19,2026-11-12,Active,Online,35
+KVH-MO-00163,C0100,Motor,Motor Comprehensive,400000,11600,Annual,2025-08-30,2026-11-04,Active,Online,35
+KVH-HE-00164,C0100,Health,Health Shield Family Floater,1250000,16350,Annual,2025-11-04,2027-09-18,Active,Online,
+KVH-LI-00165,C0100,Life,Term Secure Plus (ROP),5800000,18050,Annual,2025-07-04,2027-04-12,Active,Online,
+KVH-MO-00166,C0101,Motor,Two-Wheeler Secure,1150000,26500,Annual,2022-09-30,2026-11-27,Active,Online,20
+KVH-MO-00167,C0102,Motor,Two-Wheeler Secure,1150000,23700,Annual,2024-01-17,2026-10-25,Active,Agent,20
+KVH-HE-00168,C0102,Health,Super Top-Up,1000000,40300,Monthly,2025-09-30,2026-11-15,Active,Online,
+KVH-MO-00169,C0103,Motor,Motor Third-Party Plus,550000,14750,Annual,2017-08-20,2027-03-05,Active,Agent,20
+KVH-LI-00170,C0103,Life,Child Future Saver,7150000,66450,Annual,2017-03-12,2026-10-26,Active,Agent,
+KVH-HO-00171,C0104,Home,Home Protect Structure,10750000,14800,Annual,2021-12-02,2027-01-25,Active,Online,
+KVH-MO-00172,C0104,Motor,Motor Comprehensive,1900000,45100,Annual,2019-08-14,2027-03-14,Active,Bancassurance,45
+KVH-LI-00173,C0104,Life,Child Future Saver,20300000,60200,Monthly,2025-08-23,2027-02-22,Active,Online,
+KVH-HO-00174,C0105,Home,Home Protect Structure,3600000,6450,Annual,2020-09-23,2026-10-21,Active,Online,
+KVH-HE-00175,C0105,Health,Health Shield Family Floater,1200000,17850,Monthly,2018-02-02,2027-03-14,Active,Broker,
+KVH-MO-00176,C0106,Motor,Two-Wheeler Secure,350000,15550,Annual,2026-03-23,2026-11-16,Active,Agent,25
+KVH-LI-00177,C0106,Life,Term Secure Plus (ROP),4250000,43700,Quarterly,2026-03-02,2027-01-21,Active,Agent,
+KVH-MO-00178,C0107,Motor,Two-Wheeler Secure,550000,24700,Annual,2024-07-01,2026-12-14,Active,Bancassurance,45
+KVH-MO-00179,C0108,Motor,Two-Wheeler Secure,600000,26450,Annual,2025-04-07,2026-09-20,Grace Period,Agent,20
+KVH-MO-00180,C0109,Motor,Motor Comprehensive,850000,14150,Annual,2023-09-07,2027-08-14,Active,Agent,20
+KVH-HE-00181,C0110,Health,Health Shield Family Floater,3000000,110150,Quarterly,2026-07-05,2026-11-20,Active,Agent,
+KVH-HE-00182,C0111,Health,Senior Care Health,1400000,43500,Annual,2023-06-21,2026-11-06,Active,Bancassurance,
+KVH-HO-00183,C0111,Home,Home Protect Contents,5100000,13350,Annual,2024-10-20,2027-05-21,Active,Agent,
+KVH-MO-00184,C0111,Motor,Two-Wheeler Secure,550000,26700,Annual,2021-03-20,2027-07-01,Active,Broker,20
+KVH-HE-00185,C0112,Health,Senior Care Health,2000000,25900,Monthly,2020-12-09,2026-11-05,Active,Online,
+KVH-HO-00186,C0112,Home,Home Protect Structure,2900000,2700,Annual,2026-01-25,2027-09-16,Active,Agent,
+KVH-LI-00187,C0112,Life,Child Future Saver,12200000,26750,Monthly,2023-11-04,2027-08-04,Active,Online,
+KVH-MO-00188,C0113,Motor,Two-Wheeler Secure,1500000,20800,Annual,2026-06-08,2026-11-17,Active,Online,25
+KVH-HE-00189,C0114,Health,Senior Care Health,550000,31700,Monthly,2023-09-21,2026-12-08,Active,Online,
+KVH-HO-00190,C0114,Home,Home Protect Structure,6000000,8850,Monthly,2021-04-26,2027-03-06,Active,Bancassurance,
+KVH-HE-00191,C0115,Health,Super Top-Up,950000,12950,Quarterly,2022-02-23,2027-08-04,Active,Online,
+KVH-HE-00192,C0116,Health,Super Top-Up,1550000,65100,Annual,2025-07-15,2027-06-01,Active,Agent,
+KVH-LI-00193,C0117,Life,Term Secure,9100000,46700,Annual,2025-06-26,2027-06-06,Active,Agent,
+KVH-HE-00194,C0118,Health,Super Top-Up,1450000,11350,Monthly,2025-02-02,2026-10-16,Active,Bancassurance,
+KVH-MO-00195,C0119,Motor,Motor Third-Party Plus,1000000,36400,Annual,2018-10-06,2027-06-05,Active,Agent,35
+KVH-HO-00196,C0120,Home,Home Protect Contents,7600000,15400,Annual,2025-10-14,2026-10-28,Active,Agent,
+KVH-MO-00197,C0120,Motor,Two-Wheeler Secure,1700000,27200,Annual,2020-03-23,2027-02-27,Active,Online,20
+KVH-MO-00198,C0121,Motor,Motor Comprehensive,1200000,37500,Annual,2025-08-31,2027-08-22,Active,Online,25
+KVH-MO-00199,C0122,Motor,Motor Third-Party Plus,900000,62800,Annual,2017-11-01,2027-06-08,Active,Broker,20
+KVH-LI-00200,C0122,Life,Term Secure,22100000,65650,Monthly,2018-12-29,2027-04-03,Active,Online,
+KVH-HE-00201,C0123,Health,Senior Care Health,2800000,75750,Annual,2020-10-18,2027-06-15,Active,Agent,
+KVH-HE-00202,C0124,Health,Super Top-Up,2500000,20850,Annual,2024-10-26,2027-03-08,Active,Online,
+KVH-LI-00203,C0124,Life,Term Secure Plus (ROP),25800000,58800,Quarterly,2023-10-11,2027-08-15,Active,Bancassurance,
+KVH-HO-00204,C0125,Home,Home Protect Contents,2150000,7000,Quarterly,2020-09-13,2027-06-21,Active,Online,
+KVH-HE-00205,C0125,Health,Senior Care Health,950000,27100,Monthly,2020-04-10,2027-05-24,Active,Agent,
+KVH-LI-00206,C0126,Life,Term Secure Plus (ROP),7300000,64000,Monthly,2024-05-26,2027-07-11,Active,Online,
+KVH-MO-00207,C0126,Motor,Motor Comprehensive,1600000,12000,Annual,2023-11-13,2027-02-08,Active,Broker,0
+KVH-HE-00208,C0127,Health,Health Shield Family Floater,1300000,30600,Monthly,2025-04-22,2026-12-10,Active,Agent,
+KVH-LI-00209,C0127,Life,Term Secure Plus (ROP),5900000,65350,Quarterly,2026-06-22,2026-12-14,Active,Agent,
+KVH-LI-00210,C0128,Life,Term Secure Plus (ROP),5150000,17050,Annual,2023-11-06,2026-11-21,Active,Agent,
+KVH-HE-00211,C0129,Health,Health Shield Individual,550000,25850,Monthly,2023-01-11,2027-05-11,Active,Agent,
+KVH-LI-00212,C0130,Life,Term Secure Plus (ROP),7850000,41950,Annual,2025-03-22,2026-11-20,Active,Bancassurance,
+KVH-HO-00213,C0131,Home,Home Protect Contents,2350000,4200,Annual,2023-09-30,2027-05-15,Active,Broker,
+KVH-MO-00214,C0131,Motor,Motor Third-Party Plus,200000,6500,Annual,2021-10-31,2027-08-09,Active,Agent,35
+KVH-HE-00215,C0131,Health,Health Shield Family Floater,600000,14600,Annual,2023-09-11,2027-09-18,Active,Online,
+KVH-LI-00216,C0132,Life,Term Secure Plus (ROP),11600000,14700,Monthly,2024-12-04,2027-05-23,Active,Bancassurance,
+KVH-MO-00217,C0132,Motor,Motor Third-Party Plus,650000,18900,Annual,2025-12-05,2027-05-07,Active,Bancassurance,35
+KVH-MO-00218,C0133,Motor,Motor Comprehensive,1050000,22200,Annual,2021-10-11,2027-05-03,Active,Broker,25
+KVH-HE-00219,C0134,Health,Super Top-Up,350000,7250,Annual,2026-03-04,2026-12-21,Active,Online,
+KVH-MO-00220,C0134,Motor,Motor Comprehensive,400000,18000,Annual,2026-03-17,2027-02-02,Active,Bancassurance,50
+KVH-LI-00221,C0134,Life,Term Secure Plus (ROP),6050000,52550,Annual,2024-03-20,2026-11-11,Active,Agent,
+KVH-HO-00222,C0135,Home,Home Protect Contents,4750000,3600,Quarterly,2026-07-05,2026-11-14,Active,Agent,
+KVH-HE-00223,C0136,Health,Senior Care Health,2900000,20750,Monthly,2025-02-05,2026-11-04,Active,Online,
+KVH-MO-00224,C0137,Motor,Motor Third-Party Plus,350000,10950,Annual,2025-01-26,2026-12-26,Active,Online,0
+KVH-HE-00225,C0137,Health,Senior Care Health,1050000,16550,Annual,2025-05-15,2027-02-06,Active,Online,
+KVH-HO-00226,C0138,Home,Home Protect Structure,1450000,5700,Annual,2023-01-08,2026-10-13,Active,Online,
+KVH-MO-00227,C0138,Motor,Two-Wheeler Secure,250000,13550,Annual,2023-04-23,2027-08-10,Active,Online,50
+KVH-MO-00228,C0139,Motor,Motor Comprehensive,600000,11900,Annual,2018-09-07,2027-10-02,Active,Online,50
+KVH-HE-00229,C0139,Health,Health Shield Family Floater,1550000,37000,Annual,2023-06-13,2026-12-12,Active,Agent,
+KVH-LI-00230,C0139,Life,Term Secure,12150000,43850,Annual,2022-09-21,2026-12-07,Active,Agent,
+KVH-LI-00231,C0140,Life,Child Future Saver,11400000,43700,Annual,2022-02-14,2027-01-22,Active,Broker,
+KVH-MO-00232,C0140,Motor,Motor Third-Party Plus,1000000,17650,Annual,2026-02-22,2027-09-14,Active,Online,0
+KVH-HE-00233,C0141,Health,Super Top-Up,1100000,26850,Annual,2025-09-26,2026-10-09,Active,Broker,
+KVH-MO-00234,C0142,Motor,Two-Wheeler Secure,400000,22000,Annual,2021-11-02,2026-10-09,Active,Online,0
+KVH-HE-00235,C0142,Health,Health Shield Individual,2350000,25900,Quarterly,2023-11-30,2026-12-22,Active,Online,
+KVH-HO-00236,C0142,Home,Home Protect Contents,2950000,12800,Monthly,2022-06-14,2026-10-03,Grace Period,Agent,
+KVH-MO-00237,C0143,Motor,Two-Wheeler Secure,850000,11450,Annual,2024-05-07,2027-01-10,Active,Broker,25
+KVH-MO-00238,C0144,Motor,Two-Wheeler Secure,1000000,12400,Annual,2022-11-13,2026-10-31,Active,Bancassurance,50
+KVH-HE-00239,C0144,Health,Super Top-Up,400000,37350,Annual,2024-10-10,2027-06-27,Active,Agent,
+KVH-HO-00240,C0144,Home,Home Protect Contents,3150000,1800,Monthly,2022-06-27,2027-09-23,Active,Agent,
+KVH-HE-00241,C0145,Health,Health Shield Family Floater,1550000,8300,Monthly,2023-01-23,2027-01-18,Active,Bancassurance,
+KVH-HE-00242,C0146,Health,Health Shield Family Floater,3050000,60450,Annual,2020-04-18,2026-10-13,Active,Bancassurance,
+KVH-MO-00243,C0146,Motor,Motor Third-Party Plus,950000,31550,Annual,2026-07-04,2027-06-07,Active,Agent,20
+KVH-MO-00244,C0147,Motor,Motor Comprehensive,300000,25050,Annual,2026-02-10,2026-10-19,Active,Agent,0
+KVH-HE-00245,C0148,Health,Super Top-Up,2200000,19450,Annual,2026-04-21,2027-08-16,Active,Online,
+KVH-MO-00246,C0148,Motor,Two-Wheeler Secure,700000,27200,Annual,2017-09-28,2026-10-04,Active,Agent,0
+KVH-LI-00247,C0148,Life,Term Secure,25300000,105600,Annual,2018-10-19,2027-02-17,Active,Bancassurance,
+KVH-MO-00248,C0149,Motor,Motor Third-Party Plus,350000,16850,Annual,2026-08-16,2026-11-06,Active,Agent,50
+KVH-HE-00249,C0149,Health,Senior Care Health,1050000,30550,Annual,2025-09-07,2027-02-21,Active,Bancassurance,
+KVH-MO-00250,C0150,Motor,Motor Third-Party Plus,1150000,21050,Annual,2019-03-26,2027-10-02,Active,Online,35
+KVH-LI-00251,C0150,Life,Child Future Saver,10350000,19100,Annual,2020-06-07,2027-04-27,Active,Bancassurance,
+KVH-MO-00252,C0151,Motor,Two-Wheeler Secure,2150000,22250,Annual,2021-09-15,2027-09-02,Active,Broker,35
+KVH-LI-00253,C0152,Life,Term Secure Plus (ROP),13650000,74550,Monthly,2025-12-22,2026-11-28,Active,Broker,
+KVH-HE-00254,C0152,Health,Super Top-Up,2450000,25050,Annual,2025-02-06,2026-11-22,Active,Bancassurance,
+KVH-HE-00255,C0153,Health,Senior Care Health,1900000,35900,Monthly,2022-12-02,2027-04-10,Active,Bancassurance,
+KVH-HO-00256,C0154,Home,Home Protect Contents,3150000,10500,Monthly,2026-01-01,2026-11-18,Active,Agent,
+KVH-MO-00257,C0154,Motor,Two-Wheeler Secure,2350000,12150,Annual,2024-06-29,2026-09-28,Grace Period,Agent,50
+KVH-MO-00258,C0155,Motor,Motor Third-Party Plus,900000,11950,Annual,2025-07-12,2026-11-10,Active,Agent,0
+KVH-MO-00259,C0156,Motor,Motor Third-Party Plus,900000,6150,Annual,2025-11-10,2027-08-07,Active,Agent,50
+KVH-HE-00260,C0157,Health,Senior Care Health,950000,40500,Monthly,2024-05-29,2026-10-26,Active,Agent,
+KVH-MO-00261,C0158,Motor,Motor Third-Party Plus,2550000,58550,Annual,2026-04-19,2026-11-13,Active,Agent,45
+KVH-HE-00262,C0159,Health,Health Shield Individual,1300000,34100,Monthly,2025-04-09,2026-11-19,Active,Online,
+KVH-MO-00263,C0159,Motor,Motor Comprehensive,1150000,18800,Annual,2025-07-05,2027-01-05,Active,Agent,50
+KVH-HO-00264,C0159,Home,Home Protect Structure,3850000,8350,Quarterly,2025-04-03,2026-10-13,Active,Bancassurance,
+KVH-HE-00265,C0160,Health,Senior Care Health,1750000,11700,Monthly,2026-07-09,2026-10-16,Active,Online,
+KVH-LI-00266,C0160,Life,Term Secure,6200000,47800,Annual,2026-06-11,2027-06-18,Active,Bancassurance,
+KVH-MO-00267,C0160,Motor,Two-Wheeler Secure,950000,9100,Annual,2026-08-03,2027-07-12,Active,Agent,0
+KVH-MO-00268,C0161,Motor,Two-Wheeler Secure,1700000,20600,Annual,2025-06-25,2026-12-04,Active,Broker,35
+KVH-HE-00269,C0162,Health,Health Shield Individual,1550000,34500,Annual,2024-09-10,2027-06-05,Active,Online,
+KVH-MO-00270,C0163,Motor,Motor Comprehensive,1900000,32000,Annual,2023-03-30,2027-01-28,Active,Agent,35
+KVH-LI-00271,C0164,Life,Term Secure,5500000,27150,Monthly,2025-01-21,2027-06-10,Active,Agent,
+KVH-MO-00272,C0165,Motor,Two-Wheeler Secure,200000,21800,Annual,2024-08-22,2026-11-28,Active,Bancassurance,50
+KVH-HE-00273,C0165,Health,Super Top-Up,1200000,40700,Monthly,2019-05-26,2027-01-29,Active,Online,
+KVH-LI-00274,C0165,Life,Term Secure Plus (ROP),4450000,50700,Quarterly,2022-12-30,2027-07-30,Active,Agent,
+KVH-LI-00275,C0166,Life,Child Future Saver,11250000,55850,Annual,2021-08-03,2027-09-18,Active,Bancassurance,
+KVH-HE-00276,C0167,Health,Senior Care Health,1650000,9300,Annual,2022-12-11,2027-06-28,Active,Broker,
+KVH-MO-00277,C0168,Motor,Motor Comprehensive,300000,8500,Annual,2024-10-14,2026-11-15,Active,Bancassurance,20
+KVH-HE-00278,C0168,Health,Health Shield Individual,1450000,36350,Annual,2021-09-15,2027-03-11,Active,Online,
+KVH-HO-00279,C0169,Home,Home Protect Contents,4050000,3400,Monthly,2023-09-10,2026-10-10,Active,Online,
+KVH-MO-00280,C0170,Motor,Motor Comprehensive,1150000,24650,Annual,2026-08-01,2026-12-18,Active,Bancassurance,0
+KVH-HE-00281,C0170,Health,Senior Care Health,1300000,17900,Annual,2026-08-30,2026-12-14,Active,Bancassurance,
+KVH-HO-00282,C0170,Home,Home Protect Structure,5450000,3750,Annual,2026-08-08,2027-01-09,Active,Agent,
+KVH-HE-00283,C0171,Health,Senior Care Health,1750000,14950,Annual,2021-05-04,2027-08-16,Active,Agent,
+KVH-LI-00284,C0172,Life,Term Secure,4550000,42500,Monthly,2023-05-13,2027-04-08,Active,Agent,
+KVH-HO-00285,C0173,Home,Home Protect Structure,1650000,3150,Monthly,2024-12-01,2026-10-15,Active,Agent,
+KVH-HE-00286,C0174,Health,Senior Care Health,1650000,16750,Annual,2026-07-19,2026-11-07,Active,Broker,
+KVH-MO-00287,C0175,Motor,Motor Comprehensive,800000,22600,Annual,2021-03-17,2027-08-03,Active,Agent,20
+KVH-LI-00288,C0175,Life,Term Secure,5000000,42050,Monthly,2023-01-04,2026-10-19,Active,Online,
+KVH-HE-00289,C0176,Health,Senior Care Health,1200000,42350,Monthly,2026-04-21,2027-07-06,Active,Agent,
+KVH-MO-00290,C0176,Motor,Two-Wheeler Secure,600000,5650,Annual,2023-06-25,2027-05-09,Active,Bancassurance,20
+KVH-MO-00291,C0177,Motor,Motor Comprehensive,350000,19200,Annual,2019-05-01,2027-09-06,Active,Agent,20
+KVH-MO-00292,C0178,Motor,Two-Wheeler Secure,350000,23900,Annual,2021-10-25,2027-07-24,Active,Bancassurance,0
+KVH-HE-00293,C0178,Health,Super Top-Up,550000,18400,Monthly,2021-06-02,2027-09-27,Active,Bancassurance,
+KVH-LI-00294,C0178,Life,Term Secure,10850000,51950,Annual,2023-12-28,2027-02-09,Active,Bancassurance,
+KVH-HO-00295,C0179,Home,Home Protect Structure,6000000,7950,Monthly,2026-02-03,2026-11-10,Active,Online,
+KVH-HE-00296,C0179,Health,Senior Care Health,2200000,12850,Annual,2019-03-01,2027-05-15,Active,Online,
+KVH-HE-00297,C0180,Health,Super Top-Up,1600000,39600,Annual,2025-10-26,2026-11-07,Active,Online,
+KVH-MO-00298,C0180,Motor,Motor Third-Party Plus,950000,13800,Annual,2025-12-13,2026-10-02,Grace Period,Online,25
+KVH-HE-00299,C0181,Health,Super Top-Up,1200000,37300,Monthly,2023-11-07,2027-09-26,Active,Agent,
+KVH-MO-00300,C0182,Motor,Motor Third-Party Plus,1000000,20650,Annual,2020-10-10,2026-10-15,Active,Online,0
+KVH-HE-00301,C0182,Health,Health Shield Individual,950000,12950,Annual,2021-04-17,2026-10-11,Active,Online,
+KVH-LI-00302,C0183,Life,Term Secure,9400000,10550,Monthly,2026-05-28,2026-11-14,Active,Bancassurance,
+KVH-HE-00303,C0184,Health,Senior Care Health,1650000,21050,Monthly,2025-04-17,2026-10-15,Active,Agent,
+KVH-HE-00304,C0185,Health,Super Top-Up,550000,35950,Annual,2025-11-29,2027-06-28,Active,Agent,
+KVH-MO-00305,C0185,Motor,Motor Comprehensive,350000,16050,Annual,2023-04-28,2026-12-03,Active,Agent,35
+KVH-HO-00306,C0185,Home,Home Protect Structure,4800000,7050,Quarterly,2026-04-18,2027-09-22,Active,Agent,
+KVH-HE-00307,C0186,Health,Super Top-Up,1650000,17750,Annual,2022-11-10,2027-01-02,Active,Bancassurance,
+KVH-HO-00308,C0186,Home,Home Protect Contents,2200000,6800,Monthly,2024-03-29,2027-06-28,Active,Agent,
+KVH-MO-00309,C0187,Motor,Motor Comprehensive,2200000,41350,Annual,2026-01-07,2026-11-03,Active,Online,35
+KVH-LI-00310,C0188,Life,Child Future Saver,4050000,57900,Annual,2022-10-11,2027-07-28,Active,Agent,
+KVH-MO-00311,C0188,Motor,Two-Wheeler Secure,750000,21200,Annual,2021-03-31,2027-02-20,Active,Bancassurance,45
+KVH-HO-00312,C0188,Home,Home Protect Structure,4500000,6700,Quarterly,2021-01-21,2027-08-22,Active,Online,
+KVH-MO-00313,C0189,Motor,Motor Comprehensive,1250000,22700,Annual,2023-09-30,2026-11-02,Active,Bancassurance,0
+KVH-MO-00314,C0190,Motor,Motor Comprehensive,2850000,65450,Annual,2024-06-10,2027-08-19,Active,Agent,25
+KVH-MO-00315,C0191,Motor,Two-Wheeler Secure,900000,24050,Annual,2026-05-23,2026-11-19,Active,Online,50
+KVH-HO-00316,C0192,Home,Home Protect Contents,3850000,7550,Quarterly,2025-09-18,2027-07-14,Active,Online,
+KVH-HE-00317,C0192,Health,Health Shield Family Floater,600000,8800,Quarterly,2026-03-19,2027-09-16,Active,Broker,
+KVH-HE-00318,C0193,Health,Health Shield Individual,2700000,66500,Monthly,2019-02-23,2026-10-17,Active,Agent,
+KVH-MO-00319,C0194,Motor,Motor Comprehensive,1000000,24600,Annual,2022-12-06,2026-11-29,Active,Agent,50
+KVH-HE-00320,C0194,Health,Super Top-Up,1400000,19350,Annual,2024-06-27,2027-07-24,Active,Online,
+KVH-MO-00321,C0195,Motor,Two-Wheeler Secure,800000,20050,Annual,2025-08-30,2027-01-31,Active,Broker,45
+KVH-HE-00322,C0196,Health,Health Shield Individual,4300000,91350,Quarterly,2026-06-01,2027-07-24,Active,Online,
+KVH-LI-00323,C0196,Life,Child Future Saver,29200000,151750,Annual,2020-09-13,2026-11-03,Active,Bancassurance,
+KVH-MO-00324,C0196,Motor,Motor Third-Party Plus,2050000,49450,Annual,2023-02-12,2027-08-29,Active,Agent,50
+KVH-LI-00325,C0197,Life,Term Secure Plus (ROP),11150000,37600,Annual,2023-12-23,2026-11-26,Active,Bancassurance,
+KVH-HE-00326,C0197,Health,Super Top-Up,450000,25350,Monthly,2025-04-26,2027-05-19,Active,Bancassurance,
+KVH-MO-00327,C0198,Motor,Motor Third-Party Plus,1750000,32700,Annual,2023-08-11,2027-03-27,Active,Bancassurance,45
+KVH-HE-00328,C0199,Health,Super Top-Up,2550000,23500,Monthly,2026-07-05,2026-11-02,Active,Bancassurance,
+KVH-MO-00329,C0200,Motor,Motor Third-Party Plus,300000,16500,Annual,2026-08-21,2026-12-22,Active,Online,0
+KVH-LI-00330,C0200,Life,Child Future Saver,7000000,29850,Monthly,2026-05-11,2027-05-07,Active,Online,
+KVH-HO-00331,C0201,Home,Home Protect Structure,9500000,18800,Annual,2023-08-13,2026-10-22,Active,Agent,
+KVH-MO-00332,C0201,Motor,Two-Wheeler Secure,1600000,43550,Annual,2022-07-30,2027-05-26,Active,Agent,35
+KVH-LI-00333,C0201,Life,Child Future Saver,7350000,83100,Monthly,2023-09-07,2027-05-20,Active,Online,
+KVH-LI-00334,C0202,Life,Term Secure,4850000,49750,Monthly,2022-08-28,2026-11-28,Active,Agent,
+KVH-MO-00335,C0203,Motor,Motor Comprehensive,1950000,21450,Annual,2022-03-04,2027-05-05,Active,Bancassurance,50
+KVH-MO-00336,C0204,Motor,Two-Wheeler Secure,1750000,31150,Annual,2023-02-15,2027-01-29,Active,Agent,25
+KVH-LI-00337,C0205,Life,Term Secure,37050000,34450,Quarterly,2025-03-03,2026-11-09,Active,Agent,
+KVH-MO-00338,C0206,Motor,Motor Third-Party Plus,250000,16050,Annual,2018-10-21,2027-07-31,Active,Agent,45
+KVH-LI-00339,C0206,Life,Child Future Saver,12750000,35050,Monthly,2024-09-02,2027-04-17,Active,Agent,
+KVH-HO-00340,C0207,Home,Home Protect Structure,4700000,3700,Annual,2024-05-12,2027-04-14,Active,Online,
+KVH-LI-00341,C0208,Life,Term Secure,5150000,50100,Annual,2019-10-16,2026-11-06,Active,Online,
+KVH-MO-00342,C0208,Motor,Motor Comprehensive,1550000,11400,Annual,2024-04-11,2027-06-21,Active,Agent,45
+KVH-MO-00343,C0209,Motor,Motor Comprehensive,900000,13650,Annual,2026-08-19,2026-12-05,Active,Online,35
+KVH-HE-00344,C0209,Health,Health Shield Family Floater,2150000,16850,Annual,2026-08-17,2027-08-23,Active,Agent,
+KVH-LI-00345,C0209,Life,Term Secure,10550000,67050,Annual,2026-07-24,2027-07-07,Active,Online,
+KVH-MO-00346,C0210,Motor,Motor Comprehensive,800000,18550,Annual,2023-03-24,2026-10-11,Active,Agent,0
+KVH-HE-00347,C0210,Health,Super Top-Up,1050000,12050,Annual,2018-05-02,2027-01-11,Active,Bancassurance,
+KVH-LI-00348,C0211,Life,Term Secure Plus (ROP),9100000,10450,Quarterly,2023-02-20,2027-10-02,Active,Agent,
+KVH-HE-00349,C0211,Health,Super Top-Up,850000,34350,Monthly,2025-07-24,2026-11-14,Active,Online,
+KVH-LI-00350,C0212,Life,Term Secure Plus (ROP),14150000,90500,Quarterly,2022-08-07,2026-10-09,Active,Online,
+KVH-MO-00351,C0212,Motor,Motor Comprehensive,1800000,12800,Annual,2023-08-31,2027-09-19,Active,Agent,45
+KVH-LI-00352,C0213,Life,Term Secure,9500000,14700,Annual,2023-01-22,2027-04-15,Active,Online,
+KVH-HE-00353,C0213,Health,Senior Care Health,1550000,30600,Quarterly,2019-05-27,2027-02-07,Active,Bancassurance,
+KVH-MO-00354,C0214,Motor,Two-Wheeler Secure,250000,6900,Annual,2026-03-04,2026-12-02,Active,Broker,0
+KVH-HE-00355,C0214,Health,Senior Care Health,1600000,42600,Quarterly,2026-01-21,2026-11-04,Active,Bancassurance,
+KVH-MO-00356,C0215,Motor,Two-Wheeler Secure,400000,24900,Annual,2020-12-14,2027-02-02,Active,Agent,20
+KVH-LI-00357,C0216,Life,Term Secure Plus (ROP),11400000,29500,Annual,2018-02-06,2027-02-16,Active,Bancassurance,
+KVH-HO-00358,C0216,Home,Home Protect Structure,4700000,13950,Annual,2021-11-21,2027-03-12,Active,Agent,
+KVH-MO-00359,C0216,Motor,Two-Wheeler Secure,1050000,14500,Annual,2021-04-27,2027-06-16,Active,Bancassurance,25
+KVH-MO-00360,C0217,Motor,Motor Comprehensive,800000,7200,Annual,2021-09-14,2027-07-22,Active,Online,50
+KVH-HE-00361,C0218,Health,Senior Care Health,3000000,35950,Annual,2024-12-24,2026-11-07,Active,Agent,
+KVH-HO-00362,C0219,Home,Home Protect Structure,750000,2150,Quarterly,2026-02-04,2026-10-16,Active,Online,
+KVH-MO-00363,C0220,Motor,Motor Third-Party Plus,400000,23400,Annual,2024-09-04,2026-11-19,Active,Agent,0
+KVH-LI-00364,C0221,Life,Term Secure,6050000,36600,Monthly,2025-03-12,2027-01-26,Active,Agent,
+KVH-HE-00365,C0222,Health,Health Shield Individual,1700000,28800,Annual,2023-12-16,2027-02-05,Active,Online,
+KVH-MO-00366,C0223,Motor,Two-Wheeler Secure,1100000,8650,Annual,2019-06-10,2026-11-23,Active,Broker,0
+KVH-HE-00367,C0223,Health,Health Shield Individual,1200000,19950,Annual,2018-01-16,2027-05-09,Active,Broker,
+KVH-LI-00368,C0224,Life,Term Secure Plus (ROP),4900000,30450,Annual,2017-08-09,2026-11-06,Cancellation Requested,Agent,
+KVH-MO-00369,C0225,Motor,Motor Comprehensive,200000,9700,Annual,2025-04-26,2027-09-14,Active,Agent,35
+KVH-HE-00370,C0225,Health,Health Shield Family Floater,1350000,30100,Annual,2019-09-04,2026-12-24,Active,Agent,
+KVH-MO-00371,C0226,Motor,Motor Comprehensive,400000,14150,Annual,2024-12-31,2026-11-13,Active,Online,20
+KVH-LI-00372,C0227,Life,Term Secure,11200000,61700,Annual,2024-04-07,2026-11-19,Active,Agent,
+KVH-MO-00373,C0227,Motor,Motor Third-Party Plus,300000,13650,Annual,2025-06-18,2027-04-13,Cancellation Requested,Broker,25
+KVH-HE-00374,C0228,Health,Senior Care Health,4350000,74550,Monthly,2026-06-26,2026-12-05,Active,Online,
+KVH-MO-00375,C0228,Motor,Motor Third-Party Plus,2550000,32400,Annual,2026-04-01,2027-09-26,Active,Agent,45
+KVH-HO-00376,C0229,Home,Home Protect Structure,2450000,7450,Monthly,2021-10-03,2027-09-23,Active,Agent,
+KVH-LI-00377,C0230,Life,Term Secure Plus (ROP),15900000,27650,Monthly,2021-03-11,2026-10-08,Active,Online,
+KVH-HE-00378,C0230,Health,Senior Care Health,750000,53500,Annual,2024-03-24,2027-08-18,Active,Online,
+KVH-MO-00379,C0231,Motor,Two-Wheeler Secure,2000000,71600,Annual,2025-06-27,2026-11-16,Active,Agent,25
+KVH-HE-00380,C0231,Health,Super Top-Up,3500000,31900,Annual,2025-10-09,2027-02-13,Active,Agent,
+KVH-MO-00381,C0232,Motor,Motor Third-Party Plus,450000,17600,Annual,2024-01-14,2026-10-15,Active,Agent,35
+KVH-LI-00382,C0232,Life,Child Future Saver,5750000,33850,Monthly,2024-08-14,2026-12-29,Active,Agent,
+KVH-HE-00383,C0232,Health,Super Top-Up,800000,24300,Quarterly,2025-02-02,2026-12-10,Active,Online,
+KVH-MO-00384,C0233,Motor,Motor Third-Party Plus,1300000,19450,Annual,2021-03-31,2026-10-11,Active,Agent,50
+KVH-HE-00385,C0233,Health,Health Shield Family Floater,2100000,10950,Quarterly,2018-03-06,2026-11-17,Active,Broker,
+KVH-HE-00386,C0234,Health,Health Shield Family Floater,950000,13900,Quarterly,2023-09-23,2026-10-27,Active,Online,
+KVH-LI-00387,C0234,Life,Term Secure Plus (ROP),8550000,14200,Annual,2025-06-11,2026-12-17,Active,Agent,
+KVH-LI-00388,C0235,Life,Child Future Saver,11900000,12100,Annual,2023-06-15,2026-09-28,Grace Period,Online,
+KVH-MO-00389,C0236,Motor,Motor Third-Party Plus,1400000,7150,Annual,2026-05-20,2026-12-03,Active,Bancassurance,25
+KVH-MO-00390,C0237,Motor,Two-Wheeler Secure,1100000,6150,Annual,2018-12-12,2026-11-28,Active,Broker,35
+KVH-HE-00391,C0237,Health,Senior Care Health,1600000,18700,Quarterly,2022-07-27,2027-06-18,Active,Broker,
+KVH-MO-00392,C0238,Motor,Motor Comprehensive,1200000,10450,Annual,2025-09-20,2026-10-18,Active,Agent,25
+KVH-LI-00393,C0238,Life,Term Secure,10800000,12950,Monthly,2025-03-25,2027-03-05,Active,Agent,
+KVH-HE-00394,C0238,Health,Health Shield Individual,1700000,37700,Monthly,2025-11-20,2027-08-21,Active,Online,
+KVH-HE-00395,C0239,Health,Health Shield Family Floater,4250000,55200,Monthly,2018-04-11,2026-12-30,Active,Agent,
+KVH-MO-00396,C0239,Motor,Two-Wheeler Secure,2200000,62850,Annual,2017-11-07,2026-12-23,Active,Online,25
+KVH-HE-00397,C0240,Health,Senior Care Health,1150000,31650,Quarterly,2023-09-12,2026-10-15,Active,Broker,
+KVH-LI-00398,C0240,Life,Child Future Saver,11800000,85000,Quarterly,2023-06-07,2027-01-01,Active,Bancassurance,
+KVH-MO-00399,C0240,Motor,Motor Comprehensive,1350000,21850,Annual,2026-03-10,2027-07-08,Active,Online,45
+KVH-HO-00400,C0241,Home,Home Protect Structure,8200000,15850,Monthly,2023-02-26,2027-04-19,Active,Online,
+KVH-LI-00401,C0242,Life,Term Secure Plus (ROP),8050000,28800,Monthly,2023-11-24,2026-12-13,Active,Bancassurance,
+KVH-MO-00402,C0243,Motor,Two-Wheeler Secure,400000,10550,Annual,2024-08-30,2026-11-11,Active,Agent,20
+KVH-HO-00403,C0243,Home,Home Protect Contents,4150000,5500,Monthly,2024-06-28,2027-08-15,Active,Bancassurance,
+KVH-LI-00404,C0243,Life,Term Secure Plus (ROP),12700000,17900,Annual,2025-06-16,2026-12-29,Active,Broker,
+KVH-MO-00405,C0244,Motor,Motor Comprehensive,800000,26050,Annual,2018-09-22,2026-11-04,Active,Bancassurance,25
+KVH-HE-00406,C0245,Health,Super Top-Up,600000,36500,Monthly,2024-10-22,2026-10-24,Cancellation Requested,Agent,
+KVH-HO-00407,C0246,Home,Home Protect Contents,2500000,9950,Monthly,2025-02-11,2026-10-31,Active,Broker,
+KVH-MO-00408,C0246,Motor,Motor Comprehensive,550000,23100,Annual,2024-09-27,2026-10-20,Active,Online,25
+KVH-HE-00409,C0247,Health,Super Top-Up,2050000,44500,Annual,2019-05-03,2026-10-11,Cancellation Requested,Agent,
+KVH-MO-00410,C0248,Motor,Motor Third-Party Plus,300000,14100,Annual,2026-08-01,2026-12-26,Active,Agent,0
+KVH-HE-00411,C0248,Health,Super Top-Up,1550000,17950,Monthly,2026-07-25,2026-12-17,Active,Broker,
+KVH-LI-00412,C0249,Life,Term Secure Plus (ROP),15250000,50350,Annual,2025-01-15,2026-10-27,Active,Online,
+KVH-MO-00413,C0249,Motor,Motor Third-Party Plus,1300000,14750,Annual,2025-10-03,2027-09-28,Active,Online,45
+KVH-HE-00414,C0249,Health,Health Shield Family Floater,950000,46800,Annual,2023-06-12,2027-06-25,Active,Online,
+KVH-MO-00415,C0250,Motor,Motor Comprehensive,1200000,45500,Annual,2020-11-25,2027-05-05,Active,Online,35
+KVH-LI-00416,C0250,Life,Term Secure Plus (ROP),22750000,20000,Annual,2021-03-23,2026-12-23,Active,Agent,
+KVH-HO-00417,C0250,Home,Home Protect Contents,5750000,15150,Monthly,2023-02-15,2027-09-30,Active,Broker,
+KVH-MO-00418,C0251,Motor,Two-Wheeler Secure,900000,10050,Annual,2025-09-11,2027-01-19,Active,Bancassurance,50
+KVH-HE-00419,C0251,Health,Super Top-Up,950000,6750,Annual,2021-02-08,2027-03-14,Active,Online,
+KVH-HO-00420,C0251,Home,Home Protect Contents,2300000,9100,Quarterly,2021-03-11,2027-04-25,Active,Bancassurance,
+KVH-MO-00421,C0252,Motor,Two-Wheeler Secure,1050000,17100,Annual,2024-05-20,2026-11-10,Active,Bancassurance,20
+KVH-HE-00422,C0252,Health,Super Top-Up,1350000,23700,Annual,2024-09-15,2027-08-28,Active,Agent,
+KVH-HE-00423,C0253,Health,Health Shield Family Floater,750000,43400,Annual,2024-04-16,2026-10-22,Active,Agent,
+KVH-MO-00424,C0253,Motor,Motor Third-Party Plus,950000,26450,Annual,2020-01-09,2027-07-06,Active,Agent,0
+KVH-LI-00425,C0253,Life,Term Secure,8800000,42200,Annual,2026-03-04,2027-06-27,Active,Broker,
+KVH-MO-00426,C0254,Motor,Motor Third-Party Plus,800000,5000,Annual,2017-03-10,2027-06-18,Active,Bancassurance,25
+KVH-LI-00427,C0254,Life,Term Secure Plus (ROP),4300000,57100,Annual,2019-02-22,2027-07-20,Active,Bancassurance,
+KVH-LI-00428,C0255,Life,Term Secure Plus (ROP),11800000,30300,Quarterly,2025-06-05,2026-11-02,Active,Online,
+KVH-HE-00429,C0256,Health,Health Shield Family Floater,1350000,39650,Monthly,2021-07-27,2026-09-26,Grace Period,Online,
+KVH-LI-00430,C0256,Life,Term Secure Plus (ROP),10050000,33150,Monthly,2022-12-27,2026-11-29,Active,Broker,
+KVH-LI-00431,C0257,Life,Child Future Saver,11950000,69150,Quarterly,2023-07-04,2027-04-19,Active,Bancassurance,
+KVH-HE-00432,C0257,Health,Health Shield Family Floater,1350000,48900,Monthly,2020-12-30,2027-06-27,Active,Bancassurance,
+KVH-MO-00433,C0257,Motor,Two-Wheeler Secure,1100000,51300,Annual,2024-12-04,2027-07-11,Active,Agent,20
+KVH-MO-00434,C0258,Motor,Two-Wheeler Secure,1050000,27900,Annual,2025-04-13,2027-06-22,Active,Bancassurance,0
+KVH-MO-00435,C0259,Motor,Motor Third-Party Plus,700000,28900,Annual,2023-02-15,2027-02-24,Active,Broker,35
+KVH-HE-00436,C0260,Health,Super Top-Up,1000000,54150,Quarterly,2016-12-04,2026-12-25,Active,Agent,
+KVH-HE-00437,C0261,Health,Health Shield Family Floater,2300000,9650,Annual,2026-08-07,2026-11-12,Active,Online,
+KVH-MO-00438,C0262,Motor,Motor Comprehensive,1050000,17200,Annual,2024-10-23,2026-12-24,Active,Bancassurance,20
+KVH-HO-00439,C0262,Home,Home Protect Contents,800000,4850,Annual,2025-12-22,2027-06-13,Active,Agent,
+KVH-MO-00440,C0263,Motor,Two-Wheeler Secure,550000,24750,Annual,2024-11-15,2027-06-26,Active,Online,35
+KVH-HE-00441,C0263,Health,Super Top-Up,1100000,25800,Monthly,2025-11-11,2027-02-06,Active,Broker,
+KVH-HE-00442,C0264,Health,Super Top-Up,1450000,106050,Annual,2024-12-11,2027-08-07,Active,Bancassurance,
+KVH-MO-00443,C0264,Motor,Motor Comprehensive,1950000,60400,Annual,2017-07-07,2026-11-27,Active,Agent,20
+KVH-HE-00444,C0265,Health,Health Shield Individual,1600000,22450,Monthly,2025-08-05,2026-12-04,Active,Online,
+KVH-MO-00445,C0265,Motor,Motor Third-Party Plus,850000,24100,Annual,2025-02-21,2026-09-29,Grace Period,Agent,45
+KVH-HO-00446,C0266,Home,Home Protect Structure,7250000,3200,Annual,2026-01-31,2026-11-22,Active,Agent,
+KVH-HE-00447,C0266,Health,Senior Care Health,1950000,15550,Monthly,2024-07-12,2027-04-16,Active,Broker,
+KVH-MO-00448,C0266,Motor,Motor Third-Party Plus,1000000,9900,Annual,2026-02-15,2027-03-23,Active,Online,25
+KVH-LI-00449,C0267,Life,Child Future Saver,10100000,26000,Quarterly,2023-11-05,2026-09-28,Grace Period,Bancassurance,
+KVH-HE-00450,C0268,Health,Super Top-Up,1750000,42500,Annual,2023-08-22,2027-01-15,Active,Bancassurance,
+KVH-MO-00451,C0268,Motor,Motor Comprehensive,2050000,33050,Annual,2018-10-29,2027-04-12,Active,Bancassurance,35
+KVH-LI-00452,C0268,Life,Term Secure,26550000,26000,Monthly,2019-09-09,2026-09-19,Grace Period,Bancassurance,
+KVH-HE-00453,C0269,Health,Health Shield Individual,450000,19750,Annual,2025-06-21,2026-10-07,Active,Online,
+KVH-HE-00454,C0270,Health,Health Shield Individual,1450000,16350,Monthly,2025-03-25,2027-08-30,Active,Agent,
+KVH-MO-00455,C0270,Motor,Motor Third-Party Plus,1150000,22100,Annual,2024-02-02,2027-02-20,Active,Agent,20
+KVH-HE-00456,C0271,Health,Health Shield Family Floater,1500000,23950,Annual,2023-04-01,2026-12-26,Active,Online,
+KVH-MO-00457,C0271,Motor,Two-Wheeler Secure,1250000,14600,Annual,2021-07-30,2026-10-04,Active,Agent,35
+KVH-HO-00458,C0271,Home,Home Protect Contents,2450000,6150,Annual,2022-07-02,2027-06-19,Active,Agent,
+KVH-MO-00459,C0272,Motor,Motor Comprehensive,700000,15500,Annual,2023-09-26,2027-06-17,Active,Bancassurance,25
+KVH-HE-00460,C0272,Health,Health Shield Individual,1350000,18450,Monthly,2021-07-23,2027-05-26,Active,Online,
+KVH-MO-00461,C0273,Motor,Motor Comprehensive,650000,7750,Annual,2022-07-13,2027-01-14,Active,Agent,35
+KVH-HE-00462,C0273,Health,Super Top-Up,1450000,39150,Quarterly,2024-04-28,2027-04-04,Active,Online,
+KVH-MO-00463,C0274,Motor,Motor Comprehensive,2000000,17850,Annual,2022-05-30,2026-10-17,Active,Agent,0
+KVH-HE-00464,C0274,Health,Health Shield Individual,4500000,83400,Monthly,2026-06-16,2027-01-15,Cancellation Requested,Online,
+KVH-LI-00465,C0275,Life,Term Secure Plus (ROP),11300000,44150,Monthly,2022-12-28,2027-06-30,Active,Agent,
+KVH-HE-00466,C0276,Health,Senior Care Health,1600000,42800,Quarterly,2022-05-03,2027-06-20,Active,Bancassurance,
+KVH-MO-00467,C0276,Motor,Two-Wheeler Secure,850000,11800,Annual,2024-02-14,2027-07-14,Active,Online,0
+KVH-HO-00468,C0276,Home,Home Protect Contents,5350000,3350,Annual,2021-01-27,2027-10-02,Active,Bancassurance,
+KVH-MO-00469,C0277,Motor,Motor Third-Party Plus,450000,11750,Annual,2022-10-18,2026-10-25,Active,Agent,45
+KVH-MO-00470,C0278,Motor,Motor Third-Party Plus,600000,16050,Annual,2025-10-24,2027-01-01,Active,Online,35
+KVH-HE-00471,C0279,Health,Super Top-Up,2050000,28350,Annual,2026-04-07,2026-09-24,Grace Period,Online,
+KVH-MO-00472,C0279,Motor,Motor Comprehensive,550000,12800,Annual,2025-10-22,2027-05-23,Active,Bancassurance,45
+KVH-HE-00473,C0280,Health,Super Top-Up,1150000,42000,Annual,2026-08-06,2026-12-31,Active,Agent,
+KVH-MO-00474,C0280,Motor,Two-Wheeler Secure,1700000,9950,Annual,2025-06-28,2027-04-27,Active,Broker,0
+KVH-HO-00475,C0280,Home,Home Protect Structure,4700000,6650,Annual,2026-04-26,2027-06-08,Active,Online,
+KVH-LI-00476,C0281,Life,Term Secure Plus (ROP),16200000,42100,Monthly,2022-07-29,2026-11-10,Active,Bancassurance,
+KVH-HO-00477,C0281,Home,Home Protect Structure,3450000,12700,Monthly,2021-07-21,2027-05-23,Active,Bancassurance,
+KVH-HE-00478,C0282,Health,Health Shield Individual,700000,12550,Annual,2023-06-22,2027-08-31,Active,Broker,
+KVH-MO-00479,C0282,Motor,Motor Comprehensive,950000,9600,Annual,2026-05-24,2027-04-22,Active,Online,0
+KVH-HE-00480,C0283,Health,Senior Care Health,1100000,24650,Annual,2026-04-04,2026-11-06,Active,Bancassurance,
+KVH-MO-00481,C0283,Motor,Motor Third-Party Plus,950000,20400,Annual,2026-02-06,2027-09-24,Active,Online,45
+KVH-HO-00482,C0283,Home,Home Protect Contents,1300000,9550,Monthly,2026-07-05,2027-05-15,Active,Online,
+KVH-HE-00483,C0284,Health,Senior Care Health,1600000,19850,Monthly,2025-12-31,2026-10-27,Active,Agent,
+KVH-HE-00484,C0285,Health,Health Shield Family Floater,1700000,18200,Monthly,2025-02-20,2027-04-20,Active,Agent,
+KVH-HO-00485,C0286,Home,Home Protect Contents,850000,6250,Monthly,2025-01-31,2026-11-22,Active,Bancassurance,
+KVH-HO-00486,C0287,Home,Home Protect Contents,3800000,4300,Annual,2019-02-01,2027-05-02,Active,Agent,
+KVH-MO-00487,C0287,Motor,Two-Wheeler Secure,350000,5500,Annual,2017-12-15,2026-12-22,Active,Online,45
+KVH-LI-00488,C0287,Life,Child Future Saver,11200000,57000,Quarterly,2024-10-07,2027-04-04,Active,Bancassurance,
+KVH-HO-00489,C0288,Home,Home Protect Contents,5050000,6000,Quarterly,2022-02-09,2027-06-29,Active,Agent,
+KVH-HE-00490,C0288,Health,Health Shield Individual,1100000,6350,Quarterly,2022-08-01,2027-04-09,Active,Agent,
+KVH-MO-00491,C0289,Motor,Motor Third-Party Plus,250000,12750,Annual,2017-06-29,2027-04-03,Active,Broker,0
+KVH-HO-00492,C0289,Home,Home Protect Contents,2350000,9650,Annual,2025-12-10,2027-03-18,Active,Online,
+KVH-MO-00493,C0290,Motor,Motor Third-Party Plus,550000,66100,Annual,2024-09-30,2026-12-11,Active,Agent,35
+KVH-HE-00494,C0290,Health,Senior Care Health,1350000,80150,Quarterly,2022-08-20,2027-07-21,Active,Broker,
+KVH-MO-00495,C0291,Motor,Two-Wheeler Secure,1750000,13400,Annual,2025-03-13,2027-09-27,Active,Agent,50
+KVH-MO-00496,C0292,Motor,Two-Wheeler Secure,850000,13100,Annual,2026-08-21,2026-11-17,Active,Agent,20
+KVH-HO-00497,C0292,Home,Home Protect Contents,5100000,4100,Annual,2026-04-10,2027-01-10,Active,Agent,
+KVH-MO-00498,C0293,Motor,Motor Third-Party Plus,1500000,18050,Annual,2025-04-30,2026-11-26,Active,Bancassurance,45
+KVH-MO-00499,C0294,Motor,Motor Third-Party Plus,1050000,16050,Annual,2022-11-17,2027-03-10,Active,Broker,25
+KVH-LI-00500,C0295,Life,Term Secure,31050000,121850,Annual,2020-03-01,2026-11-17,Active,Agent,
+KVH-MO-00501,C0295,Motor,Two-Wheeler Secure,1950000,31350,Annual,2024-10-20,2027-06-15,Active,Bancassurance,35
+KVH-MO-00502,C0296,Motor,Motor Comprehensive,900000,22600,Annual,2024-09-18,2026-09-17,Lapsed,Agent,45
+KVH-HE-00503,C0296,Health,Super Top-Up,1400000,16600,Monthly,2022-10-24,2027-01-30,Active,Online,
+KVH-MO-00504,C0297,Motor,Motor Comprehensive,1600000,49500,Annual,2024-09-30,2026-12-09,Active,Bancassurance,45
+KVH-HE-00505,C0298,Health,Super Top-Up,500000,30150,Quarterly,2025-10-14,2026-12-29,Active,Agent,
+KVH-MO-00506,C0298,Motor,Motor Comprehensive,800000,37950,Annual,2026-06-05,2027-03-09,Active,Agent,50
+KVH-HO-00507,C0298,Home,Home Protect Contents,1900000,10150,Annual,2025-12-26,2027-09-28,Active,Online,
+KVH-MO-00508,C0299,Motor,Two-Wheeler Secure,700000,38850,Annual,2026-01-02,2026-12-01,Active,Bancassurance,25
+KVH-LI-00509,C0300,Life,Term Secure Plus (ROP),10100000,71800,Monthly,2022-04-08,2027-07-05,Active,Online,

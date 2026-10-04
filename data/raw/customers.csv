@@ -1,0 +1,301 @@
+CUSTOMER_ID,FULL_NAME,GENDER,AGE,CITY,STATE,CITY_TIER,SEGMENT,ANNUAL_INCOME_BAND,CUSTOMER_SINCE,TENURE_YEARS,PREFERRED_CHANNEL,PREFERRED_LANGUAGE,EMAIL,MOBILE_MASKED,KYC_STATUS
+C0001,Sana Mehta,F,22,Bengaluru,Karnataka,1,HNI,50 L+,2025-01-19,1.7,WhatsApp,Kannada,sana.mehta1@example.in,+91-9XXXXX8073,Verified
+C0002,Ananya Chatterjee,F,31,Kolkata,West Bengal,1,HNI,50 L+,2019-12-02,6.8,WhatsApp,English,ananya.chatterjee2@example.in,+91-9XXXXX8447,Verified
+C0003,Pooja Menon,F,45,Jaipur,Rajasthan,2,Mass,3-6 L,2020-10-21,6.0,WhatsApp,English,pooja.menon3@example.in,+91-9XXXXX9148,Verified
+C0004,Arjun Shah,M,31,Pune,Maharashtra,1,Mass,3-6 L,2020-08-09,6.2,Mobile App,Hindi,arjun.shah4@example.in,+91-9XXXXX8493,Verified
+C0005,Venkatesh Shetty,M,48,Delhi,Delhi,1,Mass Affluent,6-15 L,2015-12-31,10.8,WhatsApp,English,venkatesh.shetty5@example.in,+91-9XXXXX6982,Verified
+C0006,Aditya Jain,M,22,Mumbai,Maharashtra,1,Mass Affluent,6-15 L,2023-03-15,3.6,WhatsApp,English,aditya.jain6@example.in,+91-9XXXXX6424,Verified
+C0007,Rajesh Iyer,M,28,Delhi,Delhi,1,Mass,3-6 L,2023-11-09,2.9,Mobile App,English,rajesh.iyer7@example.in,+91-9XXXXX3642,Pending re-KYC
+C0008,Aarav Patel,M,36,Lucknow,Uttar Pradesh,2,Mass,3-6 L,2018-01-21,8.7,Email,Hindi,aarav.patel8@example.in,+91-9XXXXX2451,Verified
+C0009,Rahul Menon,M,25,Delhi,Delhi,1,Mass Affluent,6-15 L,2019-05-28,7.4,Branch,Hindi,rahul.menon9@example.in,+91-9XXXXX9176,Verified
+C0010,Rekha Kapoor,F,37,Bengaluru,Karnataka,1,Mass,3-6 L,2016-01-21,10.7,Mobile App,Hindi,rekha.kapoor10@example.in,+91-9XXXXX3753,Verified
+C0011,Ananya Sinha,F,38,Bengaluru,Karnataka,1,Mass Affluent,6-15 L,2025-01-04,1.7,WhatsApp,Kannada,ananya.sinha11@example.in,+91-9XXXXX2693,Verified
+C0012,Rahul Shetty,M,30,Mumbai,Maharashtra,1,Mass Affluent,6-15 L,2018-03-08,8.6,Branch,Marathi,rahul.shetty12@example.in,+91-9XXXXX4762,Verified
+C0013,Simran Menon,F,45,Mumbai,Maharashtra,1,Mass Affluent,6-15 L,2024-12-18,1.8,WhatsApp,Marathi,simran.menon13@example.in,+91-9XXXXX3402,Pending re-KYC
+C0014,Amit Jain,M,29,Lucknow,Uttar Pradesh,2,SME Owner,15-50 L,2020-08-24,6.1,Mobile App,English,amit.jain14@example.in,+91-9XXXXX3530,Verified
+C0015,Neha Sharma,F,64,Delhi,Delhi,1,Mass,3-6 L,2024-08-27,2.1,Branch,Hindi,neha.sharma15@example.in,+91-9XXXXX6712,Verified
+C0016,Kunal Kulkarni,M,35,Delhi,Delhi,1,SME Owner,15-50 L,2015-11-21,10.9,WhatsApp,English,kunal.kulkarni16@example.in,+91-9XXXXX1199,Pending re-KYC
+C0017,Pallavi Pandey,F,43,Bengaluru,Karnataka,1,Mass,3-6 L,2026-08-21,0.1,Phone,Hindi,pallavi.pandey17@example.in,+91-9XXXXX4304,Verified
+C0018,Shruti Chatterjee,F,36,Pune,Maharashtra,1,Mass,3-6 L,2023-09-30,3.0,Phone,Marathi,shruti.chatterjee18@example.in,+91-9XXXXX1161,Verified
+C0019,Arjun Rao,M,31,Chennai,Tamil Nadu,1,Mass Affluent,6-15 L,2023-09-05,3.1,Phone,Tamil,arjun.rao19@example.in,+91-9XXXXX7650,Verified
+C0020,Kunal Agarwal,M,55,Delhi,Delhi,1,Mass Affluent,6-15 L,2022-11-06,3.9,WhatsApp,Hindi,kunal.agarwal20@example.in,+91-9XXXXX2333,Verified
+C0021,Rohan Patel,M,61,Pune,Maharashtra,1,Mass,3-6 L,2024-05-02,2.4,Phone,Hindi,rohan.patel21@example.in,+91-9XXXXX5205,Verified
+C0022,Fatima Shah,F,35,Delhi,Delhi,1,Mass Affluent,6-15 L,2023-12-11,2.8,Phone,English,fatima.shah22@example.in,+91-9XXXXX3417,Verified
+C0023,Aditi Bansal,F,36,Lucknow,Uttar Pradesh,2,Mass,3-6 L,2021-06-16,5.3,Branch,Hindi,aditi.bansal23@example.in,+91-9XXXXX6386,Verified
+C0024,Anil Banerjee,M,38,Pune,Maharashtra,1,Mass,3-6 L,2020-03-07,6.6,WhatsApp,Hindi,anil.banerjee24@example.in,+91-9XXXXX9858,Verified
+C0025,Mary Iyer,F,71,Kochi,Kerala,2,Mass,3-6 L,2011-05-12,15.4,WhatsApp,Malayalam,mary.iyer25@example.in,+91-9XXXXX9331,Verified
+C0026,Abhishek Gill,M,22,Kochi,Kerala,2,Mass,3-6 L,2018-07-12,8.2,Email,English,abhishek.gill26@example.in,+91-9XXXXX9815,Verified
+C0027,Farhan Mehta,M,22,Chennai,Tamil Nadu,1,Mass Affluent,6-15 L,2022-12-29,3.8,Phone,Tamil,farhan.mehta27@example.in,+91-9XXXXX4902,Verified
+C0028,Ravi Malhotra,M,37,Delhi,Delhi,1,Mass,3-6 L,2021-06-21,5.3,WhatsApp,English,ravi.malhotra28@example.in,+91-9XXXXX7931,Verified
+C0029,Aditya Sinha,M,37,Kochi,Kerala,2,Mass Affluent,6-15 L,2026-01-13,0.7,Email,Malayalam,aditya.sinha29@example.in,+91-9XXXXX5529,Pending re-KYC
+C0030,Manish Mukherjee,M,49,Hyderabad,Telangana,1,Mass,3-6 L,2024-10-24,1.9,Mobile App,English,manish.mukherjee30@example.in,+91-9XXXXX9968,Pending re-KYC
+C0031,Revathi Chopra,F,44,Delhi,Delhi,1,Mass Affluent,6-15 L,2017-04-22,9.5,Mobile App,English,revathi.chopra31@example.in,+91-9XXXXX5658,Verified
+C0032,Nandini Joshi,F,57,Nagpur,Maharashtra,2,Mass,3-6 L,2015-01-02,11.8,Mobile App,Hindi,nandini.joshi32@example.in,+91-9XXXXX8353,Pending re-KYC
+C0033,Deepak Reddy,M,45,Bengaluru,Karnataka,1,Mass,3-6 L,2017-05-22,9.4,Branch,English,deepak.reddy33@example.in,+91-9XXXXX4246,Pending re-KYC
+C0034,Vivaan Menon,M,50,Bengaluru,Karnataka,1,SME Owner,15-50 L,2023-02-18,3.6,WhatsApp,Kannada,vivaan.menon34@example.in,+91-9XXXXX1291,Verified
+C0035,Kunal Das,M,23,Chennai,Tamil Nadu,1,HNI,50 L+,2018-11-10,7.9,Branch,Hindi,kunal.das35@example.in,+91-9XXXXX1397,Pending re-KYC
+C0036,Aditya Menon,M,33,Kochi,Kerala,2,Mass,3-6 L,2022-02-02,4.7,Phone,Malayalam,aditya.menon36@example.in,+91-9XXXXX9072,Verified
+C0037,Kiran Shah,F,38,Pune,Maharashtra,1,SME Owner,15-50 L,2022-08-15,4.1,Phone,English,kiran.shah37@example.in,+91-9XXXXX3589,Pending re-KYC
+C0038,Sanjay Chatterjee,M,52,Lucknow,Uttar Pradesh,2,SME Owner,15-50 L,2025-07-24,1.2,WhatsApp,Hindi,sanjay.chatterjee38@example.in,+91-9XXXXX5858,Verified
+C0039,Divya Chopra,F,31,Kochi,Kerala,2,Mass,3-6 L,2023-10-18,3.0,WhatsApp,Hindi,divya.chopra39@example.in,+91-9XXXXX1039,Verified
+C0040,Isha Chopra,F,35,Ahmedabad,Gujarat,1,Mass,3-6 L,2018-12-28,7.8,Phone,English,isha.chopra40@example.in,+91-9XXXXX3234,Pending re-KYC
+C0041,Nikhil Rao,M,53,Hyderabad,Telangana,1,Mass Affluent,6-15 L,2021-01-30,5.7,Phone,Hindi,nikhil.rao41@example.in,+91-9XXXXX4635,Pending re-KYC
+C0042,Venkatesh Chatterjee,M,44,Bengaluru,Karnataka,1,Mass Affluent,6-15 L,2024-06-26,2.3,Phone,Hindi,venkatesh.chatterjee42@example.in,+91-9XXXXX3687,Verified
+C0043,Deepak Reddy,M,36,Delhi,Delhi,1,Mass Affluent,6-15 L,2023-02-26,3.6,WhatsApp,English,deepak.reddy43@example.in,+91-9XXXXX3845,Verified
+C0044,Anil Kulkarni,M,47,Chennai,Tamil Nadu,1,Mass Affluent,6-15 L,2022-02-22,4.6,Mobile App,Hindi,anil.kulkarni44@example.in,+91-9XXXXX4454,Verified
+C0045,Farhan Pillai,M,37,Mumbai,Maharashtra,1,HNI,50 L+,2017-06-15,9.3,Mobile App,Hindi,farhan.pillai45@example.in,+91-9XXXXX7354,Pending re-KYC
+C0046,Karthik Gill,M,22,Pune,Maharashtra,1,Mass Affluent,6-15 L,2019-01-02,7.8,Email,Marathi,karthik.gill46@example.in,+91-9XXXXX2296,Verified
+C0047,Sanjay Chatterjee,M,44,Kolkata,West Bengal,1,Mass,3-6 L,2018-12-09,7.8,Mobile App,English,sanjay.chatterjee47@example.in,+91-9XXXXX8213,Pending re-KYC
+C0048,Ravi Sinha,M,42,Bengaluru,Karnataka,1,Mass,3-6 L,2015-08-14,11.1,Mobile App,Kannada,ravi.sinha48@example.in,+91-9XXXXX9465,Verified
+C0049,Siddharth Qureshi,M,22,Delhi,Delhi,1,Mass Affluent,6-15 L,2023-12-07,2.8,Email,English,siddharth.qureshi49@example.in,+91-9XXXXX8591,Pending re-KYC
+C0050,Tejas Nair,M,45,Bengaluru,Karnataka,1,Mass Affluent,6-15 L,2017-01-31,9.7,WhatsApp,English,tejas.nair50@example.in,+91-9XXXXX8667,Verified
+C0051,Siddharth Iyer,M,40,Chennai,Tamil Nadu,1,Mass Affluent,6-15 L,2016-05-19,10.4,Phone,Tamil,siddharth.iyer51@example.in,+91-9XXXXX2597,Verified
+C0052,Mary Qureshi,F,40,Bengaluru,Karnataka,1,Mass,3-6 L,2021-09-27,5.0,Email,English,mary.qureshi52@example.in,+91-9XXXXX8910,Verified
+C0053,Fatima Chatterjee,F,37,Chandigarh,Punjab,2,Mass Affluent,6-15 L,2025-04-05,1.5,Email,English,fatima.chatterjee53@example.in,+91-9XXXXX7590,Verified
+C0054,Sneha Rao,F,36,Delhi,Delhi,1,Mass Affluent,6-15 L,2026-04-05,0.5,WhatsApp,English,sneha.rao54@example.in,+91-9XXXXX7995,Verified
+C0055,Ravi Thakur,M,33,Jaipur,Rajasthan,2,Mass,3-6 L,2019-10-19,7.0,WhatsApp,Hindi,ravi.thakur55@example.in,+91-9XXXXX9577,Verified
+C0056,Naveen Qureshi,M,32,Kolkata,West Bengal,1,Mass Affluent,6-15 L,2025-09-17,1.0,Email,Bengali,naveen.qureshi56@example.in,+91-9XXXXX3102,Pending re-KYC
+C0057,Rahul D'Souza,M,35,Chennai,Tamil Nadu,1,Mass Affluent,6-15 L,2021-07-12,5.2,Mobile App,Hindi,rahul.dsouza57@example.in,+91-9XXXXX9121,Verified
+C0058,Fatima Gill,F,28,Bengaluru,Karnataka,1,Mass,3-6 L,2020-04-27,6.4,Phone,English,fatima.gill58@example.in,+91-9XXXXX7458,Pending re-KYC
+C0059,Arjun Banerjee,M,22,Hyderabad,Telangana,1,SME Owner,15-50 L,2025-07-17,1.2,WhatsApp,Telugu,arjun.banerjee59@example.in,+91-9XXXXX5471,Verified
+C0060,Arjun Pillai,M,54,Mumbai,Maharashtra,1,Mass Affluent,6-15 L,2023-09-11,3.1,Phone,English,arjun.pillai60@example.in,+91-9XXXXX4120,Pending re-KYC
+C0061,Abhishek Sinha,M,22,Delhi,Delhi,1,SME Owner,15-50 L,2019-09-27,7.0,WhatsApp,Hindi,abhishek.sinha61@example.in,+91-9XXXXX3694,Verified
+C0062,Swati Banerjee,F,39,Delhi,Delhi,1,Mass Affluent,6-15 L,2025-10-28,0.9,Mobile App,English,swati.banerjee62@example.in,+91-9XXXXX9951,Verified
+C0063,Abhishek Jain,M,36,Hyderabad,Telangana,1,Mass,3-6 L,2020-12-26,5.8,Branch,Telugu,abhishek.jain63@example.in,+91-9XXXXX7652,Verified
+C0064,Rajesh Jain,M,38,Delhi,Delhi,1,Mass,3-6 L,2016-12-04,9.8,Email,Hindi,rajesh.jain64@example.in,+91-9XXXXX2004,Verified
+C0065,Sanjay Chopra,M,48,Bengaluru,Karnataka,1,Mass,3-6 L,2022-08-27,4.1,WhatsApp,Hindi,sanjay.chopra65@example.in,+91-9XXXXX5572,Verified
+C0066,Pooja Gupta,F,24,Delhi,Delhi,1,Mass,3-6 L,2016-01-13,10.7,WhatsApp,Hindi,pooja.gupta66@example.in,+91-9XXXXX3976,Pending re-KYC
+C0067,Imran D'Souza,M,42,Mumbai,Maharashtra,1,Mass,3-6 L,2019-01-23,7.7,Email,Marathi,imran.dsouza67@example.in,+91-9XXXXX5279,Verified
+C0068,Sneha Nair,F,51,Hyderabad,Telangana,1,HNI,50 L+,2013-01-02,13.8,Mobile App,Hindi,sneha.nair68@example.in,+91-9XXXXX6011,Verified
+C0069,Kiran Mehta,F,50,Vadodara,Gujarat,2,Mass,3-6 L,2025-07-19,1.2,Phone,Hindi,kiran.mehta69@example.in,+91-9XXXXX8756,Verified
+C0070,Arjun Kulkarni,M,59,Mumbai,Maharashtra,1,Mass,3-6 L,2025-11-18,0.9,Phone,Hindi,arjun.kulkarni70@example.in,+91-9XXXXX7031,Verified
+C0071,Yash Pandey,M,40,Chennai,Tamil Nadu,1,SME Owner,15-50 L,2013-08-23,13.1,WhatsApp,English,yash.pandey71@example.in,+91-9XXXXX2488,Verified
+C0072,Anil Reddy,M,45,Mumbai,Maharashtra,1,Mass Affluent,6-15 L,2023-03-05,3.6,Mobile App,Marathi,anil.reddy72@example.in,+91-9XXXXX8550,Verified
+C0073,Fatima Malhotra,F,55,Hyderabad,Telangana,1,Mass,3-6 L,2017-01-21,9.7,Phone,English,fatima.malhotra73@example.in,+91-9XXXXX9849,Verified
+C0074,Anil Gill,M,36,Bengaluru,Karnataka,1,Mass,3-6 L,2020-12-23,5.8,Phone,Hindi,anil.gill74@example.in,+91-9XXXXX9278,Pending re-KYC
+C0075,Rekha Banerjee,F,41,Delhi,Delhi,1,Mass Affluent,6-15 L,2026-01-10,0.7,WhatsApp,English,rekha.banerjee75@example.in,+91-9XXXXX4999,Verified
+C0076,Swati Sharma,F,56,Indore,Madhya Pradesh,2,HNI,50 L+,2012-10-20,14.0,Mobile App,English,swati.sharma76@example.in,+91-9XXXXX6658,Verified
+C0077,Venkatesh Mehta,M,51,Hyderabad,Telangana,1,Mass Affluent,6-15 L,2023-07-27,3.2,Phone,Hindi,venkatesh.mehta77@example.in,+91-9XXXXX3990,Verified
+C0078,Ritu Shetty,F,25,Bengaluru,Karnataka,1,SME Owner,15-50 L,2020-06-27,6.3,Phone,Kannada,ritu.shetty78@example.in,+91-9XXXXX5309,Verified
+C0079,Kunal Chatterjee,M,48,Delhi,Delhi,1,Mass,3-6 L,2021-11-21,4.9,Phone,Hindi,kunal.chatterjee79@example.in,+91-9XXXXX1996,Verified
+C0080,Tanvi Agarwal,F,28,Chandigarh,Punjab,2,SME Owner,15-50 L,2025-01-02,1.8,WhatsApp,Punjabi,tanvi.agarwal80@example.in,+91-9XXXXX4826,Verified
+C0081,Kavya Das,F,41,Hyderabad,Telangana,1,Mass Affluent,6-15 L,2020-03-09,6.6,WhatsApp,Hindi,kavya.das81@example.in,+91-9XXXXX8516,Verified
+C0082,Simran Kulkarni,F,63,Jaipur,Rajasthan,2,Mass,3-6 L,2023-05-20,3.4,WhatsApp,Hindi,simran.kulkarni82@example.in,+91-9XXXXX3380,Verified
+C0083,Amit Sharma,M,30,Ahmedabad,Gujarat,1,HNI,50 L+,2020-04-27,6.4,Phone,Gujarati,amit.sharma83@example.in,+91-9XXXXX1328,Pending re-KYC
+C0084,Gayatri Banerjee,F,39,Jaipur,Rajasthan,2,Mass Affluent,6-15 L,2021-05-28,5.4,Branch,Hindi,gayatri.banerjee84@example.in,+91-9XXXXX2185,Verified
+C0085,Rekha Deshpande,F,40,Pune,Maharashtra,1,Mass Affluent,6-15 L,2018-08-11,8.1,WhatsApp,Marathi,rekha.deshpande85@example.in,+91-9XXXXX9250,Verified
+C0086,Imran Shah,M,45,Chennai,Tamil Nadu,1,Mass,3-6 L,2020-04-21,6.5,Phone,Tamil,imran.shah86@example.in,+91-9XXXXX9385,Verified
+C0087,Kiran Khan,F,58,Hyderabad,Telangana,1,Mass Affluent,6-15 L,2025-02-16,1.6,Branch,Telugu,kiran.khan87@example.in,+91-9XXXXX3525,Verified
+C0088,Tejas Bhat,M,39,Chennai,Tamil Nadu,1,Mass,3-6 L,2018-06-14,8.3,Email,English,tejas.bhat88@example.in,+91-9XXXXX6923,Verified
+C0089,Anil Joshi,M,49,Coimbatore,Tamil Nadu,2,Mass,3-6 L,2015-04-29,11.4,Branch,English,anil.joshi89@example.in,+91-9XXXXX5075,Verified
+C0090,Diya Chopra,F,55,Delhi,Delhi,1,SME Owner,15-50 L,2022-01-19,4.7,WhatsApp,English,diya.chopra90@example.in,+91-9XXXXX2705,Verified
+C0091,Kunal Kulkarni,M,44,Bengaluru,Karnataka,1,Mass,3-6 L,2017-02-10,9.6,WhatsApp,Kannada,kunal.kulkarni91@example.in,+91-9XXXXX8244,Verified
+C0092,Swati Hegde,F,41,Kochi,Kerala,2,Mass,3-6 L,2023-06-27,3.3,Phone,English,swati.hegde92@example.in,+91-9XXXXX3551,Pending re-KYC
+C0093,Zoya Sharma,F,40,Coimbatore,Tamil Nadu,2,Mass Affluent,6-15 L,2018-04-02,8.5,WhatsApp,Hindi,zoya.sharma93@example.in,+91-9XXXXX4596,Verified
+C0094,Harini Qureshi,F,30,Bengaluru,Karnataka,1,SME Owner,15-50 L,2017-11-25,8.9,Phone,Hindi,harini.qureshi94@example.in,+91-9XXXXX4625,Pending re-KYC
+C0095,Anjali Verma,F,38,Kochi,Kerala,2,SME Owner,15-50 L,2024-04-23,2.4,Email,Malayalam,anjali.verma95@example.in,+91-9XXXXX6703,Verified
+C0096,Rohan Chopra,M,35,Hyderabad,Telangana,1,Mass,3-6 L,2017-10-04,9.0,Mobile App,Telugu,rohan.chopra96@example.in,+91-9XXXXX2208,Pending re-KYC
+C0097,Naveen Khan,M,23,Jaipur,Rajasthan,2,Mass,3-6 L,2023-05-06,3.4,Branch,English,naveen.khan97@example.in,+91-9XXXXX6693,Verified
+C0098,Siddharth Nair,M,36,Jaipur,Rajasthan,2,Mass,3-6 L,2025-03-11,1.6,WhatsApp,English,siddharth.nair98@example.in,+91-9XXXXX2587,Verified
+C0099,Pooja Thakur,F,58,Vadodara,Gujarat,2,SME Owner,15-50 L,2020-02-01,6.7,WhatsApp,Gujarati,pooja.thakur99@example.in,+91-9XXXXX2600,Verified
+C0100,Aditya Patel,M,26,Kolkata,West Bengal,1,Mass,3-6 L,2025-06-11,1.3,WhatsApp,English,aditya.patel100@example.in,+91-9XXXXX2997,Pending re-KYC
+C0101,Abhishek D'Souza,M,44,Indore,Madhya Pradesh,2,Mass,3-6 L,2021-10-05,5.0,Phone,English,abhishek.dsouza101@example.in,+91-9XXXXX4042,Verified
+C0102,Bhavna Reddy,F,31,Pune,Maharashtra,1,Mass,3-6 L,2023-09-20,3.0,Phone,English,bhavna.reddy102@example.in,+91-9XXXXX1834,Verified
+C0103,Kunal Shetty,M,22,Ahmedabad,Gujarat,1,Mass Affluent,6-15 L,2016-10-25,9.9,Phone,Gujarati,kunal.shetty103@example.in,+91-9XXXXX2070,Verified
+C0104,Tanvi Gupta,F,34,Bengaluru,Karnataka,1,SME Owner,15-50 L,2019-08-01,7.2,Phone,English,tanvi.gupta104@example.in,+91-9XXXXX8874,Verified
+C0105,Diya Fernandes,F,31,Delhi,Delhi,1,Mass Affluent,6-15 L,2008-07-21,18.2,Phone,Hindi,diya.fernandes105@example.in,+91-9XXXXX9377,Verified
+C0106,Farhan Kulkarni,M,23,Delhi,Delhi,1,Mass,3-6 L,2024-06-29,2.3,WhatsApp,Hindi,farhan.kulkarni106@example.in,+91-9XXXXX6753,Verified
+C0107,Vikram Hegde,M,45,Mumbai,Maharashtra,1,Mass,3-6 L,2020-09-01,6.1,Phone,English,vikram.hegde107@example.in,+91-9XXXXX5229,Verified
+C0108,Kiran Kapoor,F,29,Pune,Maharashtra,1,Mass Affluent,6-15 L,2022-04-01,4.5,Mobile App,Marathi,kiran.kapoor108@example.in,+91-9XXXXX2585,Verified
+C0109,Rajesh Rao,M,50,Mumbai,Maharashtra,1,Mass,3-6 L,2021-09-24,5.0,Phone,Marathi,rajesh.rao109@example.in,+91-9XXXXX9366,Verified
+C0110,Zoya Shetty,F,55,Mumbai,Maharashtra,1,HNI,50 L+,2026-04-28,0.4,Branch,Hindi,zoya.shetty110@example.in,+91-9XXXXX1397,Verified
+C0111,Tanvi Joshi,F,41,Pune,Maharashtra,1,SME Owner,15-50 L,2021-03-12,5.6,WhatsApp,Marathi,tanvi.joshi111@example.in,+91-9XXXXX2951,Verified
+C0112,Deepak Khan,M,35,Indore,Madhya Pradesh,2,Mass Affluent,6-15 L,2017-11-07,8.9,WhatsApp,Hindi,deepak.khan112@example.in,+91-9XXXXX3438,Verified
+C0113,Fatima Chopra,F,34,Chennai,Tamil Nadu,1,Mass Affluent,6-15 L,2019-03-29,7.5,Email,Tamil,fatima.chopra113@example.in,+91-9XXXXX1851,Pending re-KYC
+C0114,Amit Hegde,M,31,Hyderabad,Telangana,1,Mass Affluent,6-15 L,2019-08-30,7.1,Branch,Telugu,amit.hegde114@example.in,+91-9XXXXX7019,Pending re-KYC
+C0115,Divya Mehta,F,58,Hyderabad,Telangana,1,Mass,3-6 L,2020-06-07,6.3,WhatsApp,English,divya.mehta115@example.in,+91-9XXXXX7690,Verified
+C0116,Pooja Menon,F,50,Delhi,Delhi,1,SME Owner,15-50 L,2021-05-02,5.4,Branch,English,pooja.menon116@example.in,+91-9XXXXX7973,Verified
+C0117,Sneha Agarwal,F,22,Pune,Maharashtra,1,Mass Affluent,6-15 L,2019-10-25,6.9,WhatsApp,English,sneha.agarwal117@example.in,+91-9XXXXX9189,Verified
+C0118,Aarav Jain,M,33,Bengaluru,Karnataka,1,Mass,3-6 L,2023-11-25,2.9,WhatsApp,Kannada,aarav.jain118@example.in,+91-9XXXXX5557,Verified
+C0119,Swati Menon,F,23,Pune,Maharashtra,1,Mass Affluent,6-15 L,2015-04-02,11.5,Phone,Marathi,swati.menon119@example.in,+91-9XXXXX6167,Verified
+C0120,Gurpreet Menon,M,45,Mumbai,Maharashtra,1,SME Owner,15-50 L,2013-02-15,13.6,WhatsApp,English,gurpreet.menon120@example.in,+91-9XXXXX2203,Verified
+C0121,Aarav Reddy,M,44,Chennai,Tamil Nadu,1,SME Owner,15-50 L,2024-03-31,2.5,Branch,Tamil,aarav.reddy121@example.in,+91-9XXXXX9125,Pending re-KYC
+C0122,Deepak Nair,M,36,Mumbai,Maharashtra,1,HNI,50 L+,2016-01-26,10.7,Branch,Hindi,deepak.nair122@example.in,+91-9XXXXX4574,Verified
+C0123,Siddharth Reddy,M,54,Delhi,Delhi,1,SME Owner,15-50 L,2018-08-22,8.1,Phone,English,siddharth.reddy123@example.in,+91-9XXXXX9782,Pending re-KYC
+C0124,Naveen Iyer,M,54,Hyderabad,Telangana,1,SME Owner,15-50 L,2022-12-23,3.8,Phone,Hindi,naveen.iyer124@example.in,+91-9XXXXX6113,Pending re-KYC
+C0125,Joseph Agarwal,M,46,Nagpur,Maharashtra,2,Mass Affluent,6-15 L,2017-11-03,8.9,Phone,Hindi,joseph.agarwal125@example.in,+91-9XXXXX4197,Verified
+C0126,Aditya Bhat,M,48,Pune,Maharashtra,1,Mass Affluent,6-15 L,2022-04-06,4.5,Branch,English,aditya.bhat126@example.in,+91-9XXXXX8204,Verified
+C0127,Siddharth Chatterjee,M,41,Delhi,Delhi,1,Mass,3-6 L,2023-06-02,3.3,WhatsApp,Hindi,siddharth.chatterjee127@example.in,+91-9XXXXX2670,Verified
+C0128,Ritu D'Souza,F,49,Bengaluru,Karnataka,1,Mass,3-6 L,2023-08-28,3.1,WhatsApp,English,ritu.dsouza128@example.in,+91-9XXXXX9429,Verified
+C0129,Meera Shetty,F,44,Chennai,Tamil Nadu,1,Mass Affluent,6-15 L,2017-02-19,9.6,Branch,Tamil,meera.shetty129@example.in,+91-9XXXXX1155,Verified
+C0130,Diya Thakur,F,39,Chennai,Tamil Nadu,1,Mass,3-6 L,2025-02-17,1.6,WhatsApp,English,diya.thakur130@example.in,+91-9XXXXX4914,Verified
+C0131,Nandini Fernandes,F,51,Coimbatore,Tamil Nadu,2,Mass,3-6 L,2019-04-24,7.4,Email,Tamil,nandini.fernandes131@example.in,+91-9XXXXX4146,Verified
+C0132,Siddharth Fernandes,M,39,Hyderabad,Telangana,1,Mass Affluent,6-15 L,2023-05-16,3.4,Mobile App,English,siddharth.fernandes132@example.in,+91-9XXXXX3621,Verified
+C0133,Yash Mishra,M,42,Bengaluru,Karnataka,1,Mass Affluent,6-15 L,2017-01-25,9.7,WhatsApp,Hindi,yash.mishra133@example.in,+91-9XXXXX5951,Verified
+C0134,Meera Shah,F,34,Lucknow,Uttar Pradesh,2,Mass,3-6 L,2023-07-14,3.2,Mobile App,Hindi,meera.shah134@example.in,+91-9XXXXX5206,Verified
+C0135,Rohan Pandey,M,22,Mumbai,Maharashtra,1,Mass,3-6 L,2021-09-14,5.1,Mobile App,English,rohan.pandey135@example.in,+91-9XXXXX9369,Verified
+C0136,Aditi Pandey,F,52,Indore,Madhya Pradesh,2,SME Owner,15-50 L,2023-03-10,3.6,WhatsApp,English,aditi.pandey136@example.in,+91-9XXXXX5294,Pending re-KYC
+C0137,Simran Gill,F,22,Mumbai,Maharashtra,1,Mass,3-6 L,2024-08-23,2.1,WhatsApp,Marathi,simran.gill137@example.in,+91-9XXXXX9008,Verified
+C0138,Kiran Nair,F,47,Nagpur,Maharashtra,2,Mass,3-6 L,2021-07-01,5.3,Branch,Marathi,kiran.nair138@example.in,+91-9XXXXX7889,Verified
+C0139,Ritu Shah,F,49,Kolkata,West Bengal,1,Mass,3-6 L,2017-08-17,9.1,Phone,English,ritu.shah139@example.in,+91-9XXXXX9642,Verified
+C0140,Priya Saxena,F,41,Delhi,Delhi,1,Mass,3-6 L,2018-05-23,8.4,Phone,Hindi,priya.saxena140@example.in,+91-9XXXXX6147,Verified
+C0141,Gayatri Agarwal,F,47,Mumbai,Maharashtra,1,Mass,3-6 L,2024-06-05,2.3,Phone,Hindi,gayatri.agarwal141@example.in,+91-9XXXXX7722,Verified
+C0142,Yash Shah,M,45,Kochi,Kerala,2,Mass Affluent,6-15 L,2020-05-11,6.4,Email,Hindi,yash.shah142@example.in,+91-9XXXXX1782,Pending re-KYC
+C0143,Siddharth Joshi,M,55,Chennai,Tamil Nadu,1,Mass,3-6 L,2019-11-14,6.9,Phone,Hindi,siddharth.joshi143@example.in,+91-9XXXXX2066,Verified
+C0144,Rahul Shetty,M,22,Coimbatore,Tamil Nadu,2,Mass,3-6 L,2021-08-08,5.2,Phone,English,rahul.shetty144@example.in,+91-9XXXXX4534,Pending re-KYC
+C0145,Divya Gupta,F,52,Kochi,Kerala,2,Mass,3-6 L,2019-01-06,7.7,Mobile App,Malayalam,divya.gupta145@example.in,+91-9XXXXX2431,Pending re-KYC
+C0146,Simran Deshpande,F,24,Bengaluru,Karnataka,1,SME Owner,15-50 L,2020-02-25,6.6,Phone,Kannada,simran.deshpande146@example.in,+91-9XXXXX3590,Verified
+C0147,Vikram Gill,M,35,Hyderabad,Telangana,1,Mass,3-6 L,2024-06-22,2.3,Mobile App,Hindi,vikram.gill147@example.in,+91-9XXXXX7101,Verified
+C0148,Pooja Reddy,F,39,Chandigarh,Punjab,2,SME Owner,15-50 L,2015-02-28,11.6,Mobile App,Punjabi,pooja.reddy148@example.in,+91-9XXXXX8878,Verified
+C0149,Divya Sinha,F,23,Indore,Madhya Pradesh,2,Mass,3-6 L,2024-11-02,1.9,Phone,Hindi,divya.sinha149@example.in,+91-9XXXXX8465,Pending re-KYC
+C0150,Kavya Nair,F,35,Chennai,Tamil Nadu,1,Mass,3-6 L,2017-05-10,9.4,Email,Tamil,kavya.nair150@example.in,+91-9XXXXX9505,Verified
+C0151,Sana Shetty,F,45,Ahmedabad,Gujarat,1,SME Owner,15-50 L,2020-12-23,5.8,Branch,Gujarati,sana.shetty151@example.in,+91-9XXXXX3076,Verified
+C0152,Bhavna Sharma,F,36,Ahmedabad,Gujarat,1,Mass Affluent,6-15 L,2021-01-23,5.7,WhatsApp,English,bhavna.sharma152@example.in,+91-9XXXXX9741,Verified
+C0153,Aditya Pillai,M,35,Mysuru,Karnataka,3,SME Owner,15-50 L,2020-08-19,6.1,Phone,Kannada,aditya.pillai153@example.in,+91-9XXXXX1809,Verified
+C0154,Karthik Mishra,M,41,Mumbai,Maharashtra,1,HNI,50 L+,2021-10-14,5.0,Email,English,karthik.mishra154@example.in,+91-9XXXXX4730,Verified
+C0155,Harish Fernandes,M,42,Chennai,Tamil Nadu,1,Mass,3-6 L,2022-12-06,3.8,Email,Tamil,harish.fernandes155@example.in,+91-9XXXXX6811,Pending re-KYC
+C0156,Rahul Saxena,M,32,Jaipur,Rajasthan,2,Mass,3-6 L,2015-03-17,11.6,WhatsApp,Hindi,rahul.saxena156@example.in,+91-9XXXXX3560,Verified
+C0157,Revathi Nair,F,32,Hyderabad,Telangana,1,Mass,3-6 L,2024-01-08,2.7,Phone,Hindi,revathi.nair157@example.in,+91-9XXXXX5021,Verified
+C0158,Isha Malhotra,F,41,Delhi,Delhi,1,HNI,50 L+,2025-04-29,1.4,WhatsApp,English,isha.malhotra158@example.in,+91-9XXXXX9629,Verified
+C0159,Ananya Malhotra,F,22,Ahmedabad,Gujarat,1,Mass,3-6 L,2025-03-18,1.5,Phone,English,ananya.malhotra159@example.in,+91-9XXXXX5214,Verified
+C0160,Vikram Gill,M,22,Mumbai,Maharashtra,1,Mass,3-6 L,2025-10-18,1.0,Email,Hindi,vikram.gill160@example.in,+91-9XXXXX2388,Verified
+C0161,Lakshmi Pandey,F,46,Bengaluru,Karnataka,1,Mass Affluent,6-15 L,2021-04-11,5.5,Phone,Hindi,lakshmi.pandey161@example.in,+91-9XXXXX8646,Verified
+C0162,Deepak Sinha,M,46,Hyderabad,Telangana,1,SME Owner,15-50 L,2023-07-07,3.2,WhatsApp,Hindi,deepak.sinha162@example.in,+91-9XXXXX7012,Pending re-KYC
+C0163,Venkatesh D'Souza,M,38,Bengaluru,Karnataka,1,SME Owner,15-50 L,2019-09-23,7.0,WhatsApp,English,venkatesh.dsouza163@example.in,+91-9XXXXX3887,Verified
+C0164,Arjun Joshi,M,41,Ahmedabad,Gujarat,1,Mass,3-6 L,2017-10-17,9.0,Mobile App,Gujarati,arjun.joshi164@example.in,+91-9XXXXX5016,Pending re-KYC
+C0165,Manish Rao,M,37,Delhi,Delhi,1,Mass,3-6 L,2019-03-21,7.5,Mobile App,Hindi,manish.rao165@example.in,+91-9XXXXX1923,Verified
+C0166,Priya Jain,F,52,Bengaluru,Karnataka,1,Mass,3-6 L,2019-08-03,7.2,Phone,English,priya.jain166@example.in,+91-9XXXXX9075,Verified
+C0167,Gayatri Shetty,F,22,Ahmedabad,Gujarat,1,Mass Affluent,6-15 L,2019-01-02,7.8,Phone,Gujarati,gayatri.shetty167@example.in,+91-9XXXXX4236,Verified
+C0168,Priya Qureshi,F,29,Mumbai,Maharashtra,1,Mass,3-6 L,2021-06-01,5.3,WhatsApp,Hindi,priya.qureshi168@example.in,+91-9XXXXX6586,Verified
+C0169,Vivaan Nair,M,45,Mumbai,Maharashtra,1,Mass,3-6 L,2023-03-15,3.6,Branch,Marathi,vivaan.nair169@example.in,+91-9XXXXX9330,Verified
+C0170,Nandini Fernandes,F,35,Coimbatore,Tamil Nadu,2,Mass,3-6 L,2026-07-28,0.2,Mobile App,Tamil,nandini.fernandes170@example.in,+91-9XXXXX5952,Verified
+C0171,Rekha Hegde,F,24,Bengaluru,Karnataka,1,Mass Affluent,6-15 L,2018-08-01,8.2,WhatsApp,English,rekha.hegde171@example.in,+91-9XXXXX8639,Pending re-KYC
+C0172,Isha Nair,F,36,Bengaluru,Karnataka,1,Mass,3-6 L,2015-09-02,11.1,Mobile App,Hindi,isha.nair172@example.in,+91-9XXXXX2936,Pending re-KYC
+C0173,Rekha Patel,F,22,Nagpur,Maharashtra,2,Mass,3-6 L,2023-07-10,3.2,Phone,Hindi,rekha.patel173@example.in,+91-9XXXXX4735,Verified
+C0174,Kiran Deshpande,F,43,Delhi,Delhi,1,Mass,3-6 L,2024-10-26,1.9,Mobile App,Hindi,kiran.deshpande174@example.in,+91-9XXXXX7204,Verified
+C0175,Aditya Kapoor,M,43,Pune,Maharashtra,1,Mass Affluent,6-15 L,2017-05-10,9.4,Phone,Hindi,aditya.kapoor175@example.in,+91-9XXXXX7167,Verified
+C0176,Aditya Pillai,M,58,Kolkata,West Bengal,1,Mass,3-6 L,2016-12-19,9.8,WhatsApp,English,aditya.pillai176@example.in,+91-9XXXXX2304,Verified
+C0177,Sanjay Mehta,M,45,Bengaluru,Karnataka,1,Mass,3-6 L,2015-03-05,11.6,Mobile App,Hindi,sanjay.mehta177@example.in,+91-9XXXXX5514,Verified
+C0178,Revathi Thakur,F,45,Vadodara,Gujarat,2,Mass,3-6 L,2020-10-15,6.0,WhatsApp,Gujarati,revathi.thakur178@example.in,+91-9XXXXX1926,Pending re-KYC
+C0179,Siddharth Jain,M,40,Chennai,Tamil Nadu,1,SME Owner,15-50 L,2014-12-28,11.8,WhatsApp,Tamil,siddharth.jain179@example.in,+91-9XXXXX5536,Verified
+C0180,Anil Iyer,M,26,Mysuru,Karnataka,3,Mass,3-6 L,2024-11-04,1.9,WhatsApp,Hindi,anil.iyer180@example.in,+91-9XXXXX9205,Pending re-KYC
+C0181,Anil Patel,M,49,Delhi,Delhi,1,Mass,3-6 L,2019-02-06,7.7,WhatsApp,Hindi,anil.patel181@example.in,+91-9XXXXX4604,Verified
+C0182,Simran Jain,F,48,Chennai,Tamil Nadu,1,Mass,3-6 L,2020-05-04,6.4,WhatsApp,Tamil,simran.jain182@example.in,+91-9XXXXX4083,Verified
+C0183,Gurpreet Hegde,M,35,Ahmedabad,Gujarat,1,Mass,3-6 L,2026-05-08,0.4,Phone,Hindi,gurpreet.hegde183@example.in,+91-9XXXXX7421,Verified
+C0184,Pranav Banerjee,M,46,Pune,Maharashtra,1,Mass Affluent,6-15 L,2018-10-31,7.9,Phone,Marathi,pranav.banerjee184@example.in,+91-9XXXXX1974,Pending re-KYC
+C0185,Rahul Qureshi,M,22,Pune,Maharashtra,1,Mass,3-6 L,2023-03-02,3.6,Mobile App,Marathi,rahul.qureshi185@example.in,+91-9XXXXX1226,Verified
+C0186,Pooja Banerjee,F,46,Chennai,Tamil Nadu,1,Mass Affluent,6-15 L,2015-04-18,11.5,Mobile App,English,pooja.banerjee186@example.in,+91-9XXXXX9058,Pending re-KYC
+C0187,Fatima Gupta,F,22,Mumbai,Maharashtra,1,SME Owner,15-50 L,2025-02-06,1.7,Mobile App,English,fatima.gupta187@example.in,+91-9XXXXX7930,Verified
+C0188,Venkatesh Khan,M,43,Bengaluru,Karnataka,1,Mass,3-6 L,2020-09-18,6.0,Mobile App,Kannada,venkatesh.khan188@example.in,+91-9XXXXX8913,Pending re-KYC
+C0189,Amit Qureshi,M,40,Chennai,Tamil Nadu,1,Mass,3-6 L,2020-02-29,6.6,Phone,English,amit.qureshi189@example.in,+91-9XXXXX6091,Verified
+C0190,Zoya Reddy,F,43,Nashik,Maharashtra,3,HNI,50 L+,2015-06-20,11.3,Branch,Marathi,zoya.reddy190@example.in,+91-9XXXXX6256,Pending re-KYC
+C0191,Ananya Gill,F,51,Ahmedabad,Gujarat,1,Mass,3-6 L,2023-08-25,3.1,Email,Gujarati,ananya.gill191@example.in,+91-9XXXXX4410,Verified
+C0192,Harini Thakur,F,32,Chandigarh,Punjab,2,Mass,3-6 L,2019-08-11,7.1,Branch,Punjabi,harini.thakur192@example.in,+91-9XXXXX7875,Verified
+C0193,Kavya Reddy,F,71,Chennai,Tamil Nadu,1,SME Owner,15-50 L,2017-04-27,9.4,Mobile App,Hindi,kavya.reddy193@example.in,+91-9XXXXX8729,Verified
+C0194,Swati Rao,F,64,Mumbai,Maharashtra,1,Mass,3-6 L,2020-12-22,5.8,Phone,English,swati.rao194@example.in,+91-9XXXXX9547,Pending re-KYC
+C0195,Imran Banerjee,M,30,Chennai,Tamil Nadu,1,Mass,3-6 L,2021-07-30,5.2,Email,Tamil,imran.banerjee195@example.in,+91-9XXXXX2772,Verified
+C0196,Arjun Bansal,M,47,Chennai,Tamil Nadu,1,HNI,50 L+,2017-08-23,9.1,WhatsApp,Hindi,arjun.bansal196@example.in,+91-9XXXXX9187,Pending re-KYC
+C0197,Revathi Reddy,F,41,Chennai,Tamil Nadu,1,Mass,3-6 L,2022-01-27,4.7,Email,English,revathi.reddy197@example.in,+91-9XXXXX9338,Verified
+C0198,Revathi Pillai,F,42,Kochi,Kerala,2,HNI,50 L+,2017-02-15,9.6,WhatsApp,Hindi,revathi.pillai198@example.in,+91-9XXXXX7340,Verified
+C0199,Nikhil Das,M,31,Mumbai,Maharashtra,1,SME Owner,15-50 L,2026-01-23,0.7,Phone,Hindi,nikhil.das199@example.in,+91-9XXXXX7246,Verified
+C0200,Isha Naidu,F,29,Mumbai,Maharashtra,1,Mass,3-6 L,2026-04-13,0.5,WhatsApp,Hindi,isha.naidu200@example.in,+91-9XXXXX6041,Verified
+C0201,Bhavna Shetty,F,42,Chandigarh,Punjab,2,SME Owner,15-50 L,2022-06-24,4.3,Mobile App,Punjabi,bhavna.shetty201@example.in,+91-9XXXXX8419,Verified
+C0202,Pallavi Khan,F,50,Mumbai,Maharashtra,1,Mass,3-6 L,2021-07-22,5.2,WhatsApp,Marathi,pallavi.khan202@example.in,+91-9XXXXX4784,Verified
+C0203,Harini Hegde,F,46,Bengaluru,Karnataka,1,HNI,50 L+,2016-05-26,10.4,Phone,Hindi,harini.hegde203@example.in,+91-9XXXXX7276,Verified
+C0204,Ananya Sinha,F,69,Delhi,Delhi,1,Mass Affluent,6-15 L,2021-09-27,5.0,Mobile App,Hindi,ananya.sinha204@example.in,+91-9XXXXX7614,Verified
+C0205,Manish Shah,M,41,Bengaluru,Karnataka,1,HNI,50 L+,2016-03-15,10.6,WhatsApp,Kannada,manish.shah205@example.in,+91-9XXXXX8475,Verified
+C0206,Revathi Gupta,F,65,Kolkata,West Bengal,1,Mass,3-6 L,2016-05-05,10.4,Phone,Bengali,revathi.gupta206@example.in,+91-9XXXXX3941,Pending re-KYC
+C0207,Vikram Mehta,M,51,Indore,Madhya Pradesh,2,Mass Affluent,6-15 L,2020-05-01,6.4,Phone,Hindi,vikram.mehta207@example.in,+91-9XXXXX2355,Verified
+C0208,Revathi Shah,F,57,Mumbai,Maharashtra,1,Mass Affluent,6-15 L,2017-03-18,9.5,Phone,English,revathi.shah208@example.in,+91-9XXXXX1098,Verified
+C0209,Abhishek Sinha,M,40,Hyderabad,Telangana,1,Mass Affluent,6-15 L,2026-07-23,0.2,WhatsApp,Hindi,abhishek.sinha209@example.in,+91-9XXXXX3225,Verified
+C0210,Diya Chatterjee,F,68,Mysuru,Karnataka,3,Mass,3-6 L,2014-11-06,11.9,Branch,Hindi,diya.chatterjee210@example.in,+91-9XXXXX7866,Verified
+C0211,Manish Kapoor,M,22,Jaipur,Rajasthan,2,Mass,3-6 L,2019-12-06,6.8,Email,English,manish.kapoor211@example.in,+91-9XXXXX6684,Pending re-KYC
+C0212,Rahul Agarwal,M,48,Ahmedabad,Gujarat,1,SME Owner,15-50 L,2017-03-09,9.6,Phone,Hindi,rahul.agarwal212@example.in,+91-9XXXXX7219,Verified
+C0213,Rahul Banerjee,M,33,Hyderabad,Telangana,1,Mass,3-6 L,2018-01-20,8.7,Email,English,rahul.banerjee213@example.in,+91-9XXXXX9519,Verified
+C0214,Rekha D'Souza,F,22,Mumbai,Maharashtra,1,Mass,3-6 L,2024-05-14,2.4,Email,Marathi,rekha.dsouza214@example.in,+91-9XXXXX6329,Pending re-KYC
+C0215,Neha Nair,F,22,Hyderabad,Telangana,1,Mass,3-6 L,2016-07-03,10.3,Phone,Telugu,neha.nair215@example.in,+91-9XXXXX4313,Verified
+C0216,Aditya Pandey,M,24,Coimbatore,Tamil Nadu,2,Mass Affluent,6-15 L,2017-12-03,8.8,Phone,English,aditya.pandey216@example.in,+91-9XXXXX4449,Pending re-KYC
+C0217,Bhavna Chatterjee,F,41,Bengaluru,Karnataka,1,Mass,3-6 L,2020-02-29,6.6,Mobile App,Kannada,bhavna.chatterjee217@example.in,+91-9XXXXX7106,Verified
+C0218,Vivaan Sharma,M,35,Kolkata,West Bengal,1,SME Owner,15-50 L,2023-11-02,2.9,WhatsApp,English,vivaan.sharma218@example.in,+91-9XXXXX7142,Verified
+C0219,Pranav Gupta,M,39,Mumbai,Maharashtra,1,Mass,3-6 L,2025-07-19,1.2,WhatsApp,Marathi,pranav.gupta219@example.in,+91-9XXXXX8272,Verified
+C0220,Sana Banerjee,F,47,Chandigarh,Punjab,2,Mass,3-6 L,2024-03-25,2.5,Phone,English,sana.banerjee220@example.in,+91-9XXXXX6580,Verified
+C0221,Isha Naidu,F,39,Jaipur,Rajasthan,2,Mass,3-6 L,2015-04-03,11.5,WhatsApp,Hindi,isha.naidu221@example.in,+91-9XXXXX4057,Pending re-KYC
+C0222,Swati Pandey,F,52,Pune,Maharashtra,1,Mass,3-6 L,2010-01-09,16.7,Email,Marathi,swati.pandey222@example.in,+91-9XXXXX9549,Pending re-KYC
+C0223,Farhan Sharma,M,51,Chennai,Tamil Nadu,1,Mass,3-6 L,2015-09-28,11.0,Phone,Hindi,farhan.sharma223@example.in,+91-9XXXXX7533,Verified
+C0224,Kavya Reddy,F,41,Vadodara,Gujarat,2,Mass,3-6 L,2015-08-11,11.1,Phone,English,kavya.reddy224@example.in,+91-9XXXXX6578,Verified
+C0225,Naveen Singh,M,40,Kochi,Kerala,2,Mass,3-6 L,2015-07-26,11.2,Mobile App,English,naveen.singh225@example.in,+91-9XXXXX2493,Verified
+C0226,Swati Iyer,F,23,Mumbai,Maharashtra,1,Mass,3-6 L,2019-11-19,6.9,Email,English,swati.iyer226@example.in,+91-9XXXXX5700,Verified
+C0227,Bhavna Chopra,F,22,Mumbai,Maharashtra,1,Mass,3-6 L,2020-06-19,6.3,Mobile App,English,bhavna.chopra227@example.in,+91-9XXXXX8978,Verified
+C0228,Gurpreet Sinha,M,44,Pune,Maharashtra,1,HNI,50 L+,2025-05-31,1.3,WhatsApp,English,gurpreet.sinha228@example.in,+91-9XXXXX3054,Verified
+C0229,Arjun Pandey,M,57,Delhi,Delhi,1,Mass,3-6 L,2018-01-28,8.7,Phone,English,arjun.pandey229@example.in,+91-9XXXXX5688,Verified
+C0230,Arjun Iyer,M,46,Ahmedabad,Gujarat,1,Mass Affluent,6-15 L,2017-12-14,8.8,Email,English,arjun.iyer230@example.in,+91-9XXXXX2528,Pending re-KYC
+C0231,Lakshmi Chopra,F,31,Bengaluru,Karnataka,1,HNI,50 L+,2025-03-15,1.6,Phone,Kannada,lakshmi.chopra231@example.in,+91-9XXXXX3834,Pending re-KYC
+C0232,Naveen Iyer,M,30,Bengaluru,Karnataka,1,Mass,3-6 L,2023-01-12,3.7,WhatsApp,English,naveen.iyer232@example.in,+91-9XXXXX6172,Verified
+C0233,Naveen Bansal,M,32,Hyderabad,Telangana,1,Mass Affluent,6-15 L,2014-05-17,12.4,Phone,English,naveen.bansal233@example.in,+91-9XXXXX1777,Verified
+C0234,Rahul Pillai,M,40,Ahmedabad,Gujarat,1,Mass,3-6 L,2022-05-19,4.4,Mobile App,English,rahul.pillai234@example.in,+91-9XXXXX4431,Verified
+C0235,Ritu Shah,F,34,Mumbai,Maharashtra,1,Mass,3-6 L,2020-08-07,6.2,WhatsApp,English,ritu.shah235@example.in,+91-9XXXXX5569,Pending re-KYC
+C0236,Nikhil Sinha,M,29,Pune,Maharashtra,1,Mass Affluent,6-15 L,2025-10-23,0.9,Phone,English,nikhil.sinha236@example.in,+91-9XXXXX3037,Verified
+C0237,Naveen Mishra,M,37,Lucknow,Uttar Pradesh,2,Mass,3-6 L,2018-06-18,8.3,Phone,English,naveen.mishra237@example.in,+91-9XXXXX2229,Verified
+C0238,Harini Singh,F,38,Bengaluru,Karnataka,1,Mass,3-6 L,2021-06-20,5.3,Mobile App,Hindi,harini.singh238@example.in,+91-9XXXXX5801,Verified
+C0239,Zoya Pillai,F,42,Bengaluru,Karnataka,1,HNI,50 L+,2015-07-18,11.2,Phone,English,zoya.pillai239@example.in,+91-9XXXXX6104,Pending re-KYC
+C0240,Kiran Kulkarni,F,42,Indore,Madhya Pradesh,2,Mass Affluent,6-15 L,2021-02-27,5.6,Phone,Hindi,kiran.kulkarni240@example.in,+91-9XXXXX1904,Verified
+C0241,Yash Deshpande,M,44,Kolkata,West Bengal,1,HNI,50 L+,2021-10-30,4.9,Mobile App,Bengali,yash.deshpande241@example.in,+91-9XXXXX6419,Verified
+C0242,Revathi Mishra,F,52,Chennai,Tamil Nadu,1,Mass,3-6 L,2022-06-01,4.3,Email,Tamil,revathi.mishra242@example.in,+91-9XXXXX3148,Verified
+C0243,Aarav Deshpande,M,27,Nagpur,Maharashtra,2,Mass,3-6 L,2024-02-22,2.6,Mobile App,English,aarav.deshpande243@example.in,+91-9XXXXX4032,Pending re-KYC
+C0244,Abhishek Agarwal,M,22,Mumbai,Maharashtra,1,Mass Affluent,6-15 L,2016-08-01,10.2,Phone,Marathi,abhishek.agarwal244@example.in,+91-9XXXXX2809,Pending re-KYC
+C0245,Mary Mishra,F,42,Mumbai,Maharashtra,1,Mass,3-6 L,2017-08-28,9.1,Email,Marathi,mary.mishra245@example.in,+91-9XXXXX9308,Verified
+C0246,Mary Pillai,F,35,Vadodara,Gujarat,2,Mass Affluent,6-15 L,2024-09-15,2.1,WhatsApp,Gujarati,mary.pillai246@example.in,+91-9XXXXX5919,Verified
+C0247,Neha Kulkarni,F,36,Kolkata,West Bengal,1,Mass Affluent,6-15 L,2008-08-01,18.2,Phone,English,neha.kulkarni247@example.in,+91-9XXXXX8081,Pending re-KYC
+C0248,Mary Shah,F,41,Delhi,Delhi,1,Mass,3-6 L,2026-06-14,0.3,Mobile App,Hindi,mary.shah248@example.in,+91-9XXXXX8334,Verified
+C0249,Fatima Iyer,F,47,Bengaluru,Karnataka,1,Mass Affluent,6-15 L,2022-11-01,3.9,WhatsApp,Kannada,fatima.iyer249@example.in,+91-9XXXXX8513,Verified
+C0250,Joseph Fernandes,M,59,Hyderabad,Telangana,1,SME Owner,15-50 L,2020-07-08,6.2,Phone,Telugu,joseph.fernandes250@example.in,+91-9XXXXX2074,Verified
+C0251,Siddharth Joshi,M,24,Chennai,Tamil Nadu,1,Mass,3-6 L,2019-03-23,7.5,Phone,Tamil,siddharth.joshi251@example.in,+91-9XXXXX5432,Pending re-KYC
+C0252,Tejas Gill,M,62,Mumbai,Maharashtra,1,Mass,3-6 L,2024-05-12,2.4,WhatsApp,English,tejas.gill252@example.in,+91-9XXXXX2835,Verified
+C0253,Nikhil Khan,M,53,Vadodara,Gujarat,2,Mass,3-6 L,2019-11-05,6.9,Phone,English,nikhil.khan253@example.in,+91-9XXXXX5650,Verified
+C0254,Bhavna Menon,F,56,Chennai,Tamil Nadu,1,Mass,3-6 L,2015-10-13,11.0,Phone,Tamil,bhavna.menon254@example.in,+91-9XXXXX2087,Verified
+C0255,Siddharth Verma,M,74,Hyderabad,Telangana,1,Mass Affluent,6-15 L,2025-03-11,1.6,Email,English,siddharth.verma255@example.in,+91-9XXXXX2868,Pending re-KYC
+C0256,Venkatesh Joshi,M,22,Mumbai,Maharashtra,1,Mass,3-6 L,2018-10-15,8.0,WhatsApp,Marathi,venkatesh.joshi256@example.in,+91-9XXXXX2517,Verified
+C0257,Fatima Agarwal,F,46,Coimbatore,Tamil Nadu,2,SME Owner,15-50 L,2020-12-23,5.8,Phone,Tamil,fatima.agarwal257@example.in,+91-9XXXXX5660,Verified
+C0258,Vikram Reddy,M,27,Chandigarh,Punjab,2,HNI,50 L+,2018-10-02,8.0,Phone,Hindi,vikram.reddy258@example.in,+91-9XXXXX2429,Verified
+C0259,Kunal Chatterjee,M,53,Chennai,Tamil Nadu,1,Mass Affluent,6-15 L,2022-02-12,4.6,Mobile App,English,kunal.chatterjee259@example.in,+91-9XXXXX2569,Verified
+C0260,Nikhil Bhat,M,29,Mumbai,Maharashtra,1,Mass Affluent,6-15 L,2015-08-11,11.1,Mobile App,English,nikhil.bhat260@example.in,+91-9XXXXX2261,Verified
+C0261,Sanjay Shetty,M,32,Hyderabad,Telangana,1,Mass Affluent,6-15 L,2019-02-26,7.6,Email,Hindi,sanjay.shetty261@example.in,+91-9XXXXX8462,Verified
+C0262,Shruti Verma,F,41,Hyderabad,Telangana,1,Mass,3-6 L,2023-04-13,3.5,Email,Hindi,shruti.verma262@example.in,+91-9XXXXX7857,Pending re-KYC
+C0263,Rohan Banerjee,M,22,Delhi,Delhi,1,Mass,3-6 L,2015-08-05,11.2,Phone,Hindi,rohan.banerjee263@example.in,+91-9XXXXX3827,Pending re-KYC
+C0264,Isha Jain,F,41,Bengaluru,Karnataka,1,HNI,50 L+,2015-11-13,10.9,Email,Kannada,isha.jain264@example.in,+91-9XXXXX1044,Pending re-KYC
+C0265,Neha Iyer,F,26,Jaipur,Rajasthan,2,Mass,3-6 L,2025-02-01,1.7,Mobile App,Hindi,neha.iyer265@example.in,+91-9XXXXX9267,Verified
+C0266,Kavya Kapoor,F,56,Jaipur,Rajasthan,2,Mass Affluent,6-15 L,2021-08-31,5.1,WhatsApp,Hindi,kavya.kapoor266@example.in,+91-9XXXXX8220,Verified
+C0267,Rajesh Bansal,M,32,Indore,Madhya Pradesh,2,Mass,3-6 L,2023-04-27,3.4,Branch,Hindi,rajesh.bansal267@example.in,+91-9XXXXX1622,Pending re-KYC
+C0268,Gayatri Qureshi,F,22,Indore,Madhya Pradesh,2,SME Owner,15-50 L,2018-07-19,8.2,Email,Hindi,gayatri.qureshi268@example.in,+91-9XXXXX3722,Pending re-KYC
+C0269,Simran Kapoor,F,52,Delhi,Delhi,1,Mass,3-6 L,2021-08-05,5.2,WhatsApp,English,simran.kapoor269@example.in,+91-9XXXXX9243,Pending re-KYC
+C0270,Imran Mehta,M,49,Bengaluru,Karnataka,1,Mass,3-6 L,2023-01-24,3.7,WhatsApp,English,imran.mehta270@example.in,+91-9XXXXX7846,Verified
+C0271,Sanjay Thakur,M,31,Nagpur,Maharashtra,2,Mass,3-6 L,2018-04-18,8.5,Email,Marathi,sanjay.thakur271@example.in,+91-9XXXXX6691,Pending re-KYC
+C0272,Rahul Banerjee,M,56,Pune,Maharashtra,1,Mass,3-6 L,2018-06-29,8.3,Email,Marathi,rahul.banerjee272@example.in,+91-9XXXXX5875,Verified
+C0273,Vivaan Pandey,M,53,Chandigarh,Punjab,2,Mass,3-6 L,2015-03-19,11.5,WhatsApp,Hindi,vivaan.pandey273@example.in,+91-9XXXXX1511,Verified
+C0274,Ananya Hegde,F,23,Mumbai,Maharashtra,1,HNI,50 L+,2019-08-05,7.2,Phone,Marathi,ananya.hegde274@example.in,+91-9XXXXX2485,Verified
+C0275,Ravi Shetty,M,43,Mumbai,Maharashtra,1,Mass,3-6 L,2019-06-16,7.3,Phone,English,ravi.shetty275@example.in,+91-9XXXXX1492,Verified
+C0276,Ritu Joshi,F,61,Kolkata,West Bengal,1,Mass,3-6 L,2018-02-07,8.7,Email,English,ritu.joshi276@example.in,+91-9XXXXX4069,Verified
+C0277,Aditi Pandey,F,49,Bengaluru,Karnataka,1,Mass,3-6 L,2021-12-12,4.8,Phone,Kannada,aditi.pandey277@example.in,+91-9XXXXX2563,Pending re-KYC
+C0278,Sneha Agarwal,F,39,Pune,Maharashtra,1,Mass,3-6 L,2017-07-21,9.2,Phone,English,sneha.agarwal278@example.in,+91-9XXXXX6830,Verified
+C0279,Harini Qureshi,F,45,Jaipur,Rajasthan,2,SME Owner,15-50 L,2019-08-12,7.1,Phone,Hindi,harini.qureshi279@example.in,+91-9XXXXX2903,Verified
+C0280,Venkatesh Mehta,M,62,Bengaluru,Karnataka,1,Mass Affluent,6-15 L,2025-05-30,1.3,Phone,Kannada,venkatesh.mehta280@example.in,+91-9XXXXX1674,Verified
+C0281,Abhishek Khan,M,43,Lucknow,Uttar Pradesh,2,Mass Affluent,6-15 L,2021-04-21,5.5,WhatsApp,English,abhishek.khan281@example.in,+91-9XXXXX2753,Verified
+C0282,Imran Khan,M,47,Mumbai,Maharashtra,1,Mass,3-6 L,2020-01-21,6.7,Mobile App,English,imran.khan282@example.in,+91-9XXXXX3898,Pending re-KYC
+C0283,Venkatesh Mishra,M,41,Hyderabad,Telangana,1,Mass,3-6 L,2025-04-03,1.5,WhatsApp,Telugu,venkatesh.mishra283@example.in,+91-9XXXXX5976,Verified
+C0284,Shruti Saxena,F,48,Mumbai,Maharashtra,1,Mass,3-6 L,2025-09-21,1.0,WhatsApp,Marathi,shruti.saxena284@example.in,+91-9XXXXX8560,Verified
+C0285,Deepak Das,M,39,Pune,Maharashtra,1,Mass Affluent,6-15 L,2018-08-05,8.2,Mobile App,English,deepak.das285@example.in,+91-9XXXXX6774,Verified
+C0286,Farhan Gupta,M,46,Delhi,Delhi,1,Mass,3-6 L,2021-04-14,5.5,Email,Hindi,farhan.gupta286@example.in,+91-9XXXXX1273,Verified
+C0287,Rahul Mishra,M,26,Mumbai,Maharashtra,1,Mass,3-6 L,2017-04-14,9.5,WhatsApp,English,rahul.mishra287@example.in,+91-9XXXXX8755,Verified
+C0288,Venkatesh Malhotra,M,47,Coimbatore,Tamil Nadu,2,Mass,3-6 L,2019-03-05,7.6,Branch,Tamil,venkatesh.malhotra288@example.in,+91-9XXXXX8252,Pending re-KYC
+C0289,Venkatesh Deshpande,M,28,Hyderabad,Telangana,1,Mass,3-6 L,2016-06-16,10.3,WhatsApp,Telugu,venkatesh.deshpande289@example.in,+91-9XXXXX8176,Verified
+C0290,Harini Thakur,F,53,Hyderabad,Telangana,1,HNI,50 L+,2021-10-31,4.9,Phone,Telugu,harini.thakur290@example.in,+91-9XXXXX1719,Verified
+C0291,Manish Saxena,M,28,Bengaluru,Karnataka,1,Mass Affluent,6-15 L,2021-01-11,5.7,Phone,Kannada,manish.saxena291@example.in,+91-9XXXXX8395,Verified
+C0292,Swati Sharma,F,39,Lucknow,Uttar Pradesh,2,Mass Affluent,6-15 L,2023-11-17,2.9,WhatsApp,Hindi,swati.sharma292@example.in,+91-9XXXXX1348,Verified
+C0293,Lakshmi Das,F,55,Chennai,Tamil Nadu,1,Mass Affluent,6-15 L,2024-05-29,2.3,WhatsApp,Hindi,lakshmi.das293@example.in,+91-9XXXXX6276,Verified
+C0294,Meera Pandey,F,34,Mumbai,Maharashtra,1,Mass,3-6 L,2020-05-28,6.4,Mobile App,Hindi,meera.pandey294@example.in,+91-9XXXXX5564,Verified
+C0295,Mary Jain,F,46,Delhi,Delhi,1,HNI,50 L+,2019-04-26,7.4,WhatsApp,English,mary.jain295@example.in,+91-9XXXXX2284,Verified
+C0296,Anil Qureshi,M,33,Ahmedabad,Gujarat,1,SME Owner,15-50 L,2017-08-28,9.1,Phone,English,anil.qureshi296@example.in,+91-9XXXXX5747,Pending re-KYC
+C0297,Amit Naidu,M,38,Chandigarh,Punjab,2,SME Owner,15-50 L,2024-08-29,2.1,WhatsApp,Hindi,amit.naidu297@example.in,+91-9XXXXX5845,Verified
+C0298,Amit Rao,M,49,Delhi,Delhi,1,Mass Affluent,6-15 L,2025-06-03,1.3,Phone,English,amit.rao298@example.in,+91-9XXXXX4175,Verified
+C0299,Imran Fernandes,M,32,Indore,Madhya Pradesh,2,SME Owner,15-50 L,2025-07-07,1.2,WhatsApp,Hindi,imran.fernandes299@example.in,+91-9XXXXX9910,Verified
+C0300,Yash Kulkarni,M,30,Mumbai,Maharashtra,1,Mass Affluent,6-15 L,2019-11-24,6.9,Email,Marathi,yash.kulkarni300@example.in,+91-9XXXXX7293,Pending re-KYC
