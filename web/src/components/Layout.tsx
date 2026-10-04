@@ -15,6 +15,7 @@ export default function Layout() {
   const { store, error } = useStore()
   const [open, setOpen] = useState(false)
   const loc = useLocation()
+  useEffect(() => { window.scrollTo({ top: 0 }) }, [loc.pathname])
   useEffect(() => {
     const h = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); setOpen((o) => !o) }
