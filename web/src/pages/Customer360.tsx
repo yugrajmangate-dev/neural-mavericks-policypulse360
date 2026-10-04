@@ -79,10 +79,11 @@ export default function Customer360() {
   ]
 
   return (
-    <div className="space-y-5">
+    <div className="grid grid-cols-12 gap-5">
+     <div className="col-span-12 space-y-5 xl:col-span-9">
       <div className="grid grid-cols-12 gap-5">
         {/* Left: profile + risk */}
-        <div className="col-span-12 space-y-5 lg:col-span-3">
+        <div className="col-span-12 space-y-5 lg:col-span-4">
           <Card className="p-5">
             <div className="flex items-start gap-3">
               <div className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl text-lg font-extrabold text-ink-950" style={{ background: `linear-gradient(135deg, ${bandColor(n.RISK_BAND)}, #38d9f5)` }}>
@@ -113,7 +114,7 @@ export default function Customer360() {
         </div>
 
         {/* Center: orbit */}
-        <Card className="relative col-span-12 h-[560px] overflow-hidden lg:col-span-6" delay={0.08}>
+        <Card className="relative col-span-12 h-[600px] overflow-hidden lg:col-span-8" delay={0.08}>
           <div className="absolute left-5 top-4 z-10">
             <div className="label">360 Orbit</div>
             <div className="text-xs text-slate-500">Drag to rotate · hover a node · click for detail</div>
@@ -134,22 +135,25 @@ export default function Customer360() {
           </AnimatePresence>
         </Card>
 
-        {/* Right: NBA */}
-        <div className="col-span-12 lg:col-span-3">
-          <NBAPanel key={id} n={n} onOpen={(tid) => setTranscript(store!.insightById.get(tid) ?? null)} />
-        </div>
       </div>
 
       <div className="grid grid-cols-12 gap-5">
-        <Card className="col-span-12 p-5 lg:col-span-4" delay={0.1}>
+        <Card className="col-span-12 p-5 lg:col-span-5" delay={0.1}>
           <div className="label">Sentiment trend</div>
           <div className="mt-1 text-xs text-slate-500">Cortex SENTIMENT on customer turns, per call</div>
           <SentimentSpark calls={calls} />
         </Card>
-        <Card className="col-span-12 p-5 lg:col-span-8" delay={0.12}>
+        <Card className="col-span-12 p-5 lg:col-span-7" delay={0.12}>
           <div className="flex items-center justify-between"><div className="label">Interaction timeline</div><div className="text-xs text-slate-500">AI summaries · intent classification</div></div>
           <Timeline calls={calls} onOpen={setTranscript} />
         </Card>
+      </div>
+     </div>
+      {/* Right: NBA */}
+      <div className="col-span-12 xl:col-span-3">
+        <div className="xl:sticky xl:top-[84px]">
+          <NBAPanel key={id} n={n} onOpen={(tid) => setTranscript(store!.insightById.get(tid) ?? null)} />
+        </div>
       </div>
       <AnimatePresence>{transcript && <TranscriptModal t={transcript} onClose={() => setTranscript(null)} />}</AnimatePresence>
     </div>

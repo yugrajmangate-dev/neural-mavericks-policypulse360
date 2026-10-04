@@ -7,7 +7,7 @@ export function CountUp({ value, format = (n) => Math.round(n).toLocaleString('e
   const mv = useMotionValue(0)
   const [txt, setTxt] = useState(format(0))
   useEffect(() => {
-    const c = animate(mv, value, { duration, ease: [0.16, 1, 0.3, 1] })
+    const c = animate(mv, value, { duration, ease: [0.16, 1, 0.3, 1], onComplete: () => setTxt(format(value)) })
     const u = mv.on('change', (v) => setTxt(format(v)))
     return () => { c.stop(); u() }
   }, [value])
@@ -57,7 +57,7 @@ export function SourceBadge({ source }: { source?: string }) {
   return (
     <span className={`chip font-mono ${live ? 'border-cyan-400/40 bg-cyan-400/10 text-cyan-300' : 'border-amber-400/40 bg-amber-400/10 text-amber-300'}`} title="Data source tag from the export">
       <span className={`h-1.5 w-1.5 rounded-full ${live ? 'bg-cyan-300' : 'bg-amber-300'}`} />
-      source: {source ?? 'unknown'}
+      source: {source ?? 'loading…'}
     </span>
   )
 }

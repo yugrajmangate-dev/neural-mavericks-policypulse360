@@ -37,19 +37,19 @@ function Core({ color }: { color: string }) {
   return (
     <group>
       <mesh ref={ref}>
-        <icosahedronGeometry args={[0.85, 3]} />
+        <icosahedronGeometry args={[0.6, 3]} />
         <meshStandardMaterial color={color} emissive={color} emissiveIntensity={0.9} roughness={0.3} metalness={0.2} />
       </mesh>
       <mesh>
-        <icosahedronGeometry args={[0.9, 1]} />
+        <icosahedronGeometry args={[0.64, 1]} />
         <meshBasicMaterial color="#ffffff" wireframe transparent opacity={0.12} />
       </mesh>
       <mesh ref={halo}>
-        <sphereGeometry args={[1.25, 24, 24]} />
+        <sphereGeometry args={[0.85, 24, 24]} />
         <meshBasicMaterial color={color} transparent opacity={0.12} depthWrite={false} />
       </mesh>
       <mesh>
-        <sphereGeometry args={[1.7, 24, 24]} />
+        <sphereGeometry args={[1.15, 24, 24]} />
         <meshBasicMaterial color={color} transparent opacity={0.05} depthWrite={false} />
       </mesh>
     </group>
@@ -62,7 +62,7 @@ function Node({ node, idx, active, onHover, onSelect }: {
 }) {
   const ring = RINGS[idx % RINGS.length]
   const color = healthColor(node.health)
-  const size = 0.22 + Math.min(node.count, 30) * 0.012
+  const size = 0.18 + Math.min(node.count, 30) * 0.01
   const pts = useMemo(() => ringPoints(ring.r), [ring.r])
   const pos = useMemo(() => new THREE.Vector3(Math.cos(ring.phase) * ring.r, 0, Math.sin(ring.phase) * ring.r), [ring])
   const sats = useRef<THREE.Group>(null)
@@ -92,7 +92,7 @@ function Node({ node, idx, active, onHover, onSelect }: {
           </mesh>
           <mesh>
             <sphereGeometry args={[size * 1.8, 16, 16]} />
-            <meshBasicMaterial color={color} transparent opacity={hover || active ? 0.18 : 0.08} depthWrite={false} />
+            <meshBasicMaterial color={color} transparent opacity={hover || active ? 0.16 : 0.06} depthWrite={false} />
           </mesh>
           <group ref={sats}>
             {Array.from({ length: nSats }).map((_, i) => {
@@ -106,14 +106,14 @@ function Node({ node, idx, active, onHover, onSelect }: {
               )
             })}
           </group>
-          <Html center distanceFactor={9} position={[0, size + 0.45, 0]} style={{ pointerEvents: 'none' }}>
+          <Html zIndexRange={[15, 0]} center distanceFactor={7} position={[0, size + 0.45, 0]} style={{ pointerEvents: 'none' }}>
             <div className="whitespace-nowrap text-center">
               <div className="text-[13px] font-bold text-white drop-shadow">{node.label}</div>
               <div className="text-[11px] font-semibold" style={{ color }}>{node.count}</div>
             </div>
           </Html>
           {hover && (
-            <Html distanceFactor={9} position={[size + 0.3, 0, 0]} style={{ pointerEvents: 'none' }}>
+            <Html zIndexRange={[15, 0]} distanceFactor={7} position={[size + 0.3, 0, 0]} style={{ pointerEvents: 'none' }}>
               <div className="w-56 rounded-xl border border-white/10 bg-ink-900/95 p-3 text-left shadow-2xl backdrop-blur">
                 <div className="flex items-center gap-2 text-[13px] font-bold text-white"><span className="h-2 w-2 rounded-full" style={{ background: color }} />{node.label}</div>
                 <div className="mt-1 text-[12px] text-slate-200">{node.headline}</div>
@@ -133,12 +133,12 @@ export default function Orbit360({ nodes, coreColor, active, onSelect, name }: {
 }) {
   const [hovered, setHovered] = useState<string | null>(null)
   return (
-    <Canvas camera={{ position: [0, 3.2, 8.6], fov: 45 }} dpr={[1, 1.75]} gl={{ antialias: true, powerPreference: 'high-performance' }}>
+    <Canvas camera={{ position: [0, 3.6, 10.5], fov: 45 }} dpr={[1, 1.75]} gl={{ antialias: true, powerPreference: 'high-performance' }}>
       <ambientLight intensity={0.35} />
       <pointLight position={[0, 0, 0]} intensity={30} color={coreColor} distance={12} />
       <pointLight position={[6, 6, 6]} intensity={40} color="#7deaff" />
       <Core color={coreColor} />
-      <Html center position={[0, -1.25, 0]} distanceFactor={9} style={{ pointerEvents: 'none' }}>
+      <Html zIndexRange={[15, 0]} center position={[0, -0.95, 0]} distanceFactor={7} style={{ pointerEvents: 'none' }}>
         <div className="whitespace-nowrap rounded-full border border-white/10 bg-ink-900/70 px-3 py-1 text-[13px] font-bold text-white backdrop-blur">{name}</div>
       </Html>
       {nodes.map((n, i) => (

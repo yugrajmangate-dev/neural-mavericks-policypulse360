@@ -26,7 +26,7 @@ export default function Portfolio() {
 
   return (
     <div className="space-y-5">
-      <div className="grid grid-cols-2 gap-5 xl:grid-cols-4">
+      <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
         {kpis.map((k, i) => (
           <Card key={k.label} className="relative overflow-hidden p-5" delay={i * 0.06}>
             <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full blur-3xl" style={{ background: k.accent + '30' }} />

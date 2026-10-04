@@ -6,6 +6,7 @@ Team **Neural Mavericks** · Snowflake CoCo CLI Hackathon (GCC Edition) · Chall
 | | |
 |---|---|
 | 🚀 **Live app** (no login) | `<STREAMLIT_APP_URL>` |
+| 🌐 **Command Center (React)** | [yugrajmangate-dev.github.io/neural-mavericks-policypulse360](https://yugrajmangate-dev.github.io/neural-mavericks-policypulse360/) |
 | 🎬 **Demo video** | `<VIDEO_URL>` |
 | 📑 **Deck (PDF, official template)** | [`submission/PolicyPulse360_NeuralMavericks_Template.pdf`](submission/PolicyPulse360_NeuralMavericks_Template.pdf) |
 | 📝 **Brief** | [`submission/brief.txt`](submission/brief.txt) |
