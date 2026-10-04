@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body, #root { height: 100%; }
+body {
+  @apply bg-ink-950 text-slate-200 font-sans antialiased;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(56,217,245,0.10), transparent 60%),
+    linear-gradient(rgba(148,163,184,0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148,163,184,0.045) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  background-attachment: fixed;
+}
+.glass {
+  @apply rounded-2xl border border-white/[0.07] bg-ink-800/60 backdrop-blur-xl;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 20px 40px -24px rgba(0,0,0,0.7);
+}
+.label { @apply text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-400; }
+.chip { @apply inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium; }
+.skeleton { @apply animate-pulse rounded-lg bg-white/[0.06]; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(148,163,184,0.18); border-radius: 8px; }
+.tnum { font-variant-numeric: tabular-nums; }

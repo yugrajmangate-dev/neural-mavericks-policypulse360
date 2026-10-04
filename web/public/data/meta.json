@@ -1,0 +1,1 @@
+{"source":"local-sim","as_of":"2026-10-04","generated_at":"2026-10-04T21:07:19","note":"Offline simulation of the Cortex pipeline. Re-export from Snowflake with scripts/export_demo_data.py for real Cortex outputs."}
