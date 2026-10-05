@@ -25,7 +25,7 @@ Built under a ~3-hour hackathon deadline. Every non-obvious call is logged here.
 |---|---|
 | S1 | **Sentiment** uses `SNOWFLAKE.CORTEX.SENTIMENT` (numeric −1…1) on the *customer's* lines only, because agent scripts are uniformly polite. Labels: ≤ −0.25 negative, ≥ 0.25 positive. |
 | S2 | **Intent** uses `AI_CLASSIFY` with label descriptions and a task description. `interaction_intel_fallback.sql` swaps to `CLASSIFY_TEXT` + `SUMMARIZE` for regions without AI_* functions. |
-| S3 | **Models**: `llama3.1-70b` for summaries (cheap, widely available) and `mistral-large2` for NBA. If either is unavailable in the region, enable cross-region inference or swap models (documented in each SKILL.md). |
+| S3 | **Models**: `llama3.1-70b` for summaries (cheap, widely available) and `openai-gpt-4.1` for NBA. If either is unavailable in the region, enable cross-region inference or swap models (documented in each SKILL.md). |
 | S4 | **NBA cost cap**: the LLM runs only for High/Medium-risk or upsell-signal customers, max 150. Everyone else gets the deterministic rule-engine action. That baseline is also the fallback when the LLM JSON doesn't parse. |
 | S5 | Risk weights are **hand-set, transparent rules** (documented in `churn_risk.sql` and the skill), as the brief asked: explainable, not black-box. They are not trained on real lapse outcomes. Calibrating them is a listed next step. |
 | S6 | Cortex Search is **optional** (`transcript_search.sql`) because it has an always-on serving cost. Drop it after the demo. |
@@ -44,3 +44,13 @@ Built under a ~3-hour hackathon deadline. Every non-obvious call is logged here.
 |---|---|
 | M1 | Impact numbers are split into **measured** (on the synthetic data: 26% flagged High, 87% recall / 83% precision vs the hidden archetype, ₹37.0 L premium at risk) and **projected** (20 min → 30 s prep time; 20% save rate). Projections are labelled as such. |
 | M2 | The architecture PNG and PDF deck are rendered locally with matplotlib (`scripts/render_architecture.py`, `scripts/build_deck.py`). `architecture.mmd` holds the same diagram in Mermaid. |
+
+## Live Snowflake run (2026-10-05)
+| # | Finding / decision |
+|---|---|
+| R1 | Standard trial accounts block **all** Cortex AI functions and Cortex Code ("not available for trial accounts"). The pipeline runs on the **hackathon-credit account** (AWS us-west-2), using a programmatic-access-token connection. Browser SSO needs SAML, which new accounts don't have. |
+| R2 | `mistral-large2` isn't available on that account. NBA uses **`openai-gpt-4.1`** (≈3.5 s per call, runs in parallel, better messages than llama3.3-70b in a side-by-side test). Summaries stay on `llama3.1-70b`. |
+| R3 | The NBA LLM step is **incremental**: each run adds the next 50 highest-risk eligible customers. Three runs covered all 150 eligible customers; the other 150 low-risk customers get the rule-engine action. |
+| R4 | Fixes found on first real run: `ASOF` is a reserved word (CTE renamed), `QUALIFY` must not precede `GROUP BY` (moved into a subquery), and the semantic-view synonym `'NBA'` collided with the table alias. |
+| R5 | AI_CLASSIFY scored **100%** against the synthetic labels. The transcripts are template-generated, so real calls will score lower. |
+| R6 | GPT-4.1 sometimes writes the customer message in the customer's preferred language (e.g. Hindi for C0004), because the prompt includes it. Treat that as intended personalisation. |

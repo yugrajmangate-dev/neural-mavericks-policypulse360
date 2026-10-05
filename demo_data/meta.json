@@ -1,6 +1,7 @@
 {
-  "source": "local-sim",
+  "source": "snowflake-cortex",
   "as_of": "2026-10-04",
-  "generated_at": "2026-10-04T21:07:19",
-  "note": "Offline simulation of the Cortex pipeline. Re-export from Snowflake with scripts/export_demo_data.py for real Cortex outputs."
+  "generated_at": "2026-10-06T00:12:51",
+  "intent_accuracy_pct": 100.0,
+  "note": "Exported from POLICYPULSE (Cortex SENTIMENT + AI_CLASSIFY + AI_COMPLETE)."
 }

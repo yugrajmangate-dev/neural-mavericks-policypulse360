@@ -103,7 +103,7 @@ Portfolio **Action uptake** tile updates. The static site has no Snowflake conne
 *Demo · saved in this browser*.
 
 ## Backup prompts (if something fails live)
-- Model not available: `Use the fallback SQL for interaction-intel and swap mistral-large2 for llama3.1-70b in next-best-action.`
+- Model not available: `Use the fallback SQL for interaction-intel and swap openai-gpt-4.1 for llama3.1-70b in next-best-action.`
 - Missing objects: `Check which POLICYPULSE objects exist and run whichever skills are missing, in chain order.`
 - Agent unavailable (orchestration model not in region): `Use the ask-policypulse fallback: query APP.CUSTOMER_360_SV with SEMANTIC_VIEW() and pull evidence with SEARCH_PREVIEW.`
 - After recording: `python scripts/run_upgrades.py --teardown` drops the agent and the search service (stops serving cost).

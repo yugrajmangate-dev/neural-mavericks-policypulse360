@@ -28,8 +28,8 @@ description: Score explainable churn risk for every insurance customer from the 
    Bands: **High ≥ 55**, **Medium 30–54**, **Low < 30**.
 2. **`APP.NBA_CONTEXT`** has a rule-engine baseline action for every customer, plus a grounded prompt
    (360 JSON + risk drivers + last 4 call summaries with transcript IDs).
-3. **`APP.NBA_LLM`** runs `AI_COMPLETE('mistral-large2')` for High and Medium risk customers and anyone with upsell signals.
-   It's capped at 150 customers for cost.
+3. **`APP.NBA_LLM`** runs `AI_COMPLETE('openai-gpt-4.1')` for High and Medium risk customers and anyone with upsell signals.
+   Incremental: each run adds the next 50 highest-risk customers (re-run to extend coverage).
 4. **`APP.NEXT_BEST_ACTIONS`** is the serving table: ACTION_CATEGORY, ACTION, REASON, EVIDENCE (transcript IDs),
    CUSTOMER_MESSAGE, CHANNEL, PREMIUM_AT_RISK and GENERATED_BY. It uses the LLM output when the JSON is valid and the rule baseline otherwise.
 
@@ -37,7 +37,7 @@ description: Score explainable churn risk for every insurance customer from the 
 1. Check that `CURATED.CUSTOMER_360` and `CURATED.INTERACTION_INSIGHTS` exist and the latter has rows.
    If not, run `$c360-unify` and/or `$interaction-intel` first, and tell the user you're chaining them.
 2. Execute `.cortex/skills/next-best-action/churn_risk.sql`, then `next_best_action.sql`, on `POLICYPULSE_WH`.
-   - If `mistral-large2` is unavailable, replace it with `llama3.1-70b` in both files and re-run.
+   - If `openai-gpt-4.1` is unavailable, replace it with `llama3.1-70b` in both files and re-run.
 3. Report three things: customers per risk band, ₹ premium at risk (sum of TOTAL_ANNUAL_PREMIUM where RISK_BAND = 'High'),
    and the top 5 at-risk customers with their ACTION and REASON.
 4. **Single customer** ("what should I do for C0042?"): run `SET CID = '<id>';`, then

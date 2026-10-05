@@ -53,7 +53,7 @@ export function IntentChip({ intent }: { intent: string }) {
 }
 
 export function SourceBadge({ source }: { source?: string }) {
-  const live = source === 'cortex'
+  const live = !!source && source.includes('cortex')
   return (
     <span className={`chip font-mono ${live ? 'border-cyan-400/40 bg-cyan-400/10 text-cyan-300' : 'border-amber-400/40 bg-amber-400/10 text-amber-300'}`} title="Data source tag from the export">
       <span className={`h-1.5 w-1.5 rounded-full ${live ? 'bg-cyan-300' : 'bg-amber-300'}`} />

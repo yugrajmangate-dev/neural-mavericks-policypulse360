@@ -18,8 +18,8 @@ WITH recent AS (
       'transcript_id', TRANSCRIPT_ID, 'date', TO_VARCHAR(CALL_TS::DATE), 'intent', PRIMARY_INTENT,
       'sentiment', ROUND(SENTIMENT_SCORE, 2), 'summary', SUMMARY))
       WITHIN GROUP (ORDER BY CALL_TS DESC) AS RECENT_CALLS
-  FROM CURATED.INTERACTION_INSIGHTS
-  QUALIFY ROW_NUMBER() OVER (PARTITION BY CUSTOMER_ID ORDER BY CALL_TS DESC) <= 4
+  FROM (SELECT * FROM CURATED.INTERACTION_INSIGHTS
+        QUALIFY ROW_NUMBER() OVER (PARTITION BY CUSTOMER_ID ORDER BY CALL_TS DESC) <= 4)
   GROUP BY CUSTOMER_ID
 ),
 ev AS (   -- evidence transcript IDs per signal, newest first
@@ -122,15 +122,22 @@ SELECT r.*,
   AS PROMPT
 FROM rules r;
 
--- (b) grounded LLM recommendations (cost-capped) ----------------------------------------
-CREATE OR REPLACE TABLE APP.NBA_LLM AS
-SELECT CUSTOMER_ID,
-       AI_COMPLETE('mistral-large2', PROMPT) AS RAW_RESPONSE,
-       'AI_COMPLETE(mistral-large2)'          AS MODEL,
-       CURRENT_TIMESTAMP()::TIMESTAMP_NTZ     AS GENERATED_AT
-FROM APP.NBA_CONTEXT
-WHERE LLM_ELIGIBLE
-QUALIFY ROW_NUMBER() OVER (ORDER BY RISK_SCORE DESC) <= 150;
+-- (b) grounded LLM recommendations (cost-capped, incremental) -----------------------------
+-- Each run adds the next 50 highest-risk eligible customers that have no LLM output yet
+-- (~3.5 s per call with openai-gpt-4.1). Re-run to extend coverage;
+-- everyone else keeps the rule-engine action. Full refresh: TRUNCATE TABLE APP.NBA_LLM;
+CREATE TABLE IF NOT EXISTS APP.NBA_LLM (
+  CUSTOMER_ID VARCHAR, RAW_RESPONSE VARCHAR, MODEL VARCHAR, GENERATED_AT TIMESTAMP_NTZ
+);
+INSERT INTO APP.NBA_LLM
+SELECT x.CUSTOMER_ID,
+       AI_COMPLETE('openai-gpt-4.1', x.PROMPT),
+       'AI_COMPLETE(openai-gpt-4.1)',
+       CURRENT_TIMESTAMP()::TIMESTAMP_NTZ
+FROM APP.NBA_CONTEXT x
+WHERE x.LLM_ELIGIBLE
+  AND NOT EXISTS (SELECT 1 FROM APP.NBA_LLM l WHERE l.CUSTOMER_ID = x.CUSTOMER_ID)
+QUALIFY ROW_NUMBER() OVER (ORDER BY x.RISK_SCORE DESC) <= 50;
 
 -- (c) final serving table ----------------------------------------------------------------
 CREATE OR REPLACE TABLE APP.NEXT_BEST_ACTIONS AS

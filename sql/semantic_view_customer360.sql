@@ -27,7 +27,7 @@ CREATE OR REPLACE SEMANTIC VIEW POLICYPULSE.APP.CUSTOMER_360_SV
       COMMENT = 'One row per insurance customer: profile, policies, claims, payments and call signals',
     nba AS POLICYPULSE.APP.NEXT_BEST_ACTIONS
       PRIMARY KEY (CUSTOMER_ID)
-      WITH SYNONYMS = ('churn risk', 'next best action', 'retention recommendations', 'NBA')
+      WITH SYNONYMS = ('churn risk', 'next best action', 'retention recommendations')
       COMMENT = 'Explainable churn risk score (0-100) and the recommended next best action per customer',
     ins AS POLICYPULSE.CURATED.INTERACTION_INSIGHTS
       PRIMARY KEY (TRANSCRIPT_ID)

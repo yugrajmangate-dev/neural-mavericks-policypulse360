@@ -84,7 +84,7 @@ def meta(live: bool) -> dict:
 # --------------------------------------------------------------------- live-only Cortex calls
 def regenerate_nba(customer_id: str) -> dict | None:
     """LIVE: run AI_COMPLETE on the grounded prompt for one customer (Skill 3 single-customer mode)."""
-    q = """SELECT TRY_PARSE_JSON(REGEXP_SUBSTR(AI_COMPLETE('mistral-large2', PROMPT), '\\\\{.*\\\\}', 1, 1, 's')) AS J
+    q = """SELECT TRY_PARSE_JSON(REGEXP_SUBSTR(AI_COMPLETE('openai-gpt-4.1', PROMPT), '\\\\{.*\\\\}', 1, 1, 's')) AS J
            FROM POLICYPULSE.APP.NBA_CONTEXT WHERE CUSTOMER_ID = %s"""
     df = sql(q, (customer_id,))
     if df.empty or df.iloc[0, 0] is None:
@@ -93,5 +93,5 @@ def regenerate_nba(customer_id: str) -> dict | None:
     return json.loads(j) if isinstance(j, str) else j
 
 
-def cortex_complete(prompt: str, model: str = "mistral-large2") -> str:
+def cortex_complete(prompt: str, model: str = "openai-gpt-4.1") -> str:
     return sql("SELECT AI_COMPLETE(%s, %s) AS R", (model, prompt)).iloc[0, 0]
