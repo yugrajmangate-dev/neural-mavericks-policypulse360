@@ -26,6 +26,8 @@ FONT, FONT_SB = "Manrope", "Manrope SemiBold"
 INK = RGBColor(0x20, 0x27, 0x29)
 ACCENT = RGBColor(0x1C, 0x5C, 0xAB)
 REPO = "https://github.com/yugrajmangate-dev/neural-mavericks-policypulse360"
+REACT_URL = "https://yugrajmangate-dev.github.io/neural-mavericks-policypulse360/"
+STREAMLIT_URL = "https://neural-mavericks-policypulse360.streamlit.app/"
 MIN_PT = 14
 CONTENT_TOP, CONTENT_BOTTOM = 0.62, 5.42          # white band between header and footer banners (inches)
 LEFT, WIDTH = 0.36, 9.28
@@ -181,12 +183,12 @@ def main(template: str):
     # 4 · Impact
     add_box(s4, LEFT, CONTENT_TOP, WIDTH, CONTENT_BOTTOM - CONTENT_TOP, [
         title("3. Impact Statement"),
-        B("Measured on synthetic data: ", "78 of 300 customers (26%) flagged High risk, catching 87% of truly at-risk "
-          "customers (65/75) at 83% precision."),
-        B("Measured on synthetic data: ", "₹37.0 L of ₹1.45 Cr annual premium (25%) sits in the High-risk band; "
-          "43 High-risk renewals are due within 30 days."),
+        B("Measured on synthetic data (real Cortex run): ", "67 of 300 customers (22%) flagged High risk, catching 81% "
+          "of truly at-risk customers at 91% precision."),
+        B("Measured on synthetic data: ", "₹32.9 L of ₹1.45 Cr annual premium (23%) sits in the High-risk band; "
+          "41 High-risk renewals are due within 30 days."),
         B("Projected: ", "agent prep time ~20 min → under 30 s per customer (4 systems + recordings → one 360 card)."),
-        B("Projected: ", "saving 20% of High-risk premium = ₹7.4 L per 300 customers, about ₹247 Cr per 1M customers."),
+        B("Projected: ", "saving 20% of High-risk premium = ₹6.6 L per 300 customers, about ₹219 Cr per 1M customers."),
         B("Scalability: ", "incremental Cortex enrichment and an LLM capped to high-value customers, so cost tracks new "
           "calls, not book size. Runs on an XS warehouse with auto-suspend."),
         B("Beyond the demo: ", "portable skills on real RAW tables; next up are AI_TRANSCRIBE for call audio, dynamic "
@@ -194,7 +196,7 @@ def main(template: str):
     ], 16, "s4 impact")
 
     # 5 · Additional slide: walkthrough; reuse the template's 'Additional Slide' box (bottom) for links
-    links_top = 4.62
+    links_top = 3.8
     add_box(s5, LEFT, CONTENT_TOP, WIDTH, links_top - CONTENT_TOP, [
         title("Additional Slide: Solution Walkthrough"),
         B("Customer 360 + NBA: ", "explainable risk gauge and drivers, next best action with cited call IDs, a "
@@ -203,20 +205,20 @@ def main(template: str):
           "pipeline, and a ranked call list."),
         B("Ask PolicyPulse: ", "plain-English questions answered with Cortex AI_COMPLETE text-to-SQL "
           "(read-only). How it works: architecture + skills."),
-        B("Cortex used: ", "CORTEX.SENTIMENT · AI_CLASSIFY · AI_COMPLETE · Cortex Search · "
-          "CLASSIFY_TEXT / SUMMARIZE fallback."),
+        B("Cortex used: ", "SENTIMENT · AI_CLASSIFY · AI_COMPLETE (GPT-4.1 writes the next best action) · "
+          "Cortex Search · PolicyPulse Copilot agent with cited answers ($ask-policypulse)."),
     ], 15, "s5 walkthrough")
     lbox = next(sh for sh in s5.shapes if sh.has_text_frame and sh.text_frame.text.strip() == "Additional Slide")
     lbox.left, lbox.top, lbox.width = Inches(LEFT), Inches(links_top), Inches(WIDTH)
     lbox.height = Inches(CONTENT_BOTTOM - links_top)
     write_box(lbox.text_frame, [
         {"lead": "GitHub: ", "text": REPO, "color": ACCENT, "space_after": 2},
-        {"lead": "Live app: ", "text": "<URL>      ", "space_after": 0},
+        {"lead": "Live app (React): ", "text": REACT_URL, "color": ACCENT, "space_after": 2},
+        {"lead": "Live app (Streamlit): ", "text": STREAMLIT_URL, "color": ACCENT, "space_after": 2},
+        {"lead": "Demo video: ", "text": "<VIDEO_URL>", "space_after": 0},
     ], 14, WIDTH, CONTENT_BOTTOM - links_top, "s5 links")
-    lp = lbox.text_frame.paragraphs[-1]
-    _run(lp, "Demo video: ", MIN_PT, bold=True)
-    _run(lp, "<URL>", MIN_PT)
-    lbox.text_frame.paragraphs[0].runs[-1].hyperlink.address = REPO
+    for para, url in zip(lbox.text_frame.paragraphs[:3], [REPO, REACT_URL, STREAMLIT_URL]):
+        para.runs[-1].hyperlink.address = url
 
     prs.save(OUT)
     print(f"wrote {OUT} ({OUT.stat().st_size / 1e6:.2f} MB)")

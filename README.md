@@ -5,7 +5,7 @@ Team **Neural Mavericks** · Snowflake CoCo CLI Hackathon (GCC Edition) · Chall
 
 | | |
 |---|---|
-| 🚀 **Live app** (no login) | `<STREAMLIT_APP_URL>` |
+| 🚀 **Live app: Streamlit** (no login) | [neural-mavericks-policypulse360.streamlit.app](https://neural-mavericks-policypulse360.streamlit.app/) |
 | 🌐 **Command Center (React)** | [yugrajmangate-dev.github.io/neural-mavericks-policypulse360](https://yugrajmangate-dev.github.io/neural-mavericks-policypulse360/) |
 | 🎬 **Demo video** | `<VIDEO_URL>` |
 | 📑 **Deck (PDF, official template)** | [`submission/PolicyPulse360_NeuralMavericks_Template.pdf`](submission/PolicyPulse360_NeuralMavericks_Template.pdf) |
@@ -37,7 +37,21 @@ Skills live in [`.cortex/skills/`](.cortex/skills), so CoCo CLI loads them autom
 | [`$interaction-intel`](.cortex/skills/interaction-intel/SKILL.md) | `RAW.CALL_TRANSCRIPTS` (unstructured) | `SNOWFLAKE.CORTEX.SENTIMENT` (customer turns), `AI_CLASSIFY` (6 intents), `AI_COMPLETE` (1-line summary), optional **Cortex Search** | `CURATED.INTERACTION_INSIGHTS` (incremental) |
 | [`$next-best-action`](.cortex/skills/next-best-action/SKILL.md) | 360 + insights | explainable weighted risk (8 drivers, 0–100) + grounded `AI_COMPLETE` | `APP.CHURN_RISK`, `APP.NEXT_BEST_ACTIONS` (action · reason · evidence IDs · message) |
 
-Chain: `$c360-unify` → `$interaction-intel` → `$next-best-action`. The exact on-camera prompts are in [DEMO_SCRIPT.md](DEMO_SCRIPT.md).
+| [`$ask-policypulse`](.cortex/skills/ask-policypulse/SKILL.md) | any plain-English retention question | **PolicyPulse Copilot** Cortex Agent: Cortex Analyst on the semantic view `APP.CUSTOMER_360_SV` + Cortex Search on transcripts | cited answer (`[T0xxxx]` transcript IDs) + recommended action |
+
+Chain: `$c360-unify` → `$interaction-intel` → `$next-best-action`, then ask anything with `$ask-policypulse`. The exact on-camera prompts are in [DEMO_SCRIPT.md](DEMO_SCRIPT.md).
+
+### Results: real Cortex run (hackathon account, AWS us-west-2)
+| Metric | Value |
+|---|---|
+| Customers flagged High risk | **67 of 300 (22%)** |
+| Recall of truly at-risk customers (hidden synthetic label) | **81%**, at **91% precision** |
+| Annual premium in the High-risk band | **₹32.9 L of ₹1.45 Cr (23%)** |
+| High-risk renewals due within 30 days | **41** |
+| Transcripts enriched by Cortex (SENTIMENT · AI_CLASSIFY · AI_COMPLETE) | **819** |
+| Next best actions written by **GPT-4.1 via Cortex `AI_COMPLETE`** | **150** (High/Medium risk + upsell signals; the rest use the rule engine) |
+
+Numbers are measured on the seeded synthetic dataset. AI_CLASSIFY matched 100% of the intent labels, which is inflated because the transcripts are template-generated.
 
 ### Explainable churn score
 | Driver | Max | Rule |

@@ -47,11 +47,11 @@
 | Metric | Value |
 |---|---|
 | Agent prep time per customer | **~20 min → < 30 s** [projected: 4 systems + recordings vs one card] |
-| Customers flagged High risk | **78 of 300 (26%)** [measured] |
-| Recall of truly at-risk customers (hidden synthetic label) | **87% (65/75)**, with **83% precision** in the High band [measured] |
-| Annual premium in the High-risk band | **₹37.0 L of ₹1.45 Cr (25%)** [measured] |
-| High-risk renewals due in ≤ 30 days | **43** customers to call this month [measured] |
-| Premium retained if 20% of High-risk premium is saved | **₹7.4 L per 300 customers**, about **₹247 Cr per 1M customers** [projected] |
+| Customers flagged High risk | **67 of 300 (22%)** [measured on synthetic data, real Cortex run] |
+| Recall of truly at-risk customers (hidden synthetic label) | **81% (61/75)**, with **91% precision** in the High band [measured] |
+| Annual premium in the High-risk band | **₹32.9 L of ₹1.45 Cr (23%)** [measured] |
+| High-risk renewals due in ≤ 30 days | **41** customers to call this month [measured] |
+| Premium retained if 20% of High-risk premium is saved | **₹6.6 L per 300 customers**, about **₹219 Cr per 1M customers** [projected] |
 | Every recommendation | explainable: score drivers plus cited call IDs, so it's audit-friendly (IRDAI grievance context) |
 
 ---
