@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion'
-import { AlertTriangle, IndianRupee, Smile, Users } from 'lucide-react'
+import { AlertTriangle, IndianRupee, Smile, Target, Users } from 'lucide-react'
 import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Bar, BarChart, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { useActionLog } from '../actionLog'
 import { BandPill, Card, CountUp } from '../components/ui'
 import { bandColor, inr, INTENT_COLORS, intentLabel, useStore } from '../data'
 
@@ -11,6 +12,7 @@ const tip = { background: '#0a0f1c', border: '1px solid rgba(255,255,255,0.1)', 
 export default function Portfolio() {
   const { store } = useStore()
   const nav = useNavigate()
+  const { reviewed, uptake, reset } = useActionLog()
   const top = useMemo(() => store ? [...store.nba].sort((a, b) => (b.PREMIUM_AT_RISK ?? 0) - (a.PREMIUM_AT_RISK ?? 0) || b.RISK_SCORE - a.RISK_SCORE).filter((r) => r.RISK_BAND !== 'Low').slice(0, 20) : [], [store])
   if (!store) return <div className="grid grid-cols-4 gap-5">{[0, 1, 2, 3].map((i) => <div key={i} className="skeleton h-28" />)}<div className="skeleton col-span-4 h-80" /></div>
   const p = store.portfolio
@@ -22,17 +24,19 @@ export default function Portfolio() {
     { label: 'High risk', icon: AlertTriangle, value: p.pct_high_risk, fmt: (n: number) => `${n.toFixed(1)}%`, accent: '#ff5c6c', sub: `${p.risk_bands.High} customers score ≥ 55` },
     { label: 'Premium at risk', icon: IndianRupee, value: p.premium_at_risk, fmt: (n: number) => inr(n), accent: '#ffb547', sub: `of ${inr(p.total_premium)} total annual premium` },
     { label: 'Avg sentiment', icon: Smile, value: p.avg_sentiment, fmt: (n: number) => n.toFixed(2), accent: p.avg_sentiment < 0 ? '#ffb547' : '#34d399', sub: 'Cortex SENTIMENT, scale −1 to +1' },
+    { label: 'Action uptake', icon: Target, value: (uptake ?? 0) * 100, fmt: (n: number) => (uptake == null ? '—' : `${Math.round(n)}%`), accent: '#34d399',
+      sub: `${reviewed} reviewed · demo, this browser` },
   ]
 
   return (
     <div className="space-y-5">
-      <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-5 md:grid-cols-3 xl:grid-cols-5">
         {kpis.map((k, i) => (
           <Card key={k.label} className="relative overflow-hidden p-5" delay={i * 0.06}>
             <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full blur-3xl" style={{ background: k.accent + '30' }} />
             <div className="flex items-center justify-between"><span className="label">{k.label}</span><k.icon size={16} style={{ color: k.accent }} /></div>
             <div className="mt-2 text-3xl font-extrabold text-white"><CountUp value={k.value} format={k.fmt} /></div>
-            <div className="mt-1 text-xs text-slate-500">{k.sub}</div>
+            <div className="mt-1 text-xs text-slate-500">{k.sub}{k.label === 'Action uptake' && reviewed > 0 && <button onClick={reset} className="ml-2 text-slate-400 underline-offset-2 hover:text-white hover:underline">reset</button>}</div>
           </Card>
         ))}
       </div>

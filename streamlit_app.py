@@ -16,7 +16,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from app import chat
-from app.data import AS_OF, cortex_complete, is_live, load, meta, regenerate_nba, sql
+from app.data import AS_OF, _conn, cortex_complete, is_live, load, meta, regenerate_nba, sql
 
 st.set_page_config(page_title="PolicyPulse 360", page_icon="🛡️", layout="wide")
 
@@ -219,6 +219,49 @@ def portfolio_view(prod: tuple, seg: tuple, city: tuple) -> dict | None:
                 by_product=by_product, intents=intents, renewals=renewals, plays=plays, top=top)
 
 
+# ----------------------------------------------------------------------------- write-back (APP.ACTION_LOG)
+ACTION_STATUSES = (("Accepted", "✅"), ("Rejected", "✖️"), ("Done", "🏁"))
+
+
+def log_action(cid: str, category: str, action: str, status: str, note: str) -> str | None:
+    """Record an agent decision. LIVE: INSERT into APP.ACTION_LOG. DEMO: this browser session only.
+    Returns an error message, or None on success."""
+    if LIVE:
+        try:
+            _conn().cursor().execute(
+                "INSERT INTO POLICYPULSE.APP.ACTION_LOG (CUSTOMER_ID, ACTION_CATEGORY, ACTION, STATUS, AGENT, NOTE) "
+                "SELECT %s, %s, %s, %s, CURRENT_USER(), %s", (cid, category, action, status, note or None))
+        except Exception as e:
+            return f"{type(e).__name__}: {str(e)[:200]}"
+        live_uptake.clear()
+    st.session_state.setdefault("action_log", []).append(
+        dict(CUSTOMER_ID=cid, ACTION_CATEGORY=category, STATUS=status, TS=pd.Timestamp.now(), NOTE=note))
+    return None
+
+
+def session_status() -> dict[str, dict]:
+    """Latest decision per customer logged in this session."""
+    return {r["CUSTOMER_ID"]: r for r in st.session_state.get("action_log", [])}
+
+
+@st.cache_data(ttl=60, show_spinner=False)
+def live_uptake() -> tuple[int, float | None] | None:
+    try:
+        r = sql("SELECT REVIEWED, UPTAKE_RATE FROM POLICYPULSE.APP.ACTION_UPTAKE").iloc[0]
+        return int(r.REVIEWED), (None if pd.isna(r.UPTAKE_RATE) else float(r.UPTAKE_RATE))
+    except Exception:  # sql/action_log.sql not deployed yet
+        return None
+
+
+def action_uptake() -> tuple[int, float | None, str]:
+    """(customers reviewed, share Accepted or Done, source label)."""
+    if LIVE and (u := live_uptake()) is not None:
+        return u[0], u[1], "APP.ACTION_LOG"
+    latest = session_status().values()
+    n = len(latest)
+    return n, (sum(r["STATUS"] in ("Accepted", "Done") for r in latest) / n if n else None), "demo session"
+
+
 LIVE, D, META, LOAD_ERR = get_bundle()
 if LOAD_ERR:
     st.warning(f"Live Snowflake connection failed ({LOAD_ERR}); showing demo data.")
@@ -356,6 +399,24 @@ def customer_tab():
                         st.session_state[f"regen_{cid}"] = out
                         st.rerun(scope="fragment")
                     st.error("Cortex returned no valid JSON — keeping the stored action.")
+
+            # closed loop: the agent's decision on this action
+            where = ("writes to <code>APP.ACTION_LOG</code>" if LIVE
+                     else "<b>demo mode</b>: kept in this browser session only, not written to Snowflake")
+            st.markdown(f"<div style='margin-top:.6rem' class='pp-small'>AGENT DECISION · {where}</div>",
+                        unsafe_allow_html=True)
+            note = st.text_input("Note", key=f"note_{cid}", label_visibility="collapsed",
+                                 placeholder="Optional note, e.g. customer asked for a callback on Friday")
+            for col, (status, icon) in zip(st.columns(3), ACTION_STATUSES):
+                if col.button(f"{icon} {status}", key=f"act_{status}_{cid}", width="stretch"):
+                    err = log_action(cid, cat, str(action), status, note)
+                    if err:
+                        st.error(f"Could not write to APP.ACTION_LOG ({err}). Run sql/action_log.sql first.")
+                    else:
+                        st.toast(f"{status}: {c.FULL_NAME}" + (" · logged to Snowflake" if LIVE else " · demo session"))
+            if cur := session_status().get(cid):
+                st.markdown(f"<span class='pp-chip'>Status: <b>{cur['STATUS']}</b> · {cur['TS']:%d %b, %H:%M}"
+                            f"{' · ' + html.escape(cur['NOTE']) if cur['NOTE'] else ''}</span>", unsafe_allow_html=True)
             nxt = c.NEXT_RENEWAL_DATE
             st.markdown(f"<div class='pp-small'>Next renewal: {c.NEXT_RENEWAL_PLAN} ({c.NEXT_RENEWAL_POLICY_ID}) on "
                         f"{nxt:%d %b %Y} · {inr(c.NEXT_RENEWAL_PREMIUM)}</div>" if pd.notna(nxt) else "",
@@ -436,12 +497,17 @@ def portfolio_tab():
     if p is None:
         st.info("No customers match these filters.")
         return
+    n_rev, uptake, src_lbl = action_uptake()
     kpi_row([
         ("Customers", f"{p['n']:,}", "in current filter", ACCENT, None),
         ("High risk", f"{p['n_hi']:,}", f"{p['n_hi'] / p['n']:.0%} of book", HIGH, None),
         ("Premium at risk (High)", inr(p["hi_prem"]), f"{p['hi_prem'] / max(p['prem'], 1):.0%} of premium", HIGH, None),
         ("Expected premium loss", inr(p["exp_loss"]), "Σ premium × risk / 100", MED, "Σ premium × risk score / 100"),
         ("Renewals ≤ 30d · High risk", p["hi_renew30"], "call these first", HIGH if p["hi_renew30"] else LOW, None),
+        ("Action uptake", f"{uptake:.0%}" if uptake is not None else "—",
+         f"{n_rev} action{'s' if n_rev != 1 else ''} reviewed · {src_lbl}", LOW if (uptake or 0) >= 0.5 else MED,
+         "Share of reviewed next best actions that agents Accepted or marked Done (latest decision per customer). "
+         "All customers, not just this filter."),
     ])
 
     a, b = st.columns(2, gap="medium")
