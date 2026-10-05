@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS CURATED.INTERACTION_INSIGHTS (
 CREATE OR REPLACE VIEW CURATED.CUSTOMER_360
   COMMENT = 'PolicyPulse 360: unified customer view (structured + unstructured aggregates)'
 AS
-WITH asof AS (SELECT CURATED.AS_OF_DATE() AS D),
+WITH ref_dt AS (SELECT CURATED.AS_OF_DATE() AS D),
 
 pol AS (
   SELECT
@@ -58,7 +58,7 @@ next_ren AS (   -- the soonest upcoming (or in-grace) renewal
   SELECT p.CUSTOMER_ID, p.POLICY_ID AS NEXT_RENEWAL_POLICY_ID, p.PRODUCT_LINE AS NEXT_RENEWAL_PRODUCT,
          p.PLAN_NAME AS NEXT_RENEWAL_PLAN, p.ANNUAL_PREMIUM AS NEXT_RENEWAL_PREMIUM,
          p.RENEWAL_DATE AS NEXT_RENEWAL_DATE, DATEDIFF('day', a.D, p.RENEWAL_DATE) AS DAYS_TO_RENEWAL
-  FROM RAW.POLICIES p, asof a
+  FROM RAW.POLICIES p, ref_dt a
   WHERE p.STATUS <> 'Lapsed'
   QUALIFY ROW_NUMBER() OVER (PARTITION BY p.CUSTOMER_ID ORDER BY p.RENEWAL_DATE) = 1
 ),
@@ -75,7 +75,7 @@ clm AS (
     SUM(COALESCE(c.APPROVED_AMOUNT, 0))                                               AS TOTAL_APPROVED,
     ROUND(AVG(c.DAYS_TO_SETTLE), 1)                                                   AS AVG_DAYS_TO_SETTLE,
     MAX(IFF(c.STATUS IN ('Pending','Under Review'), c.DAYS_OPEN, NULL))               AS MAX_OPEN_CLAIM_DAYS
-  FROM RAW.CLAIMS c, asof a
+  FROM RAW.CLAIMS c, ref_dt a
   WHERE c.CLAIM_DATE >= DATEADD('month', -18, a.D)
   GROUP BY c.CUSTOMER_ID
 ),
@@ -88,7 +88,7 @@ pay AS (
     COUNT_IF(y.PAYMENT_STATUS = 'Missed')          AS N_MISSED_12M,
     ROUND(COUNT_IF(y.PAYMENT_STATUS = 'On-time') / NULLIF(COUNT(*), 0), 3) AS ON_TIME_RATE_12M,
     ROUND(AVG(IFF(y.PAYMENT_STATUS = 'Late', y.DAYS_LATE, NULL)), 1)        AS AVG_DAYS_LATE
-  FROM RAW.PAYMENTS y, asof a
+  FROM RAW.PAYMENTS y, ref_dt a
   WHERE y.DUE_DATE >= DATEADD('month', -12, a.D)
   GROUP BY y.CUSTOMER_ID
 ),
@@ -98,7 +98,7 @@ calls AS (      -- raw interaction volume (works even before Skill 2 runs)
          COUNT(*)                                                         AS N_CALLS_180D,
          MAX(t.CALL_TS)                                                   AS LAST_CALL_TS,
          SUM(t.DURATION_SEC) / 60                                         AS CALL_MINUTES_180D
-  FROM RAW.CALL_TRANSCRIPTS t, asof a
+  FROM RAW.CALL_TRANSCRIPTS t, ref_dt a
   WHERE t.CALL_TS >= DATEADD('day', -180, a.D)
   GROUP BY t.CUSTOMER_ID
 ),
@@ -115,7 +115,7 @@ ai AS (         -- AI-derived interaction signals (from Skill 2)
     COUNT_IF(i.PRIMARY_INTENT = 'claim_issue' AND i.CALL_TS >= DATEADD('day', -90, a.D))         AS N_CLAIM_ISSUE_90D,
     COUNT_IF(i.PRIMARY_INTENT = 'upsell_interest')                                              AS N_UPSELL_INTEREST_180D,
     COUNT_IF(i.PRIMARY_INTENT = 'service_praise')                                               AS N_SERVICE_PRAISE_180D
-  FROM CURATED.INTERACTION_INSIGHTS i, asof a
+  FROM CURATED.INTERACTION_INSIGHTS i, ref_dt a
   WHERE i.CALL_TS >= DATEADD('day', -180, a.D)
   GROUP BY i.CUSTOMER_ID
 )
