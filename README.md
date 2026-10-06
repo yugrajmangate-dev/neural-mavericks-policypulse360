@@ -27,7 +27,7 @@ to an action in one screen.
 
 Mermaid source: [`submission/architecture.mmd`](submission/architecture.mmd)
 
-## The three Cortex Code CLI skills
+## The four Cortex Code CLI skills
 Skills live in [`.cortex/skills/`](.cortex/skills), so CoCo CLI loads them automatically when started from the repo root. Each one is a
 `SKILL.md` plus SQL, **runnable alone or chained**. They share Snowflake tables as their contract.
 
@@ -36,10 +36,11 @@ Skills live in [`.cortex/skills/`](.cortex/skills), so CoCo CLI loads them autom
 | [`$c360-unify`](.cortex/skills/c360-unify/SKILL.md) | RAW customers, policies, claims, payments, transcripts | SQL views, `AS_OF_DATE()` | `CURATED.CUSTOMER_360` (1 row per customer, 60+ signals) |
 | [`$interaction-intel`](.cortex/skills/interaction-intel/SKILL.md) | `RAW.CALL_TRANSCRIPTS` (unstructured) | `SNOWFLAKE.CORTEX.SENTIMENT` (customer turns), `AI_CLASSIFY` (6 intents), `AI_COMPLETE` (1-line summary), optional **Cortex Search** | `CURATED.INTERACTION_INSIGHTS` (incremental) |
 | [`$next-best-action`](.cortex/skills/next-best-action/SKILL.md) | 360 + insights | explainable weighted risk (8 drivers, 0–100) + grounded `AI_COMPLETE` | `APP.CHURN_RISK`, `APP.NEXT_BEST_ACTIONS` (action · reason · evidence IDs · message) |
-
 | [`$ask-policypulse`](.cortex/skills/ask-policypulse/SKILL.md) | any plain-English retention question | **PolicyPulse Copilot** Cortex Agent: Cortex Analyst on the semantic view `APP.CUSTOMER_360_SV` + Cortex Search on transcripts | cited answer (`[T0xxxx]` transcript IDs) + recommended action |
 
 Chain: `$c360-unify` → `$interaction-intel` → `$next-best-action`, then ask anything with `$ask-policypulse`. The exact on-camera prompts are in [DEMO_SCRIPT.md](DEMO_SCRIPT.md).
+
+**Write-back action log:** recommendations aren't fire-and-forget. An agent's decision on a next best action (✅ Accepted / ✖️ Rejected / 🏁 Done, plus a note) is recorded in `APP.ACTION_LOG`. That happens from the Streamlit app in LIVE mode, or when `$ask-policypulse` offers to log it. `APP.ACTION_UPTAKE` then shows which plays agents trust. Deployed by `python scripts/run_upgrades.py` together with the semantic view, Cortex Search service and Copilot agent.
 
 ### Results: real Cortex run (hackathon account, AWS us-west-2)
 | Metric | Value |
@@ -121,12 +122,13 @@ warehouse = "POLICYPULSE_WH"
 
 ## Repo map
 ```
-.cortex/skills/        3 CoCo skills (SKILL.md + SQL)
-sql/                   setup + load
+.cortex/skills/        4 CoCo skills (SKILL.md + SQL): c360-unify · interaction-intel · next-best-action · ask-policypulse
+sql/                   setup + load · upgrades: semantic view, Cortex Search, Copilot agent, ACTION_LOG write-back
 data/                  seeded generator + raw CSVs (+ eval labels)
-scripts/               load · run_pipeline · export_demo_data · simulate_pipeline_local · render_architecture · build_deck
+scripts/               load · run_pipeline · run_upgrades · export_demo_data · export_web_data · simulate_pipeline_local · fill_template · render_architecture · build_deck
 app/                   data layer (demo/live) + Ask engine
-streamlit_app.py       the app
+streamlit_app.py       the Streamlit app
+web/                   React Command Center (GitHub Pages)
 demo_data/             Parquet the public app reads
 submission/            brief · deck · architecture · video script
 ```
