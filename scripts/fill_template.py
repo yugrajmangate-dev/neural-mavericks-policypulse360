@@ -28,6 +28,7 @@ ACCENT = RGBColor(0x1C, 0x5C, 0xAB)
 REPO = "https://github.com/yugrajmangate-dev/neural-mavericks-policypulse360"
 REACT_URL = "https://yugrajmangate-dev.github.io/neural-mavericks-policypulse360/"
 STREAMLIT_URL = "https://neural-mavericks-policypulse360.streamlit.app/"
+VIDEO_URL = "https://drive.google.com/file/d/1sbVZ61HSDpibyNr2ZdpOXsHa40tJKOqP/view?usp=sharing"
 MIN_PT = 14
 CONTENT_TOP, CONTENT_BOTTOM = 0.62, 5.42          # white band between header and footer banners (inches)
 LEFT, WIDTH = 0.36, 9.28
@@ -215,9 +216,9 @@ def main(template: str):
         {"lead": "GitHub: ", "text": REPO, "color": ACCENT, "space_after": 2},
         {"lead": "Live app (React): ", "text": REACT_URL, "color": ACCENT, "space_after": 2},
         {"lead": "Live app (Streamlit): ", "text": STREAMLIT_URL, "color": ACCENT, "space_after": 2},
-        {"lead": "Demo video: ", "text": "<VIDEO_URL>", "space_after": 0},
+        {"lead": "Demo video: ", "text": VIDEO_URL.split("?")[0], "color": ACCENT, "space_after": 0},
     ], 14, WIDTH, CONTENT_BOTTOM - links_top, "s5 links")
-    for para, url in zip(lbox.text_frame.paragraphs[:3], [REPO, REACT_URL, STREAMLIT_URL]):
+    for para, url in zip(lbox.text_frame.paragraphs[:4], [REPO, REACT_URL, STREAMLIT_URL, VIDEO_URL]):
         para.runs[-1].hyperlink.address = url
 
     prs.save(OUT)
