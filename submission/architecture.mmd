@@ -17,10 +17,13 @@ flowchart LR
       K1["$c360-unify<br/>SQL views"]
       K2["$interaction-intel<br/>CORTEX.SENTIMENT · AI_CLASSIFY<br/>AI_COMPLETE · Cortex Search"]
       K3["$next-best-action<br/>explainable risk score +<br/>grounded AI_COMPLETE"]
+      K4["$ask-policypulse<br/>plain-English question"]
     end
     C360[("CURATED.CUSTOMER_360")]
     INS[("CURATED.INTERACTION_INSIGHTS")]
     NBA[("APP.CHURN_RISK<br/>APP.NEXT_BEST_ACTIONS")]
+    AGT["Cortex Agent APP.POLICYPULSE_COPILOT<br/>Analyst on CUSTOMER_360_SV + Cortex Search"]
+    LOG[("APP.ACTION_LOG<br/>agent decisions")]
   end
 
   subgraph UX["Experience"]
@@ -39,3 +42,7 @@ flowchart LR
   NBA -->|DEMO: Parquet export| APP
   APP --> AG
   AG -->|plain-English question| APP
+  K4 --> AGT
+  C360 -. semantic view .-> AGT
+  INS -. search .-> AGT
+  APP -->|Accepted / Rejected / Done| LOG

@@ -170,7 +170,7 @@ def main(template: str):
     h = w / ratio
     s3.shapes.add_picture(str(img), Inches((10 - w) / 2), Inches(img_top), Inches(w), Inches(h))
     add_box(s3, LEFT, img_top + h + 0.04, WIDTH, CONTENT_BOTTOM - (img_top + h + 0.04), [
-        {"lead": "CoCo CLI skills: ", "text": "$c360-unify → $interaction-intel → $next-best-action",
+        {"lead": "4 CoCo CLI skills: ", "text": "$c360-unify → $interaction-intel → $next-best-action → $ask-policypulse",
          "align": PP_ALIGN.CENTER, "space_after": 0},
         {"lead": "Structured: ", "text": "customers, policies, claims, payments   ·   ", "align": PP_ALIGN.CENTER,
          "space_after": 0},
